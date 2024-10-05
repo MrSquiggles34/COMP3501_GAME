@@ -1,2 +1,7 @@
 # COMP3501_GAME
  COMP3501 TREASURE HUNT GAME
+
+Andy Li (101264096)
+Annie Zhang ()
+Usman Iftikhar ()
+
