@@ -8,7 +8,9 @@ using namespace godot;
 void CustomScene3501::_bind_methods() { }
 
 CustomScene3501::CustomScene3501() : Node3D() {
-	time_passed = 0.0;
+	
+	// Time for the scene 
+	scene_time_passed = 0.0;
 }
 
 CustomScene3501::~CustomScene3501() {
@@ -18,7 +20,8 @@ CustomScene3501::~CustomScene3501() {
 void CustomScene3501::_enter_tree ( ){
 	if(DEBUG) UtilityFunctions::print("Enter Tree - CustomScene3501."); 
 
-	create_and_add_as_child<QuatCamera>(main_camera, "QuatCamera", true);
+
+	create_and_add_as_child(this, main_camera, "QuatCamera", true);
 
 }
 
@@ -36,34 +39,4 @@ void CustomScene3501::_ready ( ){
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
 
-	time_passed += delta;
-}
-
-template <class T>
-// returns true if pointer is brand-new; false if retrieved from SceneTree
-bool CustomScene3501::create_and_add_as_child(T* &pointer, String name, bool search){
-	// this is the default behaviour
-	// added the search parameter so that we can skip the slow "find_child" call during runtime (not applicable to this demo, you should always use search = true until next assignment)
-	if(search == false){
-		pointer = memnew(T);
-		pointer->set_name(name);
-		add_child(pointer);
-		pointer->set_owner(get_tree()->get_edited_scene_root());
-		return true;
-	}
-
-	// always only have to search once if we save it here
-	Node* child = find_child(name);
-	
-	if(child == nullptr){
-		pointer = memnew(T);
-		pointer->set_name(name);
-		add_child(pointer);
-		pointer->set_owner(get_tree()->get_edited_scene_root());
-		return true;
-	}
-	else{
-		pointer = dynamic_cast<T*>(child);
-		return false;
-	}
 }

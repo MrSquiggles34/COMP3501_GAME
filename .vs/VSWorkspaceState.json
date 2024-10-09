@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\demo",
     "\\header",
-    "\\shader",
+    "\\header\\nodes",
+    "\\header\\util",
     "\\source",
-    "\\source\\nodes",
-    "\\source\\util"
+    "\\source\\nodes"
   ],
-  "SelectedNode": "\\header\\game.h",
+  "SelectedNode": "\\header\\util\\create_and_add_as_child.h",
   "PreviewInSolutionExplorer": false
 }
