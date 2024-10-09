@@ -2,6 +2,7 @@
 #define CREATE_AND_ADD_AS_CHILD_H
 
 #include <godot_cpp/classes/node.hpp>
+#include <godot_cpp/classes/scene_tree.hpp>
 
 namespace godot {
 
