@@ -22,6 +22,7 @@ void CustomScene3501::_enter_tree ( ){
 
 
 	create_and_add_as_child(this, main_camera, "QuatCamera", true);
+    create_and_add_as_child<Map>(this, map, "Map", true);
 
 }
 
@@ -29,7 +30,7 @@ void CustomScene3501::_ready ( ){
 	if(DEBUG) UtilityFunctions::print("Ready - CustomScene3501."); 
 
 	// set the player's position (the camera) 
-	main_camera->set_global_position(Vector3(5.0, 5.0, 25.0f));
+	main_camera->set_global_position(Vector3(0.0, 0.8, -12.0));
 	main_camera->look_at(Vector3(0, 0, 0)); // there are some bugs with this function if the up vector is parallel to the look-at position; check the manual for a link to more info
 
 	// now that we have set the camera's starting state, let's reinitialize its variables

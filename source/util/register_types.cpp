@@ -2,6 +2,7 @@
 
 #include "quat_camera.h"
 #include "custom_scene_3501.h"
+#include "map.h"
 
 #include "example_abstract_class.h"
 #include "example_derived_class.h"
@@ -25,6 +26,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_abstract_class<ExampleAbstractClass>();
 	ClassDB::register_class<ExampleDerivedClass>();
 	ClassDB::register_class<Game>();
+	ClassDB::register_class<Map>();
 }
 
 // gets called when godot unloads our plugin
