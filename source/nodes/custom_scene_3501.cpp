@@ -23,6 +23,7 @@ void CustomScene3501::_enter_tree ( ){
 
 	create_and_add_as_child(this, main_camera, "QuatCamera", true);
     create_and_add_as_child<Map>(this, map, "Map", true);
+	create_and_add_as_child<Player>(this, player, "Player", true); 
 
 }
 

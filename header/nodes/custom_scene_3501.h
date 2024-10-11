@@ -29,6 +29,7 @@
 #include "defs.h"
 #include "quat_camera.h"
 #include "map.h"
+#include "player.h"
 #include "example_derived_class.h"
 #include "create_and_add_as_child.h"
 
@@ -44,6 +45,7 @@ private:
 
 	QuatCamera* main_camera;
     Map* map;
+	Player* player;
 	Vector<ExampleDerivedClass*> reference_instances;
 
 protected:
