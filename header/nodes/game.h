@@ -2,10 +2,12 @@
 #define GAME_H
 
 #include <godot_cpp/classes/node.hpp>
+#include <godot_cpp/classes/scene_tree.hpp>
 
 #include "defs.h"
 #include "custom_scene_3501.h"
 #include "create_and_add_as_child.h"
+
 
 
 namespace godot {
@@ -32,6 +34,7 @@ namespace godot {
         void _enter_tree() override;
 
         void _pause();
+        bool get_is_paused() const;
     
     };
 

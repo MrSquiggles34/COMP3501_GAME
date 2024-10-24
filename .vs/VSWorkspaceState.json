@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\godot-cpp",
     "\\header",
     "\\header\\nodes",
-    "\\header\\util",
     "\\source",
-    "\\source\\nodes"
+    "\\source\\nodes",
+    "\\source\\util"
   ],
-  "SelectedNode": "\\header\\util\\create_and_add_as_child.h",
+  "SelectedNode": "\\source\\nodes\\quat_camera.cpp",
   "PreviewInSolutionExplorer": false
 }

@@ -13,8 +13,11 @@
 #include <godot_cpp/variant/packed_vector3_array.hpp>
 #include <godot_cpp/variant/quaternion.hpp>
 
+
+
 // everything in gdextension is defined in this namespace
 namespace godot {
+
 class QuatCamera : public Camera3D {
     // this macro sets up a few internal things
 	GDCLASS(QuatCamera, Camera3D);
@@ -47,6 +50,7 @@ public:
 	void _enter_tree() override;
 	void _ready() override;
 	void _process(double delta) override;
+	void _input(const Ref<InputEvent>&);
 };
 
 }

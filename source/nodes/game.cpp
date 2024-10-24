@@ -1,5 +1,5 @@
 #include "game.h"
-#include <godot_cpp/classes/scene_tree.hpp>
+
 
 using namespace godot;
 
@@ -44,5 +44,7 @@ void Game::_pause() {
     is_paused = !is_paused;
 }
 
-
+bool Game::get_is_paused() const {
+    return is_paused;
+}
 
