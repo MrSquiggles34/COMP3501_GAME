@@ -11,6 +11,8 @@ CustomScene3501::CustomScene3501() : Node3D() {
 	
 	// Time for the scene 
 	scene_time_passed = 0.0;
+	is_paused = false;
+	was_paused = false;
 }
 
 CustomScene3501::~CustomScene3501() {
@@ -41,4 +43,15 @@ void CustomScene3501::_ready ( ){
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
 
+	// Check if the pause state has changed
+	if (is_paused != was_paused) {
+		main_camera->toggle_pause();  
+		was_paused = is_paused;  
+	}
+
+}
+
+void CustomScene3501::toggle_pause() {
+	is_paused = !is_paused;
+	if (DEBUG) UtilityFunctions::print(is_paused ? "CustomScene Paused" : "CustomScene Resumed");
 }

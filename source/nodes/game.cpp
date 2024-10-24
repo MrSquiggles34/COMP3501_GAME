@@ -31,7 +31,15 @@ void Game::_ready() {
 void Game::_process(double delta) {
     if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
 
-    if (is_paused) return;
+    // PAUSE THE GAME BY PAUSING THE SCENE WHICH PAUSES ALL RELEVANT OBJECTS 
+    Input* _input = Input::get_singleton();
+    // Pause toggle with P key
+    if (_input->is_action_just_pressed("pause_game")) {
+
+        main_scene->toggle_pause();
+    }
+
+
 }
 
 

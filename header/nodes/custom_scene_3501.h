@@ -42,6 +42,9 @@ class CustomScene3501 : public Node3D {
 
 private:
 	double scene_time_passed;
+	
+	bool is_paused;
+	bool was_paused = false;
 
 	QuatCamera* main_camera;
     Map* map;
@@ -59,6 +62,8 @@ public:
 	void _process(double delta) override;
 	void _enter_tree ( ) override;
 	void _ready ( ) override;
+
+	void toggle_pause();
 
 };
 

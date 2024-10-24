@@ -3,6 +3,7 @@
 
 #include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/classes/scene_tree.hpp>
+#include <godot_cpp/classes/input_event.hpp>
 
 #include "defs.h"
 #include "custom_scene_3501.h"

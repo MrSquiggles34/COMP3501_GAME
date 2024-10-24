@@ -12,6 +12,7 @@ void QuatCamera::_bind_methods() {}
 
 QuatCamera::QuatCamera() : Camera3D() {
 	our_quaternion = Quaternion(Vector3(0, 0, 1), 0.0f);
+	is_paused = false;
 }
 
 void QuatCamera::_enter_tree(){
@@ -19,9 +20,6 @@ void QuatCamera::_enter_tree(){
 }
 
 void QuatCamera::_ready(){
-
-	// Lock the mouse pointer to the camera
-	//game_node = Object::cast_to<Game>(get_tree()->get_root()->get_child(0));
 
 	Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
 	
@@ -34,12 +32,7 @@ QuatCamera::~QuatCamera() {
 }
 
 void QuatCamera::_process(double delta){
-	if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
-
-	// Pause movement when game is paused
-	//if (game_node && game_node->get_is_paused()) {
-	//	return; 
-	//}
+	if (Engine::get_singleton()->is_editor_hint() || is_paused) return; // Early return if we are in editor
 
 	// you can speed up by changing these, if desired. 
 	float rotation_factor = 1.0f;	
@@ -68,6 +61,7 @@ void QuatCamera::_process(double delta){
 
 // FUNCTION FOR MOUSE LOOKING
 void QuatCamera::_input(const Ref<InputEvent>& event) {
+	if (Engine::get_singleton()->is_editor_hint() || is_paused) return;
 
 	Ref<InputEventMouseMotion> mouse_event = event;
 	if (mouse_event.is_valid()) {
@@ -139,4 +133,7 @@ void QuatCamera::Roll(float angle) {
 }
 
 
-
+void QuatCamera::toggle_pause() {
+	is_paused = !is_paused;
+	if (DEBUG) UtilityFunctions::print(is_paused ? "Camera Paused" : "Camera Resumed");
+}

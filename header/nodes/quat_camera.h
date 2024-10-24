@@ -13,6 +13,7 @@
 #include <godot_cpp/variant/packed_vector3_array.hpp>
 #include <godot_cpp/variant/quaternion.hpp>
 
+#include "defs.h"
 
 
 // everything in gdextension is defined in this namespace
@@ -23,6 +24,8 @@ class QuatCamera : public Camera3D {
 	GDCLASS(QuatCamera, Camera3D);
 
 private:
+
+	bool is_paused;
 
 	// this one is the one we will use to transform our side, up and forward vectors for the GetX functions. 
 	// why would it be a bad idea to transform by the built-in quaternion?
@@ -51,6 +54,8 @@ public:
 	void _ready() override;
 	void _process(double delta) override;
 	void _input(const Ref<InputEvent>&);
+
+	void toggle_pause();
 };
 
 }
