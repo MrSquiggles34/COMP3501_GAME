@@ -20,8 +20,6 @@ void QuatCamera::_enter_tree(){
 }
 
 void QuatCamera::_ready(){
-
-	Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
 	
 	forward_ = Vector3(get_global_transform().basis[0][2], get_global_transform().basis[1][2], get_global_transform().basis[2][2]);
 	side_ = Vector3(get_global_transform().basis[0][0], get_global_transform().basis[1][0], get_global_transform().basis[2][0]);
@@ -61,6 +59,8 @@ void QuatCamera::_process(double delta){
 
 // FUNCTION FOR MOUSE LOOKING
 void QuatCamera::_input(const Ref<InputEvent>& event) {
+
+	Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
 	if (Engine::get_singleton()->is_editor_hint() || is_paused) return;
 
 	Ref<InputEventMouseMotion> mouse_event = event;
