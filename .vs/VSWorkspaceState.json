@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\header",
+    "\\header\\nodes",
+    "\\header\\util",
+    "\\source",
+    "\\source\\nodes",
+    "\\source\\util"
   ],
+  "SelectedNode": "\\header\\util\\collectable_item_abstract.h",
   "PreviewInSolutionExplorer": false
 }
