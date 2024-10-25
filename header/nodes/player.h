@@ -1,20 +1,23 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <godot_cpp/classes/node3d.hpp>
-#include <godot_cpp/classes/mesh_instance3d.hpp>
+#include <godot_cpp/classes/character_body3d.hpp>
 #include <godot_cpp/classes/cylinder_mesh.hpp>
+#include <godot_cpp/classes/collision_shape3d.hpp>
+#include <godot_cpp/classes/capsule_shape3d.hpp>
+#include <godot_cpp/classes/mesh_instance3d.hpp>
 #include <godot_cpp/classes/standard_material3d.hpp>
 #include <godot_cpp/variant/vector3.hpp>
 #include "create_and_add_as_child.h"
 
 namespace godot {
 
-class Player : public Node3D {
-    GDCLASS(Player, Node3D);
+class Player : public CharacterBody3D {
+    GDCLASS(Player, CharacterBody3D);
 
 private:
-    MeshInstance3D* body;
+    MeshInstance3D* body_mesh;
+    CollisionShape3D* collision_shape;
 
 protected:
     static void _bind_methods();
