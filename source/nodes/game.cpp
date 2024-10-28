@@ -33,7 +33,7 @@ void Game::_process(double delta) {
 
     // PAUSE THE GAME BY PAUSING THE SCENE WHICH PAUSES ALL RELEVANT OBJECTS 
     Input* _input = Input::get_singleton();
-    // Pause toggle with P key
+    // Pause toggle with ESC key
     if (_input->is_action_just_pressed("pause_game")) {
 
         main_scene->toggle_pause();

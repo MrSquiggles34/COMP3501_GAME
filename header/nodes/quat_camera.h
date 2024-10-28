@@ -27,8 +27,6 @@ private:
 
 	bool is_paused;
 
-	// this one is the one we will use to transform our side, up and forward vectors for the GetX functions. 
-	// why would it be a bad idea to transform by the built-in quaternion?
 	Quaternion our_quaternion;
 	
 	Vector3 forward_;

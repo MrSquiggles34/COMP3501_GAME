@@ -20,7 +20,6 @@ void QuatCamera::_enter_tree(){
 }
 
 void QuatCamera::_ready(){
-	
 	forward_ = Vector3(get_global_transform().basis[0][2], get_global_transform().basis[1][2], get_global_transform().basis[2][2]);
 	side_ = Vector3(get_global_transform().basis[0][0], get_global_transform().basis[1][0], get_global_transform().basis[2][0]);
 }
@@ -33,7 +32,6 @@ void QuatCamera::_process(double delta){
 	if (Engine::get_singleton()->is_editor_hint() || is_paused) return; // Early return if we are in editor
 
 	// you can speed up by changing these, if desired. 
-	float rotation_factor = 1.0f;	
 	float translation_factor = 1.0f;
 	
 	Input* _input = Input::get_singleton();
@@ -43,18 +41,13 @@ void QuatCamera::_process(double delta){
 	if(_input->is_action_pressed("move_left")){
 		set_position(get_position() - GetSide() * delta * translation_factor);
 	}
-	if(_input->is_action_pressed("move_up")){
-		set_position(get_position() + GetUp() * delta * translation_factor);
-	}
-	if(_input->is_action_pressed("move_down")){
-		set_position(get_position() - GetUp() * delta * translation_factor);
-	}
 	if(_input->is_action_pressed("move_forward")){
 		set_position(get_position() + GetForward() * delta * translation_factor);
 	}
 	if(_input->is_action_pressed("move_backward")){
 		set_position(get_position() - GetForward() * delta * translation_factor);
 	}
+	
 }
 
 // FUNCTION FOR MOUSE LOOKING
@@ -77,20 +70,17 @@ void QuatCamera::_input(const Ref<InputEvent>& event) {
 
 Vector3 QuatCamera::GetForward(void) const {
 	Vector3 current_forward = (our_quaternion.xform(forward_));
-	return -current_forward.normalized(); // Return -forward since the camera coordinate system points in the opposite direction
+	current_forward.y = 0;
+	return -current_forward.normalized();
 }
 
-
 Vector3 QuatCamera::GetSide(void) const {
-	// what should this be replaced with?
 	Vector3 current_side = (our_quaternion.xform(side_));
 	return current_side.normalized();
 }
 
-
 Vector3 QuatCamera::GetUp(void) const {
-	// how do you get the up vector?
-	Vector3 current_up = GetSide().cross(GetForward());
+	Vector3 current_up = Vector3(0,1,0);
 	return current_up.normalized();
 }
 
@@ -113,8 +103,6 @@ void QuatCamera::Pitch(float angle) {
 	set_quaternion((rotation * get_quaternion()).normalized());
 }
 
-
-
 void QuatCamera::Yaw(float angle) {
 	// Rotate around the global up axis, different from Assignment 2
 	Vector3 global_up = Vector3(0, 1, 0);
@@ -122,16 +110,6 @@ void QuatCamera::Yaw(float angle) {
 	our_quaternion = (rotation * our_quaternion).normalized();
 	set_quaternion((rotation * get_quaternion()).normalized());
 }
-
-
-
-void QuatCamera::Roll(float angle) {
-	Quaternion rotation = Quaternion(GetForward(), angle);
-	Quaternion new_quat = rotation * our_quaternion;
-	our_quaternion = (new_quat.normalized());
-	set_quaternion((rotation * get_quaternion()).normalized());
-}
-
 
 void QuatCamera::toggle_pause() {
 	is_paused = !is_paused;
