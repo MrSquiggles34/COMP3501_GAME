@@ -30,7 +30,7 @@
 #include "quat_camera.h"
 #include "map.h"
 #include "player.h"
-#include "example_derived_class.h"
+#include "test_collectable.h"
 #include "create_and_add_as_child.h"
 
 
@@ -49,7 +49,6 @@ private:
 	QuatCamera* main_camera;
     Map* map;
 	Player* player;
-	Vector<ExampleDerivedClass*> reference_instances;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes

@@ -8,7 +8,9 @@
 #include <godot_cpp/classes/mesh_instance3d.hpp>
 #include <godot_cpp/classes/standard_material3d.hpp>
 #include <godot_cpp/variant/vector3.hpp>
+#include <godot_cpp/templates/vector.hpp> 
 #include "create_and_add_as_child.h"
+#include "collectable_item_abstract.h"
 
 namespace godot {
 
@@ -18,6 +20,7 @@ class Player : public CharacterBody3D {
 private:
     MeshInstance3D* body_mesh;
     CollisionShape3D* collision_shape;
+    Vector<CollectableItemAbstract*> inventory;
 
 protected:
     static void _bind_methods();

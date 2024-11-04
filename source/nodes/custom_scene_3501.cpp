@@ -27,6 +27,13 @@ void CustomScene3501::_enter_tree ( ){
     create_and_add_as_child<Map>(this, map, "Map", true);
 	create_and_add_as_child<Player>(this, player, "Player", true); 
 
+	TestCollectable* test_obj;
+    test_obj = memnew(TestCollectable);
+    test_obj->set_name("Test");
+    this->add_child(test_obj);
+    test_obj->set_owner(get_tree()->get_edited_scene_root());
+    test_obj->set_global_position(Vector3(0.0, 1.0, 5.0));
+
 }
 
 void CustomScene3501::_ready ( ){

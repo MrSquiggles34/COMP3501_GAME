@@ -10,9 +10,7 @@ using namespace godot;
 
 void Map::_bind_methods() {}
 
-Map::Map() : Node3D() {
-    x_size = 500.0f;
-    y_size = 1000.0f;	
+Map::Map() : Node3D() {	
 }
 
 void Map::_enter_tree ( ){
@@ -22,10 +20,10 @@ void Map::_enter_tree ( ){
 
     // Add a rectangle for the ground
     BoxMesh* ground_mesh = memnew(BoxMesh);
-    ground_mesh->set_size(Vector3(x_size, 1.0f, y_size));
+    ground_mesh->set_size(Vector3(X_SIZE, 1.0f, Y_SIZE));
 
     StandardMaterial3D* material = memnew(StandardMaterial3D);
-    material->set_albedo(Color(1.0, 1.0, 1.0, 1));
+    material->set_albedo(BLANK_COL);
     ground_mesh->surface_set_material(0, material);
 
     ground->set_mesh(ground_mesh);
@@ -36,19 +34,23 @@ void Map::_enter_tree ( ){
 void Map::_ready ( ){
 	if(DEBUG) UtilityFunctions::print("Ready - Map."); 
 
-    ground->set_global_position(Vector3(0.0, 0.0, 25.0-y_size/2));
+    ground->set_global_position(Vector3(0.0, 0.0, 25.0-Y_SIZE/2));
 
-    // Figure out a good way to put this into an array of sorts and loop it
-    add_building(-12.0, 0.0, 12.0, -10.0); //0
-    add_building(-20.0, 28.0, -12.0, 0.0); //1
-    add_building(12.0, 18.0, 30.0, 0.0); //2
-    add_building(12.0, 28.0, 23.0, 18.0); //3
-    add_building(-38.0, 35.0, -2.0, 28.0); //4
-    add_building(2.0, 36.0, 15.0, 28.0); //5
+    Vector<Vector<int>> houses = {
+        {1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1},
+        {0, 1, 1, 0, 0},
+        {0, 0, 0, 1, 1},
+        {0, 0, 0, 1, 1}
+    };
+
+    setup_starting_area(24.0, 18.0, 0, 0);
+    setup_housing_area(-40.0, 50.0, houses);
 }
 
 // Function for adding buildings based on 2 x/y coordinates (4 floats)
-void Map::add_building (float x1, float y1, float x2, float y2){
+void Map::add_building (float x1, float y1, float x2, float y2, float h){
     MeshInstance3D* new_building;
     create_and_add_as_child<MeshInstance3D>(buildings, new_building, vformat("Building%d", building_list.size()), true);
 
@@ -57,14 +59,46 @@ void Map::add_building (float x1, float y1, float x2, float y2){
     BoxMesh* building = memnew(BoxMesh);
     float x_len = abs(x1 - x2);
     float y_len = abs(y1 - y2);
-    float height = rng->randf_range(5.0f, 20.0f);
+    float height = h;
+    if (height == 0) height = rng->randf_range(5.0f, 20.0f);
+    
     building->set_size(Vector3(x_len, height, y_len));
 
     StandardMaterial3D* material = memnew(StandardMaterial3D);
-    material->set_albedo(Color(0.5, 0.5, 0.5, 1));
+    material->set_albedo(BUILDING_COL);
     building->surface_set_material(0, material);
 
     new_building->set_mesh(building);
     new_building->set_global_position(Vector3(x1+x_len/2.0, height/2.0, -y1+y_len/2.0));
     building_list.push_back(new_building);
+}
+
+void Map::setup_starting_area(float width, float depth, float x, float y){
+    float radius = width/2;
+
+    add_building(x-radius, y, x+radius, y-10.0); // Back Building
+    add_building(x-radius-10.0, y+depth, x-radius, y); // Left Building
+    add_building(x+radius, y+(depth*0.4), x-radius+20.0, y); // Right Building (South)
+    add_building(x+radius, y+depth, x-radius+10.0, y+(depth*0.4)); // Right Building (North)
+    add_building(x-radius-20.0, y+depth+10.0, x-2.5, y+depth); // Upper Left Building
+    add_building(x+2.5, y+depth+20.0, x+radius+5.0, y+depth); // Upper Right Building
+}
+
+void Map::setup_housing_area(float x, float y, Vector<Vector<int>> houses){
+    float house_size = 8;
+    float road_size = 5;
+
+    for(int i=0; i<houses.size(); i++){
+		for(int j=0; j<houses[i].size(); j++){
+            if (houses[i][j] == 1) {
+                float x1 = x + ((house_size + road_size) * j);
+                float y1 = y + (house_size * i);
+                float x2 = x + (house_size * (j+1)) + (road_size*j);
+                float y2 = y + (house_size * (i+1));
+
+                add_building(x1, y1, x2, y2);
+            }
+        }
+			
+	}
 }
