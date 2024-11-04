@@ -1,7 +1,8 @@
-#include "custom_scene_3501.h"
-#include <godot_cpp/core/memory.hpp> // for memnew
-#include <godot_cpp/classes/random_number_generator.hpp> 
 
+#include "custom_scene_3501.h"
+#include "defs.h"
+
+#include "create_and_add_as_child.h"
 
 using namespace godot;
 
@@ -32,7 +33,7 @@ void CustomScene3501::_enter_tree ( ){
     test_obj->set_name("Test");
     this->add_child(test_obj);
     test_obj->set_owner(get_tree()->get_edited_scene_root());
-    test_obj->set_global_position(Vector3(0.0, 1.0, 5.0));
+    test_obj->set_global_position(Vector3(0.0, 1.0, -5.0));
 
 }
 
