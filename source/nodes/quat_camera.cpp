@@ -1,10 +1,10 @@
-#include "quat_camera.h"
-#include <godot_cpp/core/class_db.hpp>
-#include <godot_cpp/classes/mesh.hpp>
+
 #include <godot_cpp/classes/engine.hpp>
-#include <godot_cpp/classes/input_event.hpp>
 #include <godot_cpp/classes/input_event_mouse_motion.hpp>
 
+#include "quat_camera.h"
+
+#include "defs.h"
 
 using namespace godot;
 

@@ -4,16 +4,10 @@
 #include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/classes/mesh_instance3d.hpp>
-
-#include <godot_cpp/classes/shader_material.hpp>
-#include <godot_cpp/classes/box_mesh.hpp>
-#include <godot_cpp/classes/standard_material3d.hpp>
-
-#include <godot_cpp/variant/vector3.hpp>
-#include <godot_cpp/classes/random_number_generator.hpp> 
 #include <godot_cpp/templates/vector.hpp>
 
-#include "create_and_add_as_child.h"
+#include <godot_cpp/variant/color.hpp>
+#include <godot_cpp/classes/random_number_generator.hpp>
 
 #define X_SIZE 500.0f
 #define Y_SIZE 1000.0f

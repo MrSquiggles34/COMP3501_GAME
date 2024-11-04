@@ -1,16 +1,15 @@
-#include "defs.h"
+
+#include <godot_cpp/classes/sphere_mesh.hpp>
+
 #include "test_collectable.h"
 
-#include <godot_cpp/classes/resource_loader.hpp>
-#include <godot_cpp/variant/utility_functions.hpp> 
-#include <godot_cpp/classes/engine.hpp>
+#include "defs.h"
 
 using namespace godot;
 
 void TestCollectable::_bind_methods() {}
 
 TestCollectable::TestCollectable() : CollectableItemAbstract() {
-	in_inventory = false;
 	radius = 1.0;
 }
 

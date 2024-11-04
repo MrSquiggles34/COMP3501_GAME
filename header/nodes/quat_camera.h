@@ -3,18 +3,12 @@
 
 // parent class
 #include <godot_cpp/classes/camera3d.hpp>
-#include <godot_cpp/classes/node3d.hpp>
 
 #include <godot_cpp/classes/input.hpp>
+#include <godot_cpp/classes/input_event.hpp>
 
-#include <godot_cpp/variant/utility_functions.hpp>
 #include <godot_cpp/variant/vector3.hpp>
-#include <godot_cpp/variant/array.hpp>
-#include <godot_cpp/variant/packed_vector3_array.hpp>
 #include <godot_cpp/variant/quaternion.hpp>
-
-#include "defs.h"
-
 
 // everything in gdextension is defined in this namespace
 namespace godot {

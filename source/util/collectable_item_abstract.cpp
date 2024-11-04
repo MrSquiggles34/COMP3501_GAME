@@ -1,4 +1,4 @@
-#include "defs.h"
+
 #include "collectable_item_abstract.h"
 
 using namespace godot;

@@ -1,10 +1,16 @@
-#include "defs.h"
-#include "map.h"
-
 #include <godot_cpp/core/memory.hpp> 
 #include <godot_cpp/classes/resource_loader.hpp>
-#include <godot_cpp/variant/utility_functions.hpp> 
 #include <godot_cpp/classes/engine.hpp>
+#include <godot_cpp/variant/vector3.hpp>
+
+#include <godot_cpp/classes/shader_material.hpp>
+#include <godot_cpp/classes/box_mesh.hpp>
+#include <godot_cpp/classes/standard_material3d.hpp>
+
+#include "map.h"
+
+#include "defs.h"
+#include "create_and_add_as_child.h"
 
 using namespace godot;
 

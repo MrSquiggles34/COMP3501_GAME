@@ -1,5 +1,11 @@
+
+#include <godot_cpp/classes/input.hpp>
+#include <godot_cpp/classes/input_event.hpp>
+
 #include "game.h"
 
+#include "defs.h"
+#include "create_and_add_as_child.h"
 
 using namespace godot;
 
