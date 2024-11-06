@@ -42,8 +42,38 @@ void Player::_enter_tree() {
     body_mesh->set_mesh(cylinder_mesh);
 }
 
+Vector3 Player::get_input_vector() {
+    // Get raw input vector
+    Vector2 input_2d = Input::get_singleton()->get_vector("ui_left", "ui_right", "ui_up", "ui_down");
+    return Vector3(input_2d.x, 0.0, input_2d.y); // Return the input vector
+}
+
+void Player::update_velocity(float delta) {
+    Vector3 move_direction = get_input_vector();    // Get movement direction
+    Vector3 target_velocity = move_direction * move_speed;  // Calculate target velocity
+
+    // Set new velocity
+    Vector3 new_velocity = get_velocity().move_toward(target_velocity, acceleration * delta);
+    set_velocity(new_velocity);
+}
+
+
 void Player::_ready() {
     if(DEBUG) UtilityFunctions::print("Ready - Player."); 
 
     this->set_global_position(Vector3(0.0, 1.0, 0.0)); // Position the player
+
+    // Set collision layer and mask
+    set_collision_mask(1); // For Player
+    set_collision_layer(2); // For Environment/Walls/Etc.
+}
+
+void Player::_process(double delta) {
+    if(DEBUG) UtilityFunctions::print("Process - Player."); 
+
+    update_velocity(delta); // Update the player's velocity
+    move_and_slide(); // Move the player
+
+    // Check for collisions after movement
+    // Requires all objects to have collision shapes
 }
