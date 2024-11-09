@@ -8,11 +8,8 @@
 #include <godot_cpp/classes/mesh_instance3d.hpp>
 #include <godot_cpp/classes/standard_material3d.hpp>
 #include <godot_cpp/variant/vector3.hpp>
-<<<<<<< Updated upstream
 #include <godot_cpp/templates/vector.hpp> 
-=======
 #include <godot_cpp/classes/input.hpp>
->>>>>>> Stashed changes
 #include "create_and_add_as_child.h"
 #include "collectable_item_abstract.h"
 
@@ -24,14 +21,11 @@ class Player : public CharacterBody3D {
 private:
     MeshInstance3D* body_mesh;
     CollisionShape3D* collision_shape;
-<<<<<<< Updated upstream
     Vector<CollectableItemAbstract*> inventory;
-=======
     
     // Movement Variables
     float move_speed = 8.0f;
     float acceleration = 20.0f;
->>>>>>> Stashed changes
 
 protected:
     static void _bind_methods();
