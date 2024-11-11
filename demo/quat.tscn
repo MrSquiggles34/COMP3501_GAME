@@ -13,7 +13,6 @@ sky = SubResource("Sky_opf1y")
 tonemap_mode = 2
 glow_enabled = true
 
-<<<<<<< Updated upstream
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m02t7"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_66ycy"]
@@ -234,64 +233,6 @@ material = SubResource("StandardMaterial3D_bubf1")
 height = 1.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yy40k"]
-=======
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6crp6"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_ovc7t"]
-material = SubResource("StandardMaterial3D_6crp6")
-size = Vector3(500, 1, 1000)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_owc34"]
-albedo_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_emwbs"]
-material = SubResource("StandardMaterial3D_owc34")
-size = Vector3(24, 16.8011, 10)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tn1t"]
-albedo_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_oombv"]
-material = SubResource("StandardMaterial3D_4tn1t")
-size = Vector3(8, 12.0888, 28)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hlit4"]
-albedo_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_pbrvg"]
-material = SubResource("StandardMaterial3D_hlit4")
-size = Vector3(18, 9.72354, 18)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w24ii"]
-albedo_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_fmw2m"]
-material = SubResource("StandardMaterial3D_w24ii")
-size = Vector3(11, 13.0931, 10)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_786al"]
-albedo_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_1p53j"]
-material = SubResource("StandardMaterial3D_786al")
-size = Vector3(36, 7.42445, 7)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xju18"]
-albedo_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ncep8"]
-material = SubResource("StandardMaterial3D_xju18")
-size = Vector3(13, 10.1315, 8)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0hym"]
-albedo_color = Color(0, 0, 1, 1)
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_r7xq4"]
-material = SubResource("StandardMaterial3D_g0hym")
-height = 1.0
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j367v"]
->>>>>>> Stashed changes
 
 [node name="Node3D" type="Node3D"]
 visible = false
@@ -310,16 +251,11 @@ transform = Transform3D(-1, 5.81528e-09, -8.72291e-08, 0, 0.997785, 0.066519, 8.
 
 [node name="Ground" type="MeshInstance3D" parent="Game/MainScene/Map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -475)
-<<<<<<< Updated upstream
 mesh = SubResource("BoxMesh_66ycy")
-=======
-mesh = SubResource("BoxMesh_ovc7t")
->>>>>>> Stashed changes
 
 [node name="Buildings" type="Node" parent="Game/MainScene/Map"]
 
 [node name="Building0" type="MeshInstance3D" parent="Game/MainScene/Map/Buildings"]
-<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.27379, 5)
 mesh = SubResource("BoxMesh_rtqjg")
 
@@ -439,44 +375,12 @@ shape = SubResource("CapsuleShape3D_nqg26")
 [node name="Test" type="TestCollectable" parent="Game/MainScene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -5)
 mesh = SubResource("SphereMesh_skklc")
-=======
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.40054, 5)
-mesh = SubResource("BoxMesh_emwbs")
 
-[node name="Building1" type="MeshInstance3D" parent="Game/MainScene/Map/Buildings"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 6.04442, -14)
-mesh = SubResource("BoxMesh_oombv")
+[node name="Player" type="Player" parent="Game"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
-[node name="Building2" type="MeshInstance3D" parent="Game/MainScene/Map/Buildings"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 4.86177, -9)
-mesh = SubResource("BoxMesh_pbrvg")
-
-[node name="Building3" type="MeshInstance3D" parent="Game/MainScene/Map/Buildings"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 6.54656, -23)
-mesh = SubResource("BoxMesh_fmw2m")
-
-[node name="Building4" type="MeshInstance3D" parent="Game/MainScene/Map/Buildings"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 3.71222, -31.5)
-mesh = SubResource("BoxMesh_1p53j")
-
-[node name="Building5" type="MeshInstance3D" parent="Game/MainScene/Map/Buildings"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 5.06577, -32)
-mesh = SubResource("BoxMesh_ncep8")
->>>>>>> Stashed changes
-
-[node name="Player" type="Player" parent="Game/MainScene"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0900736, 1, -1.2041)
-
-<<<<<<< Updated upstream
 [node name="BodyMesh" type="MeshInstance3D" parent="Game/Player"]
 mesh = SubResource("CylinderMesh_rrbq4")
 
 [node name="CollisionShape" type="CollisionShape3D" parent="Game/Player"]
 shape = SubResource("CapsuleShape3D_yy40k")
-=======
-[node name="BodyMesh" type="MeshInstance3D" parent="Game/MainScene/Player"]
-mesh = SubResource("CylinderMesh_r7xq4")
-
-[node name="CollisionShape" type="CollisionShape3D" parent="Game/MainScene/Player"]
-shape = SubResource("CapsuleShape3D_j367v")
->>>>>>> Stashed changes
