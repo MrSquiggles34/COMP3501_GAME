@@ -7,3 +7,4 @@ demo/bin/lib*
 demo/bin/~lib*
 
 *.obj
+demo/quat.tscn
