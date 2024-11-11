@@ -43,7 +43,7 @@ public:
 	void _enter_tree ( ) override;
 	void _ready ( ) override;
 
-	void toggle_pause();
+	void toggle_pause(bool paused);
 
 };
 

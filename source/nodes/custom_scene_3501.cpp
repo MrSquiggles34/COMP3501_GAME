@@ -51,15 +51,12 @@ void CustomScene3501::_ready ( ){
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
 
-	// Check if the pause state has changed
-	if (is_paused != was_paused) {
-		main_camera->toggle_pause();  
-		was_paused = is_paused;  
-	}
+	// Can put this back in a check if it's too slow but probably fine?
+	main_camera->toggle_pause(is_paused);
 
 }
 
-void CustomScene3501::toggle_pause() {
-	is_paused = !is_paused;
-	if (DEBUG) UtilityFunctions::print(is_paused ? "CustomScene Paused" : "CustomScene Resumed");
+void CustomScene3501::toggle_pause(bool paused) {
+	is_paused = paused;
+	if (DEBUG) UtilityFunctions::print(is_paused ? "Game Paused" : "Game Resumed");
 }

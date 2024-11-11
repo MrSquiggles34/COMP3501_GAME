@@ -47,7 +47,7 @@ public:
 	void _process(double delta) override;
 	void _input(const Ref<InputEvent>&);
 
-	void toggle_pause();
+	void toggle_pause(bool paused);
 };
 
 }

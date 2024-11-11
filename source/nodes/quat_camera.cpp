@@ -111,7 +111,6 @@ void QuatCamera::Yaw(float angle) {
 	set_quaternion((rotation * get_quaternion()).normalized());
 }
 
-void QuatCamera::toggle_pause() {
-	is_paused = !is_paused;
-	if (DEBUG) UtilityFunctions::print(is_paused ? "Camera Paused" : "Camera Resumed");
+void QuatCamera::toggle_pause(bool paused) {
+	is_paused = paused;
 }

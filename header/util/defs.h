@@ -8,7 +8,7 @@
 
 // Define some numbers to check game state
 #define PLAY 0
-#define PAUSE 1
-#define INV 2
+#define INV 1
+#define JOURNAL 2
 
 #endif // DEFS_H
