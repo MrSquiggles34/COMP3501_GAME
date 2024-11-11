@@ -3,6 +3,8 @@
 
 #include "custom_scene_3501.h"
 
+#include "player.h"
+
 namespace godot {
 
     class Game : public Node {
@@ -13,6 +15,7 @@ namespace godot {
         int state;
         bool is_paused;
         double global_time_passed;
+        Player* player;
 
     protected:
         static void _bind_methods();  // Bind methods for GDExtension

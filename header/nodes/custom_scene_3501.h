@@ -27,9 +27,12 @@ private:
 	bool is_paused;
 	bool was_paused = false;
 
+	int test_obj_count;
+
 	QuatCamera* main_camera;
     Map* map;
 	Player* player;
+	Vector<TestCollectable*> test_list;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes

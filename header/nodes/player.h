@@ -40,6 +40,10 @@ public:
     void _enter_tree() override;
     void _ready() override;
     void _process(double delta) override;
+
+    void add_inventory (CollectableItemAbstract* item) { inventory.push_back(item); }
+
+    String printInventory(); //Primarily for testing purposes - can delete later
     
 };
 

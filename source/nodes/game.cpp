@@ -26,13 +26,12 @@ Game::~Game() { }
 void Game::_enter_tree() {
     if (DEBUG) UtilityFunctions::print("Enter Tree - Game.");
 
+    create_and_add_as_child<Player>(this, player, "Player", true); 
     create_and_add_as_child<CustomScene3501>(this, main_scene, "MainScene", true);
 }
 
 void Game::_ready() {
     UtilityFunctions::print("Game is ready.");
-
-    main_scene->_ready();
 }
 
 void Game::_process(double delta) {
@@ -68,6 +67,7 @@ void Game::_process(double delta) {
                 state = INV;
                 main_scene->toggle_pause(true);
                 if(DEBUG) UtilityFunctions::print("OPEN INVENTORY");
+                UtilityFunctions::print(player->printInventory());
             }
         } else if (state == JOURNAL){
             if (_input->is_action_just_pressed("journal")) {
@@ -79,6 +79,7 @@ void Game::_process(double delta) {
                 state = INV;
                 main_scene->toggle_pause(true);
                 if(DEBUG) UtilityFunctions::print("OPEN INVENTORY");
+                UtilityFunctions::print(player->printInventory());
             }
         } else if (state == INV){
             if (_input->is_action_just_pressed("journal")) {

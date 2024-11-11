@@ -10,7 +10,7 @@ using namespace godot;
 void TestCollectable::_bind_methods() {}
 
 TestCollectable::TestCollectable() : CollectableItemAbstract() {
-	radius = 1.0;
+	radius = 0.5;
 }
 
 void TestCollectable::_enter_tree ( ){

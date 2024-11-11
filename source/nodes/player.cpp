@@ -69,11 +69,20 @@ void Player::_ready() {
 }
 
 void Player::_process(double delta) {
-    if(DEBUG) UtilityFunctions::print("Process - Player."); 
+    //if(DEBUG) UtilityFunctions::print("Process - Player."); 
 
     update_velocity(delta); // Update the player's velocity
     move_and_slide(); // Move the player
 
     // Check for collisions after movement
     // Requires all objects to have collision shapes
+}
+
+String Player::printInventory(){
+    String iString = "";
+    for (int i=0; i<inventory.size(); i++){
+        iString += inventory[i]->get_name();
+        iString += "\n";
+    }
+    return iString;
 }
