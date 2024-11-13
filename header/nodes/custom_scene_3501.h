@@ -14,6 +14,7 @@
 #include "map.h"
 #include "player.h"
 #include "test_collectable.h"
+#include "hud.h"
 
 // everything in gdextension is defined in this namespace
 namespace godot {
@@ -33,6 +34,7 @@ private:
     Map* map;
 	Player* player;
 	Vector<TestCollectable*> test_list;
+	HUD* hud;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes

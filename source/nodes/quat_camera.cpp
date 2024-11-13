@@ -53,7 +53,14 @@ void QuatCamera::_process(double delta){
 // FUNCTION FOR MOUSE LOOKING
 void QuatCamera::_input(const Ref<InputEvent>& event) {
 
-	Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
+	if (!is_paused) {
+		Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
+	}
+	else {
+		Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_VISIBLE);
+	}
+
+
 	if (Engine::get_singleton()->is_editor_hint() || is_paused) return;
 
 	Ref<InputEventMouseMotion> mouse_event = event;
