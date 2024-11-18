@@ -4,6 +4,7 @@
 #include "custom_scene_3501.h"
 
 #include "player.h"
+#include "custom_mesh.h"
 
 namespace godot {
 

@@ -31,7 +31,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<Player>();
 	ClassDB::register_class<HUD>();
 	ClassDB::register_class<ParticleSystem>();
-
+	ClassDB::register_class<CustomMesh>();
 }
 
 // gets called when godot unloads our plugin
