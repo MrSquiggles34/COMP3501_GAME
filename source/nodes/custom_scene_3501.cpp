@@ -79,7 +79,7 @@ void CustomScene3501::_process(double delta) {
 
 void CustomScene3501::toggle_pause(bool paused) {
 	is_paused = paused;
-
+	hud->toggle_pause_HUD();
 
 	if (DEBUG) UtilityFunctions::print(is_paused ? "Game Paused" : "Game Resumed");
 }
