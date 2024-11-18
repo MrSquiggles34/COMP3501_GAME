@@ -30,6 +30,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<Map>();
 	ClassDB::register_class<Player>();
 	ClassDB::register_class<HUD>();
+	ClassDB::register_class<ParticleSystem>();
 
 }
 

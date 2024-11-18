@@ -15,6 +15,7 @@
 #include "player.h"
 #include "test_collectable.h"
 #include "hud.h"
+#include "particle_system.h"
 
 // everything in gdextension is defined in this namespace
 namespace godot {
@@ -35,6 +36,7 @@ private:
 	Player* player;
 	Vector<TestCollectable*> test_list;
 	HUD* hud;
+	Vector<ParticleSystem*> particle_systems;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes
@@ -49,7 +51,11 @@ public:
 	void _ready ( ) override;
 
 	void toggle_pause(bool paused);
+	void create_particle_system(String node_name, String shader_name);
+	
 
+	template <class T> 
+	bool add_as_child(T*& pointer, String name, bool search);
 };
 
 }
