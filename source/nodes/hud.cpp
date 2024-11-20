@@ -12,11 +12,8 @@ HUD::~HUD() {}
 
 void HUD::_enter_tree() {
     if (DEBUG) UtilityFunctions::print("Enter Tree - HUD.");
-
     create_and_add_as_child<ColorRect>(this, pause_background, "PauseBackground", true);
     create_and_add_as_child<Label>(this, pause_label, "PauseLabel", true);
-
-
 }
 
 void HUD::_ready() {

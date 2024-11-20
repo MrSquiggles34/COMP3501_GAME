@@ -28,7 +28,6 @@ void CustomScene3501::_enter_tree ( ){
 	create_and_add_as_child(this, main_camera, "QuatCamera", true);
     create_and_add_as_child<Map>(this, map, "Map", true);
 	create_and_add_as_child<Player>(this, player, "Player", true); 
-	create_and_add_as_child<HUD>(this, hud, "HUD", true);
 
 	// For each type of object, create as many as needed
 	Node* obj_group;
@@ -102,7 +101,6 @@ void CustomScene3501::_process(double delta) {
 
 void CustomScene3501::toggle_pause(bool paused) {
 	is_paused = paused;
-	hud->toggle_pause_HUD();
 
 	if (DEBUG) UtilityFunctions::print(is_paused ? "Game Paused" : "Game Resumed");
 }

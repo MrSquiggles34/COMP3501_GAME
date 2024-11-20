@@ -27,6 +27,7 @@ void Game::_enter_tree() {
     if (DEBUG) UtilityFunctions::print("Enter Tree - Game.");
 
     create_and_add_as_child<Player>(this, player, "Player", true); 
+    create_and_add_as_child<HUD>(this, hud, "HUD", true);
     create_and_add_as_child<CustomScene3501>(this, main_scene, "MainScene", true);
 }
 
@@ -45,6 +46,7 @@ void Game::_process(double delta) {
         is_paused = !is_paused;
         if (state == PLAY){
             main_scene->toggle_pause(is_paused);
+	        hud->toggle_pause_HUD();
         }
     }
 
