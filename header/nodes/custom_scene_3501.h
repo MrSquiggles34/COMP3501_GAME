@@ -14,7 +14,6 @@
 #include "map.h"
 #include "player.h"
 #include "test_collectable.h"
-#include "hud.h"
 #include "particle_system.h"
 
 // everything in gdextension is defined in this namespace
@@ -35,7 +34,6 @@ private:
     Map* map;
 	Player* player;
 	Vector<TestCollectable*> test_list;
-	HUD* hud;
 	Vector<ParticleSystem*> particle_systems;
 
 protected:
