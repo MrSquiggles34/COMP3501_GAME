@@ -43,7 +43,7 @@ void ParticleSystem::_ready() {
 	Ref<Shader> shader = ResourceLoader::get_singleton()->load(vformat("shaders/%s_ss.gdshader", shader_name), "Shader");
 	spatial_material->set_shader(shader);
 	// this will be the default texture of the spatial material unless you change it
-	spatial_material->set_shader_parameter("texture_image", ResourceLoader::get_singleton()->load("res://textures/droplet_texture.png"));
+	spatial_material->set_shader_parameter("texture_image", ResourceLoader::get_singleton()->load("res://textures/flame4x4orig.png"));
 
 	// Set up the quad to use for each particle
 	QuadMesh* mesh = memnew(QuadMesh);
