@@ -9,6 +9,10 @@
 #include <godot_cpp/classes/canvas_item.hpp> // for viewport size
 #include <godot_cpp/classes/control.hpp> // for the anchors preset
 #include <godot_cpp/classes/color_rect.hpp>
+#include <godot_cpp/classes/quad_mesh.hpp> // for screen-space effects
+
+#include <godot_cpp/classes/resource_loader.hpp> // Loading resources
+#include <godot_cpp/classes/scene_tree.hpp>
 
 #include "quat_camera.h"
 #include "map.h"
@@ -36,6 +40,10 @@ private:
 	Vector<TestCollectable*> test_list;
 	Vector<ParticleSystem*> particle_systems;
 
+	// Screen Space effect
+	MeshInstance3D* screen_quad_instance;
+	ShaderMaterial* screen_space_shader_material;
+
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes
 	static void _bind_methods();
@@ -54,6 +62,10 @@ public:
 
 	template <class T> 
 	bool add_as_child(T*& pointer, String name, bool search);
+
+	template <class T>
+	bool create_and_add_as_child_of_parent(T*& pointer, String name, Node* parent);
+
 };
 
 }

@@ -40,6 +40,9 @@ void CustomScene3501::_enter_tree ( ){
 	// ADD PARTICLE SYSTEMS HERE (EX:)
 	// create_particle_system("Burning Torus", "fire");
 
+	// ADD SCREEN SPACE EFFECTS HERE 
+	create_and_add_as_child_of_parent<MeshInstance3D>(screen_quad_instance, "Screen Quad", main_camera);
+
 }
 
 void CustomScene3501::_ready ( ){
@@ -81,6 +84,19 @@ void CustomScene3501::_ready ( ){
 		*/
 		
 	}
+
+	// Setup the screen-space shader
+	QuadMesh* quad_mesh = memnew(QuadMesh);
+	quad_mesh->set_size(Vector2(2, 2)); // this will cover the whole screen
+	quad_mesh->set_flip_faces(true);
+
+	screen_space_shader_material = memnew(ShaderMaterial);
+	Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/simple.gdshader", "Shader"); 
+	screen_space_shader_material->set_shader(shader);
+	quad_mesh->surface_set_material(0, screen_space_shader_material);
+	screen_quad_instance->set_mesh(quad_mesh);
+	screen_quad_instance->set_extra_cull_margin(50.0f); 
+
 }
 
 void CustomScene3501::_process(double delta) {
@@ -141,6 +157,23 @@ bool CustomScene3501::add_as_child(T*& pointer, String name, bool search) {
 		else {
 			memdelete(pointer);
 		}
+		pointer = dynamic_cast<T*>(child);
+		return false;
+	}
+}
+
+template <class T>
+bool CustomScene3501::create_and_add_as_child_of_parent(T*& pointer, String name, Node* parent) {
+	Node* child = parent->find_child(name);
+
+	if (child == nullptr) {
+		pointer = memnew(T);
+		pointer->set_name(name);
+		parent->add_child(pointer);
+		pointer->set_owner(get_tree()->get_edited_scene_root());
+		return true;
+	}
+	else {
 		pointer = dynamic_cast<T*>(child);
 		return false;
 	}
