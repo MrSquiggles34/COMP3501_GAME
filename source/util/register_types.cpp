@@ -4,6 +4,8 @@
 #include "custom_scene_3501.h"
 #include "map.h"
 #include "player.h"
+#include "collidable_object.h"
+#include "building.h"
 
 #include "collectable_item_abstract.h"
 #include "test_collectable.h"
@@ -32,6 +34,8 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<HUD>();
 	ClassDB::register_class<ParticleSystem>();
 	ClassDB::register_class<CustomMesh>();
+	ClassDB::register_class<CollidableObject>();
+	ClassDB::register_class<Building>();
 }
 
 // gets called when godot unloads our plugin

@@ -5,7 +5,6 @@
 
 #include "player.h"
 #include "custom_mesh.h"
-#include "hud.h"
 
 namespace godot {
 
@@ -18,7 +17,6 @@ namespace godot {
         bool is_paused;
         double global_time_passed;
         Player* player;
-	    HUD* hud;
 
     protected:
         static void _bind_methods();  // Bind methods for GDExtension
