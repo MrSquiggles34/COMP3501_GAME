@@ -12,6 +12,7 @@
 #include <godot_cpp/classes/input.hpp>
 #include "create_and_add_as_child.h"
 #include "collectable_item_abstract.h"
+#include "quat_camera.h"
 
 namespace godot {
 
@@ -22,6 +23,7 @@ private:
     MeshInstance3D* body_mesh;
     CollisionShape3D* collision_shape;
     Vector<CollectableItemAbstract*> inventory;
+    QuatCamera* main_camera;
     
     // Movement Variables
     float move_speed = 8.0f;

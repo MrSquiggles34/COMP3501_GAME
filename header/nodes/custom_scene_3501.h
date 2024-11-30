@@ -32,7 +32,7 @@ private:
 
 	int test_obj_count;
 
-	QuatCamera* main_camera;
+	//QuatCamera* main_camera;
     Map* map;
 	Player* player;
 	Vector<TestCollectable*> test_list;

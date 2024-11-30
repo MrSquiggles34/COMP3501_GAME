@@ -19,7 +19,10 @@ void Player::_enter_tree() {
     create_and_add_as_child<MeshInstance3D>(this, body_mesh, "BodyMesh", true);
 
     // The player has a child CollisionShape3D
-    create_and_add_as_child<CollisionShape3D>(this, collision_shape, "CollisionShape", true);    
+    create_and_add_as_child<CollisionShape3D>(this, collision_shape, "CollisionShape", true);   
+
+    // The player has a child QuatCamera
+    create_and_add_as_child(this, main_camera, "QuatCamera", true); 
 
     // Create a cylinder mesh for the player
     Ref<CylinderMesh> cylinder_mesh = memnew(CylinderMesh);
@@ -49,7 +52,19 @@ Vector3 Player::get_input_vector() {
 }
 
 void Player::update_velocity(float delta) {
-    Vector3 move_direction = get_input_vector();    // Get movement direction
+    Vector3 move_direction = get_input_vector(); // Get movement direction
+
+    if (move_direction != Vector3()) {
+        // Get the camera's forward and right vectors
+        Transform3D camera_transform = main_camera->get_global_transform();
+        Vector3 camera_forward = -camera_transform.basis.get_column(2).normalized(); // Camera forward
+        Vector3 camera_right = camera_transform.basis.get_column(0).normalized();    // Camera right
+
+        // Transform the input vector based on the camera's orientation
+        Vector3 relative_direction = (camera_forward * -move_direction.z) + (camera_right * move_direction.x);
+        move_direction = Vector3(relative_direction.x, 0.0, relative_direction.z).normalized(); // Zero out Y-axis
+    }
+
     Vector3 target_velocity = move_direction * move_speed;  // Calculate target velocity
 
     // Set new velocity
@@ -60,6 +75,13 @@ void Player::update_velocity(float delta) {
 
 void Player::_ready() {
     if(DEBUG) UtilityFunctions::print("Ready - Player."); 
+
+    // set the player's position (the camera) 
+	//main_camera->set_global_position(Vector3(0.0, 0.8, -12.0));
+	main_camera->look_at(Vector3(0, 0, 0)); // there are some bugs with this function if the up vector is parallel to the look-at position; check the manual for a link to more info
+
+	// now that we have set the camera's starting state, let's reinitialize its variables
+	main_camera->_ready();
 
     this->set_global_position(Vector3(0.0, 1.0, 0.0)); // Position the player
 
@@ -73,6 +95,18 @@ void Player::_process(double delta) {
 
     update_velocity(delta); // Update the player's velocity
     move_and_slide(); // Move the player
+
+    // Can put this back in a check if it's too slow but probably fine?
+	// main_camera->toggle_pause(is_paused);
+
+	// For each object, check collision
+	// for (int i=0; i<test_list.size(); i++){
+	// 	if (test_list[i]->in_range(main_camera->get_global_position())){
+	// 		test_list[i]->set_visible(false);
+	// 		player->add_inventory(test_list[i]);
+	// 		test_list.remove_at(i);
+	// 	}
+	// }
 
     // Check for collisions after movement
     // Requires all objects to have collision shapes
