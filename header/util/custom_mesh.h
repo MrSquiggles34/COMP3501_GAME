@@ -15,6 +15,7 @@
 #include <godot_cpp/classes/image.hpp>
 #include <godot_cpp/classes/image_texture.hpp>
 #include <godot_cpp/classes/torus_mesh.hpp>
+#include <godot_cpp/classes/box_mesh.hpp>
 #include <godot_cpp/classes/engine.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
 #include <godot_cpp/classes/compressed_texture2d.hpp>

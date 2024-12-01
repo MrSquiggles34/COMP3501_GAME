@@ -9,6 +9,9 @@
 #include <godot_cpp/variant/color.hpp>
 #include <godot_cpp/classes/random_number_generator.hpp>
 
+
+#include "custom_mesh.h"
+
 #define X_SIZE 500.0f
 #define Y_SIZE 1000.0f
 
@@ -23,8 +26,8 @@ class Map : public Node3D {
 
 private:
 	Node* buildings;
-    MeshInstance3D* ground;
-    Vector<MeshInstance3D*> building_list;
+    CustomMesh* ground;
+    Vector<CustomMesh*> building_list;
 	
 protected:
 	static void _bind_methods();

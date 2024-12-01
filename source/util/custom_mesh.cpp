@@ -34,14 +34,6 @@ void CustomMesh::_ready ( ){
 
 	// They don't HAVE to be tori; they don't all HAVE to be the same. You can change the geometry as much as you want -- it is just a canvas to display your shaders for the purposes of this assignment.
 	// That being said, your shaders should work regardless of the shape.
-	TorusMesh* mesh = memnew(TorusMesh()); 
-	shader_material = memnew(ShaderMaterial());
-	Ref<Shader> shader = ResourceLoader::get_singleton()->load(shader_name, "Shader");
-	shader_material->set_shader(shader);
-	mesh->surface_set_material(0, shader_material);
-	set_mesh(mesh);
-	// This line sends the uniform to the shader material.
-	shader_material->set_shader_parameter("color_in", base_color);
 }
 
 // called every frame (as often as possible)

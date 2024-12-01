@@ -9,6 +9,7 @@
 
 #include "collectable_item_abstract.h"
 #include "test_collectable.h"
+#include "custom_mesh.h"
 
 #include "game.h"
 
