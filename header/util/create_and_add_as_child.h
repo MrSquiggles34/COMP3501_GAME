@@ -7,7 +7,7 @@
 namespace godot {
 
     template <class T>
-    bool create_and_add_as_child(Node* parent, T*& pointer, String name, bool search = false) {
+    bool create_and_add_as_child(Node* parent, T*& pointer, String name, bool search) {
         if (search == false) {
             pointer = memnew(T);
             pointer->set_name(name);

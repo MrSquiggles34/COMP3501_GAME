@@ -3,6 +3,7 @@
 
 #include <godot_cpp/classes/character_body3d.hpp>
 #include <godot_cpp/classes/cylinder_mesh.hpp>
+#include <godot_cpp/classes/quad_mesh.hpp>
 #include <godot_cpp/classes/collision_shape3d.hpp>
 #include <godot_cpp/classes/capsule_shape3d.hpp>
 #include <godot_cpp/classes/mesh_instance3d.hpp>
@@ -10,6 +11,7 @@
 #include <godot_cpp/variant/vector3.hpp>
 #include <godot_cpp/templates/vector.hpp> 
 #include <godot_cpp/classes/input.hpp>
+#include <godot_cpp/classes/resource_loader.hpp>
 #include "create_and_add_as_child.h"
 #include "collectable_item_abstract.h"
 #include "quat_camera.h"
@@ -29,6 +31,13 @@ private:
     float move_speed = 8.0f;
     float acceleration = 20.0f;
 
+    // Screen Space effects
+    MeshInstance3D* screen_quad_instance;
+    ShaderMaterial* screen_space_shader_material;
+
+    // Pause
+    bool is_paused;
+
 protected:
     static void _bind_methods();
 
@@ -43,6 +52,7 @@ public:
     void _ready() override;
     void _process(double delta) override;
 
+    void toggle_pause(bool paused);
     void add_inventory (CollectableItemAbstract* item) { inventory.push_back(item); }
 
     String printInventory(); //Primarily for testing purposes - can delete later

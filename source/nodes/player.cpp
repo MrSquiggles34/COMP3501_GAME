@@ -8,7 +8,9 @@ using namespace godot;
 
 void Player::_bind_methods() {}
 
-Player::Player() : CharacterBody3D() {}
+Player::Player() : CharacterBody3D() {
+    is_paused = false;
+}
 
 Player::~Player() {}
 
@@ -43,6 +45,23 @@ void Player::_enter_tree() {
 
     // Set the mesh of the player
     body_mesh->set_mesh(cylinder_mesh);
+
+    // Creating a quad for Screen SPace Effects
+    create_and_add_as_child<MeshInstance3D>(main_camera, screen_quad_instance, "Screen Quad", true);
+
+    // Setup the screen-space shader
+    QuadMesh* quad_mesh = memnew(QuadMesh);
+    quad_mesh->set_size(Vector2(2, 2)); // this will cover the whole screen
+    quad_mesh->set_flip_faces(true);
+
+    
+    screen_space_shader_material = memnew(ShaderMaterial);
+    Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/no-effect.gdshader", "Shader"); 
+    screen_space_shader_material->set_shader(shader);
+    quad_mesh->surface_set_material(0, screen_space_shader_material);
+    screen_quad_instance->set_mesh(quad_mesh);
+    screen_quad_instance->set_extra_cull_margin(50.0f);
+    
 }
 
 Vector3 Player::get_input_vector() {
@@ -91,13 +110,11 @@ void Player::_ready() {
 }
 
 void Player::_process(double delta) {
-    //if(DEBUG) UtilityFunctions::print("Process - Player."); 
+    if (Engine::get_singleton()->is_editor_hint()) return;
+
 
     update_velocity(delta); // Update the player's velocity
     move_and_slide(); // Move the player
-
-    // Can put this back in a check if it's too slow but probably fine?
-	// main_camera->toggle_pause(is_paused);
 
 	// For each object, check collision
 	// for (int i=0; i<test_list.size(); i++){
@@ -119,4 +136,13 @@ String Player::printInventory(){
         iString += "\n";
     }
     return iString;
+}
+
+void Player::toggle_pause(bool paused) {
+    is_paused = paused;
+    
+    // Propogate Pause
+    main_camera->toggle_pause(is_paused);
+
+    if (DEBUG) UtilityFunctions::print(is_paused ? "Player Paused" : "Player Resumed");
 }

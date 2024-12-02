@@ -15,6 +15,7 @@ CustomMesh::CustomMesh() : MeshInstance3D() {
 	base_color = Vector3(); // black
 
 	shader_material = nullptr;
+
  }
 
 CustomMesh::~CustomMesh() {

@@ -17,8 +17,6 @@ namespace godot {
 
     private:
         Label* pause_label;
-        Panel* pause_panel;
-        ColorRect* pause_background;
 
     public:
         HUD();

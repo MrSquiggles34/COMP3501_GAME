@@ -31,9 +31,6 @@ namespace godot {
         void _process(double delta) override;
         void _enter_tree() override;
 
-        void _pause();
-        bool get_is_paused() const;
-    
     };
 
 }

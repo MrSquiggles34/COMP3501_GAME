@@ -28,7 +28,6 @@ private:
 	double scene_time_passed;
 	
 	bool is_paused;
-	bool was_paused = false;
 
 	int test_obj_count;
 

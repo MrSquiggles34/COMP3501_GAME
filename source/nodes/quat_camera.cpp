@@ -16,7 +16,20 @@ QuatCamera::QuatCamera() : Camera3D() {
 }
 
 void QuatCamera::_enter_tree(){
-	
+	// screen quad is a child of the camera so that it will follow it around (even though the shader positions it into clip space, this can prevent culling)
+	create_and_add_as_child<MeshInstance3D>(this, screen_quad_instance, "Screen Quad", true);
+
+	// Setup the screen-space shader
+	QuadMesh* quad_mesh = memnew(QuadMesh);
+	quad_mesh->set_size(Vector2(2, 2)); 
+	quad_mesh->set_flip_faces(true);
+
+	screen_space_shader_material = memnew(ShaderMaterial);
+	Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/no-effect.gdshader", "Shader"); 
+	screen_space_shader_material->set_shader(shader);
+	quad_mesh->surface_set_material(0, screen_space_shader_material);
+	screen_quad_instance->set_mesh(quad_mesh);
+	screen_quad_instance->set_extra_cull_margin(50.0f);
 }
 
 void QuatCamera::_ready(){
@@ -52,7 +65,7 @@ void QuatCamera::_process(double delta){
 
 // FUNCTION FOR MOUSE LOOKING
 void QuatCamera::_input(const Ref<InputEvent>& event) {
-
+	//if (DEBUG) UtilityFunctions::print(is_paused ? "Camera Paused" : "Camera Resumed");
 	if (!is_paused) {
 		Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
 	}
@@ -120,4 +133,15 @@ void QuatCamera::Yaw(float angle) {
 
 void QuatCamera::toggle_pause(bool paused) {
 	is_paused = paused;
+
+	if (is_paused) {
+		Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/blur-effect.gdshader", "Shader");
+		screen_space_shader_material->set_shader(shader);
+	}
+	else {
+		Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/no-effect.gdshader", "Shader");
+		screen_space_shader_material->set_shader(shader);
+	}
+
+	if (DEBUG) UtilityFunctions::print(is_paused ? "Camera Paused" : "Camera Resumed");
 }

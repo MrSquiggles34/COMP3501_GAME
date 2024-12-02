@@ -41,11 +41,12 @@ void Game::_process(double delta) {
     Input* _input = Input::get_singleton();
 
     // PAUSE THE GAME BY PAUSING THE SCENE WHICH PAUSES ALL RELEVANT OBJECTS 
-    // P to toggle pause
+    // ESC to toggle pause
     if (_input->is_action_just_pressed("pause_game")) {
         is_paused = !is_paused;
         if (state == PLAY){
             main_scene->toggle_pause(is_paused);
+            player->toggle_pause(is_paused);
 	        hud->toggle_pause_HUD();
         }
     }
@@ -97,13 +98,3 @@ void Game::_process(double delta) {
         }
     }
 }
-
-
-void Game::_pause() {
-    is_paused = !is_paused;
-}
-
-bool Game::get_is_paused() const {
-    return is_paused;
-}
-

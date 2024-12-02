@@ -13,7 +13,6 @@ CustomScene3501::CustomScene3501() : Node3D() {
 	// Time for the scene 
 	scene_time_passed = 0.0;
 	is_paused = false;
-	was_paused = false;
 
 	test_obj_count = 1;
 }
@@ -27,7 +26,6 @@ void CustomScene3501::_enter_tree ( ){
 
 	//create_and_add_as_child(this, main_camera, "QuatCamera", true);
     create_and_add_as_child<Map>(this, map, "Map", true);
-	create_and_add_as_child<Player>(this, player, "Player", true); 
 
 	// For each type of object, create as many as needed
 	Node* obj_group;
@@ -86,8 +84,7 @@ void CustomScene3501::_ready ( ){
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; 
 
-	// Can put this back in a check if it's too slow but probably fine?
-	// main_camera->toggle_pause(is_paused);
+	if (DEBUG) UtilityFunctions::print(is_paused ? "Scene Paused" : "Scene Resumed");
 
 	// For each object, check collision
 	// for (int i=0; i<test_list.size(); i++){
@@ -102,7 +99,9 @@ void CustomScene3501::_process(double delta) {
 void CustomScene3501::toggle_pause(bool paused) {
 	is_paused = paused;
 
-	if (DEBUG) UtilityFunctions::print(is_paused ? "Game Paused" : "Game Resumed");
+	// Propogate Pause 
+
+	if (DEBUG) UtilityFunctions::print(is_paused ? "Scene Paused" : "Scene Resumed");
 }
 
 void CustomScene3501::create_particle_system(String node_name, String shader_name) {

@@ -104,7 +104,7 @@ void Map::add_building (float x1, float y1, float x2, float y2, float h){
     // Shader uniforms
     building_material->set_shader_parameter("color_in", BUILDING_COL);
     building_material->set_shader_parameter("light_position", Vector3(0.0f, 5.0f, 0.0f));
-    building_material->set_shader_parameter("specular_power", 0.0f);
+    building_material->set_shader_parameter("specular_power", 1.0f);
 
     building_list.push_back(new_building);
 
