@@ -11,6 +11,7 @@ namespace godot {
 	private:
 		bool in_inventory;
 		float radius;
+		ParticleSystem* indicator;
 
 	protected:
 		static void _bind_methods();
@@ -20,6 +21,7 @@ namespace godot {
 
 		void _enter_tree() override;
 		void _ready() override;
+    	void _process(double delta) override;
 
 		bool in_range(Vector3 player_pos);
 	};

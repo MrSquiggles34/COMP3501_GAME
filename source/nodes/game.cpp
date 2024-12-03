@@ -29,6 +29,7 @@ void Game::_enter_tree() {
     create_and_add_as_child<Player>(this, player, "Player", true); 
     create_and_add_as_child<HUD>(this, hud, "HUD", true);
     create_and_add_as_child<CustomScene3501>(this, main_scene, "MainScene", true);
+    main_scene->addPlayer(player);
 }
 
 void Game::_ready() {
@@ -59,40 +60,20 @@ void Game::_process(double delta) {
             if (_input->is_action_just_pressed("interact")) {
                 if(DEBUG) UtilityFunctions::print("ACTION");
             }
-            // J to open journal
             // I to open inventory (may or may not need both)
-            if (_input->is_action_just_pressed("journal")) {
-                state = JOURNAL;
-                main_scene->toggle_pause(true);
-                if(DEBUG) UtilityFunctions::print("OPEN JOURNAL");
-            }
             if (_input->is_action_just_pressed("inventory")) {
                 state = INV;
                 main_scene->toggle_pause(true);
+                player->toggle_pause(true);
+                hud->toggle_inventory(true, player);
                 if(DEBUG) UtilityFunctions::print("OPEN INVENTORY");
-                UtilityFunctions::print(player->printInventory());
-            }
-        } else if (state == JOURNAL){
-            if (_input->is_action_just_pressed("journal")) {
-                state = PLAY;
-                main_scene->toggle_pause(false);
-                if(DEBUG) UtilityFunctions::print("CLOSE JOURNAL");
-            }
-            if (_input->is_action_just_pressed("inventory")) {
-                state = INV;
-                main_scene->toggle_pause(true);
-                if(DEBUG) UtilityFunctions::print("OPEN INVENTORY");
-                UtilityFunctions::print(player->printInventory());
             }
         } else if (state == INV){
-            if (_input->is_action_just_pressed("journal")) {
-                state = JOURNAL;
-                main_scene->toggle_pause(true);
-                if(DEBUG) UtilityFunctions::print("OPEN JOURNAL");
-            }
             if (_input->is_action_just_pressed("inventory")) {
                 state = PLAY;
+                hud->toggle_inventory(false, player);
                 main_scene->toggle_pause(false);
+                player->toggle_pause(false);
                 if(DEBUG) UtilityFunctions::print("CLOSE INVENTORY");
             }
         }

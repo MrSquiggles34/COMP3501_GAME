@@ -3,6 +3,7 @@
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/label.hpp>
+#include <godot_cpp/classes/item_list.hpp>
 #include <godot_cpp/classes/panel.hpp>
 #include <godot_cpp/classes/color_rect.hpp>
 #include <godot_cpp/classes/canvas_layer.hpp>
@@ -10,6 +11,8 @@
 #include <godot_cpp/classes/viewport.hpp>
 
 #include "defs.h"
+#include "player.h"
+#include "collectable_item_abstract.h"
 
 namespace godot {
     class HUD : public CanvasLayer {
@@ -17,6 +20,8 @@ namespace godot {
 
     private:
         Label* pause_label;
+        Label* inv_label;
+        ItemList* inventory;
 
     public:
         HUD();
@@ -26,6 +31,7 @@ namespace godot {
         void _enter_tree() override;
 
         void toggle_pause_HUD();
+        void toggle_inventory(bool is_inv, Player* player);
 
     protected:
         static void _bind_methods();

@@ -7,6 +7,8 @@ void CollectableItemAbstract::_bind_methods() {}
 
 CollectableItemAbstract::CollectableItemAbstract() : MeshInstance3D() {
 	in_inventory = false;
+    icon = NULL;
+    lore = "Lorum Ipsum";
 }
 
 bool CollectableItemAbstract::in_range(float radius, Vector3 player_pos){

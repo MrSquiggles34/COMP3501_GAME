@@ -15,6 +15,9 @@ TestCollectable::TestCollectable() : CollectableItemAbstract() {
 
 void TestCollectable::_enter_tree ( ){
 	if(DEBUG) UtilityFunctions::print("Enter Tree - TestCollectable."); 
+
+    //indicator = memnew(ParticleSystem("sparkle"));
+	//create_and_add_as_child(this, indicator, "indicator", true);
 }
 
 void TestCollectable::_ready ( ){
@@ -29,6 +32,13 @@ void TestCollectable::_ready ( ){
     self_mesh->surface_set_material(0, material);
 
     set_mesh(self_mesh);
+
+    // Need to find a good way to set uniforms
+    //indicator->set_amount(100);
+}
+
+void TestCollectable::_process(double delta) {
+    //indicator->set_global_position(get_global_position());
 }
 
 bool TestCollectable::in_range (Vector3 player_pos){
