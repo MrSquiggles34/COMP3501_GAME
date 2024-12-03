@@ -43,13 +43,6 @@ void CustomScene3501::_enter_tree ( ){
 void CustomScene3501::_ready ( ){
 	if(DEBUG) UtilityFunctions::print("Ready - CustomScene3501."); 
 
-	// // set the player's position (the camera) 
-	// main_camera->set_global_position(Vector3(0.0, 0.8, -12.0));
-	// main_camera->look_at(Vector3(0, 0, 0)); // there are some bugs with this function if the up vector is parallel to the look-at position; check the manual for a link to more info
-
-	// // now that we have set the camera's starting state, let's reinitialize its variables
-	// main_camera->_ready();
-
 	// For each object type, add them to their lists
 	Node* obj_group;
 	create_and_add_as_child<Node>(this, obj_group, "Test Group", true);
@@ -84,16 +77,14 @@ void CustomScene3501::_ready ( ){
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; 
 
-	if (DEBUG) UtilityFunctions::print(is_paused ? "Scene Paused" : "Scene Resumed");
-
 	// For each object, check collision
-	// for (int i=0; i<test_list.size(); i++){
-	// 	if (test_list[i]->in_range(main_camera->get_global_position())){
-	// 		test_list[i]->set_visible(false);
-	// 		player->add_inventory(test_list[i]);
-	// 		test_list.remove_at(i);
-	// 	}
-	// }
+	for (int i=0; i<test_list.size(); i++){
+		if (test_list[i]->in_range(player->get_global_position())){
+			test_list[i]->set_visible(false);
+			player->add_inventory(test_list[i]);
+			test_list.remove_at(i);
+		}
+	}
 }
 
 void CustomScene3501::toggle_pause(bool paused) {
@@ -105,42 +96,7 @@ void CustomScene3501::toggle_pause(bool paused) {
 }
 
 void CustomScene3501::create_particle_system(String node_name, String shader_name) {
-	
 	ParticleSystem* system = memnew(ParticleSystem(shader_name));
-	add_as_child(system, node_name, true);
+	create_and_add_as_child(this, system, node_name, true);
 	particle_systems.push_back(system);
-}
-
-template <class T>
-bool CustomScene3501::add_as_child(T*& pointer, String name, bool search) {
-	// this is the default behaviour
-	// added the search parameter so that we can skip the slow "find_child" call during runtime
-	if (search == false) {
-		pointer->set_name(name);
-		add_child(pointer);
-		pointer->set_owner(get_tree()->get_edited_scene_root());
-		return true;
-	}
-
-	// always only have to search once if we save it here
-	Node* child = find_child(name);
-
-	// if the node hasn't been added to the SceneTree yet
-	if (child == nullptr) {
-		pointer->set_name(name);
-		add_child(pointer);
-		pointer->set_owner(get_tree()->get_edited_scene_root());
-		return true;
-	}
-	// if we are grabbing the existent one, clean up the memory to the new one that was just made and passed as an argument
-	else {
-		if (pointer == nullptr) {
-			UtilityFunctions::print("There is a nullptr being passed to add_as_child...");
-		}
-		else {
-			memdelete(pointer);
-		}
-		pointer = dynamic_cast<T*>(child);
-		return false;
-	}
 }

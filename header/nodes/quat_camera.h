@@ -11,7 +11,6 @@
 #include <godot_cpp/classes/quad_mesh.hpp>
 #include <godot_cpp/classes/resource_loader.hpp>
 
-
 #include <godot_cpp/variant/vector3.hpp>
 #include <godot_cpp/variant/quaternion.hpp>
 
@@ -25,17 +24,12 @@ class QuatCamera : public Camera3D {
 	GDCLASS(QuatCamera, Camera3D);
 
 private:
-
 	bool is_paused;
 
 	Quaternion our_quaternion;
 	
 	Vector3 forward_;
 	Vector3 side_;
-
-	Vector3 GetForward() const;
-	Vector3 GetUp() const;
-	Vector3 GetSide() const;
 
 	void Pitch(float angle);
 	void Roll(float angle);
@@ -55,10 +49,12 @@ public:
 
 	void _enter_tree() override;
 	void _ready() override;
-	void _process(double delta) override;
 	void _input(const Ref<InputEvent>&);
 
 	void toggle_pause(bool paused);
+	Vector3 GetForward() const;
+	Vector3 GetUp() const;
+	Vector3 GetSide() const;
 };
 
 }

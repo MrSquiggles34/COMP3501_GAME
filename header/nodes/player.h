@@ -28,8 +28,8 @@ private:
     QuatCamera* main_camera;
     
     // Movement Variables
-    float move_speed = 8.0f;
-    float acceleration = 20.0f;
+    float move_speed = 3.0f;
+    float acceleration = 5.0f;
 
     // Screen Space effects
     MeshInstance3D* screen_quad_instance;
@@ -45,15 +45,15 @@ public:
     Player();
     ~Player();
 
-    Vector3 get_input_vector();
-    void update_velocity(float delta);
-
     void _enter_tree() override;
     void _ready() override;
     void _process(double delta) override;
 
     void toggle_pause(bool paused);
-    void add_inventory (CollectableItemAbstract* item) { inventory.push_back(item); }
+    void add_inventory (CollectableItemAbstract* item) { inventory.push_back(item); };
+    Vector<CollectableItemAbstract*> get_inventory () { return inventory; };
+
+    void update_velocity(double delta);
 
     String printInventory(); //Primarily for testing purposes - can delete later
     

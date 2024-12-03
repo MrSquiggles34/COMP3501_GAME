@@ -12,7 +12,6 @@
 // Define some numbers to check game state
 #define PLAY 0
 #define INV 1
-#define JOURNAL 2
 
 #define NOISE_WIDTH 1080
 #define NOISE_HEIGHT 1080

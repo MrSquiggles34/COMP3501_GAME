@@ -12,8 +12,8 @@
 
 #include "custom_mesh.h"
 
-#define X_SIZE 500.0f
-#define Y_SIZE 1000.0f
+#define X_SIZE 250.0f
+#define Y_SIZE 250.0f
 
 #define	BLANK_COL Color(1.0, 1.0, 1.0, 1)
 #define ROAD_COL Color(0, 0, 0, 1)

@@ -38,29 +38,6 @@ void QuatCamera::_ready(){
 }
 
 QuatCamera::~QuatCamera() {
-
-}
-
-void QuatCamera::_process(double delta){
-	if (Engine::get_singleton()->is_editor_hint() || is_paused) return; // Early return if we are in editor
-
-	// you can speed up by changing these, if desired. 
-	float translation_factor = 1.0f;
-	
-	Input* _input = Input::get_singleton();
-	if(_input->is_action_pressed("move_right")){
-		set_position(get_position() + GetSide() * delta * translation_factor);
-	}
-	if(_input->is_action_pressed("move_left")){
-		set_position(get_position() - GetSide() * delta * translation_factor);
-	}
-	if(_input->is_action_pressed("move_forward")){
-		set_position(get_position() + GetForward() * delta * translation_factor);
-	}
-	if(_input->is_action_pressed("move_backward")){
-		set_position(get_position() - GetForward() * delta * translation_factor);
-	}
-	
 }
 
 // FUNCTION FOR MOUSE LOOKING
@@ -72,7 +49,6 @@ void QuatCamera::_input(const Ref<InputEvent>& event) {
 	else {
 		Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_VISIBLE);
 	}
-
 
 	if (Engine::get_singleton()->is_editor_hint() || is_paused) return;
 

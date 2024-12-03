@@ -53,7 +53,6 @@ void Player::_enter_tree() {
     QuadMesh* quad_mesh = memnew(QuadMesh);
     quad_mesh->set_size(Vector2(2, 2)); // this will cover the whole screen
     quad_mesh->set_flip_faces(true);
-
     
     screen_space_shader_material = memnew(ShaderMaterial);
     Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/no-effect.gdshader", "Shader"); 
@@ -64,30 +63,27 @@ void Player::_enter_tree() {
     
 }
 
-Vector3 Player::get_input_vector() {
-    // Get raw input vector
-    Vector2 input_2d = Input::get_singleton()->get_vector("ui_left", "ui_right", "ui_up", "ui_down");
-    return Vector3(input_2d.x, 0.0, input_2d.y); // Return the input vector
-}
+void Player::update_velocity(double delta) {
+    Vector3 move_direction = Vector3(0.0, 0.0, 0.0); // Get movement direction
 
-void Player::update_velocity(float delta) {
-    Vector3 move_direction = get_input_vector(); // Get movement direction
-
-    if (move_direction != Vector3()) {
-        // Get the camera's forward and right vectors
-        Transform3D camera_transform = main_camera->get_global_transform();
-        Vector3 camera_forward = -camera_transform.basis.get_column(2).normalized(); // Camera forward
-        Vector3 camera_right = camera_transform.basis.get_column(0).normalized();    // Camera right
-
-        // Transform the input vector based on the camera's orientation
-        Vector3 relative_direction = (camera_forward * -move_direction.z) + (camera_right * move_direction.x);
-        move_direction = Vector3(relative_direction.x, 0.0, relative_direction.z).normalized(); // Zero out Y-axis
-    }
+    Input* _input = Input::get_singleton();
+	if(_input->is_action_pressed("move_right")){
+		move_direction = main_camera->GetSide();
+	}
+	if(_input->is_action_pressed("move_left")){
+		move_direction = -main_camera->GetSide();
+	}
+	if(_input->is_action_pressed("move_forward")){
+		move_direction = main_camera->GetForward();
+	}
+	if(_input->is_action_pressed("move_backward")){
+		move_direction = -main_camera->GetForward();
+	}
 
     Vector3 target_velocity = move_direction * move_speed;  // Calculate target velocity
 
     // Set new velocity
-    Vector3 new_velocity = get_velocity().move_toward(target_velocity, acceleration * delta);
+    Vector3 new_velocity = get_velocity().move_toward(target_velocity, delta * acceleration);
     set_velocity(new_velocity);
 }
 
@@ -111,22 +107,9 @@ void Player::_ready() {
 
 void Player::_process(double delta) {
     if (Engine::get_singleton()->is_editor_hint()) return;
-
-
+    
     update_velocity(delta); // Update the player's velocity
     move_and_slide(); // Move the player
-
-	// For each object, check collision
-	// for (int i=0; i<test_list.size(); i++){
-	// 	if (test_list[i]->in_range(main_camera->get_global_position())){
-	// 		test_list[i]->set_visible(false);
-	// 		player->add_inventory(test_list[i]);
-	// 		test_list.remove_at(i);
-	// 	}
-	// }
-
-    // Check for collisions after movement
-    // Requires all objects to have collision shapes
 }
 
 String Player::printInventory(){
