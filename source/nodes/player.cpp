@@ -46,20 +46,22 @@ void Player::_enter_tree() {
     // Set the mesh of the player
     body_mesh->set_mesh(cylinder_mesh);
 
-    // Creating a quad for Screen SPace Effects
-    create_and_add_as_child<MeshInstance3D>(main_camera, screen_quad_instance, "Screen Quad", true);
+    // Create the skybox instance
+    create_and_add_as_child<CustomMesh>(this, skybox, "Skybox", true);
+    skybox->set_shader_name(vformat("%s%s.gdshader", "shaders/", "skybox"));
+    BoxMesh* box_mesh = memnew(BoxMesh);
+    box_mesh->set_size(Vector3(500.0f, 500.0f, 500.0f));
 
-    // Setup the screen-space shader
-    QuadMesh* quad_mesh = memnew(QuadMesh);
-    quad_mesh->set_size(Vector2(2, 2)); // this will cover the whole screen
-    quad_mesh->set_flip_faces(true);
-    
-    screen_space_shader_material = memnew(ShaderMaterial);
-    Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/no-effect.gdshader", "Shader"); 
-    screen_space_shader_material->set_shader(shader);
-    quad_mesh->surface_set_material(0, screen_space_shader_material);
-    screen_quad_instance->set_mesh(quad_mesh);
-    screen_quad_instance->set_extra_cull_margin(50.0f);
+    // Assign the mesh to the MeshInstance3D
+    skybox->set_mesh(box_mesh);
+
+    // Set up the skybox material
+    ShaderMaterial* skybox_material = memnew(ShaderMaterial);
+    Ref<Shader> skybox_shader = ResourceLoader::get_singleton()->load("shaders/skybox.gdshader", "Shader");
+    skybox_material->set_shader(skybox_shader);
+    skybox_material->set_shader_parameter("sky_texture", ResourceLoader::get_singleton()->load("res://textures/nightskycolor.png"));
+
+    skybox->set_material_override(skybox_material);
     
 }
 
@@ -110,6 +112,9 @@ void Player::_process(double delta) {
     
     update_velocity(delta); // Update the player's velocity
     move_and_slide(); // Move the player
+
+    // Move skybox with player
+    skybox->set_global_position(this->get_global_position());
 }
 
 String Player::printInventory(){

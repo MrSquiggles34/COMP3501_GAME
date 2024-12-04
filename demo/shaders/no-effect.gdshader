@@ -1,6 +1,6 @@
 shader_type spatial;
 
-render_mode unshaded; 
+render_mode unshaded, depth_draw_never; 
 render_mode skip_vertex_transform;
 render_mode fog_disabled; 
 

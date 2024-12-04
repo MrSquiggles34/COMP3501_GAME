@@ -12,9 +12,12 @@
 #include <godot_cpp/templates/vector.hpp> 
 #include <godot_cpp/classes/input.hpp>
 #include <godot_cpp/classes/resource_loader.hpp>
+#include <godot_cpp/classes/image_texture.hpp>
+
 #include "create_and_add_as_child.h"
 #include "collectable_item_abstract.h"
 #include "quat_camera.h"
+#include "custom_mesh.h"
 
 namespace godot {
 
@@ -34,6 +37,10 @@ private:
     // Screen Space effects
     MeshInstance3D* screen_quad_instance;
     ShaderMaterial* screen_space_shader_material;
+
+    // Skybox
+    CustomMesh* skybox;
+    ShaderMaterial* skybox_shader_material;
 
     // Pause
     bool is_paused;
