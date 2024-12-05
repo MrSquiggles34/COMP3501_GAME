@@ -23,7 +23,6 @@ CustomMesh::~CustomMesh() {
 }
 
 void CustomMesh::_enter_tree ( ){
-	if(DEBUG) UtilityFunctions::print("Enter Tree - ", get_name()); 
 
 }
 
