@@ -39,6 +39,8 @@ void Map::_enter_tree ( ){
     ground_material->set_shader_parameter("color_in", BLANK_COL);
     ground_material->set_shader_parameter("light_position", Vector3(0.0f, 5.0f, 0.0f));
     ground_material->set_shader_parameter("specular_power", 20.0f);
+
+    create_and_add_as_child<Robo>(this, robo1, "Robo1", true);
     
     create_and_add_as_child<Node>(this, buildings, "Buildings", true);
 }

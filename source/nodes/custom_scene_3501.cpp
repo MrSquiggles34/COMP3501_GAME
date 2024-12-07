@@ -36,12 +36,17 @@ void CustomScene3501::_enter_tree ( ){
 	}
 
 	// ADD PARTICLE SYSTEMS HERE (EX:)
-	// create_particle_system("Burning Torus", "fire");
+	create_particle_system("Snow", "snow");
 
 }
 
 void CustomScene3501::_ready ( ){
 	if(DEBUG) UtilityFunctions::print("Ready - CustomScene3501."); 
+
+	player = get_node<Player>("/root/Node3D/Game/Player");
+	if (player == nullptr) {
+		UtilityFunctions::print("Player not found!");
+	}
 
 	// For each object type, add them to their lists
 	Node* obj_group;
@@ -60,7 +65,6 @@ void CustomScene3501::_ready ( ){
 		// this should never be needed, but can't hurt to have. 
 		if (particle_system == nullptr) continue;
 
-		/*
 		ShaderMaterial* shader_material = dynamic_cast<ShaderMaterial*>(*particle_system->get_draw_pass_mesh(0)->surface_get_material(0));
 		switch (index) {
 		case 0:
@@ -69,13 +73,13 @@ void CustomScene3501::_ready ( ){
 			particle_system->set_global_position(Vector3(0.0f, 0.0f, 0.0f));
 			break;
 		}
-		*/
-		
 	}
 }
 
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; 
+
+	// Particles follow player
 
 	// For each object, check collision
 	for (int i=0; i<test_list.size(); i++){
@@ -97,6 +101,40 @@ void CustomScene3501::toggle_pause(bool paused) {
 
 void CustomScene3501::create_particle_system(String node_name, String shader_name) {
 	ParticleSystem* system = memnew(ParticleSystem(shader_name));
-	create_and_add_as_child(this, system, node_name, true);
+	add_as_child(system, node_name, true);
 	particle_systems.push_back(system);
+}
+
+template <class T>
+bool CustomScene3501::add_as_child(T*& pointer, String name, bool search) {
+	// this is the default behaviour
+	// added the search parameter so that we can skip the slow "find_child" call during runtime
+	if (search == false) {
+		pointer->set_name(name);
+		add_child(pointer);
+		pointer->set_owner(get_tree()->get_edited_scene_root());
+		return true;
+	}
+
+	// always only have to search once if we save it here
+	Node* child = find_child(name);
+
+	// if the node hasn't been added to the SceneTree yet
+	if (child == nullptr) {
+		pointer->set_name(name);
+		add_child(pointer);
+		pointer->set_owner(get_tree()->get_edited_scene_root());
+		return true;
+	}
+	// if we are grabbing the existent one, clean up the memory to the new one that was just made and passed as an argument
+	else {
+		if (pointer == nullptr) {
+			UtilityFunctions::print("There is a nullptr being passed to add_as_child...");
+		}
+		else {
+			memdelete(pointer);
+		}
+		pointer = dynamic_cast<T*>(child);
+		return false;
+	}
 }

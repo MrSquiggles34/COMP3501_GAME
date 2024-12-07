@@ -11,6 +11,7 @@
 
 
 #include "custom_mesh.h"
+#include "robo.h"
 
 #define X_SIZE 250.0f
 #define Y_SIZE 250.0f
@@ -28,6 +29,9 @@ private:
 	Node* buildings;
     CustomMesh* ground;
     Vector<CustomMesh*> building_list;
+
+	Robo* robo1;
+	Robo* robo2;
 	
 protected:
 	static void _bind_methods();

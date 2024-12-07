@@ -53,6 +53,9 @@ public:
 	void toggle_pause(bool paused);
 	void create_particle_system(String node_name, String shader_name);
 	
+	template <class T>
+	bool add_as_child(T*& pointer, String name, bool search = false);
+	
 	void addPlayer(Player* p) { player = p; };
 };
 

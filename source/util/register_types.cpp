@@ -13,6 +13,12 @@
 
 #include "game.h"
 
+#include "robo_part.h"
+#include "robo.h"
+#include "robo_base.h"
+#include "robo_joint.h"
+#include "robo_head.h"
+
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
@@ -37,6 +43,11 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<CustomMesh>();
 	ClassDB::register_class<CollidableObject>();
 	ClassDB::register_class<Building>();
+	ClassDB::register_class<RoboPart>();
+	ClassDB::register_class<RoboBase>();
+	ClassDB::register_class<Robo>();
+	ClassDB::register_class<RoboJoint>();
+	ClassDB::register_class<RoboHead>();
 }
 
 // gets called when godot unloads our plugin
