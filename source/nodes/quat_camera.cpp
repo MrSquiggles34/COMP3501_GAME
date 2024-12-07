@@ -82,21 +82,21 @@ Vector3 QuatCamera::GetUp(void) const {
 
 void QuatCamera::Pitch(float angle) {
 	// Declare a max and minimum for pitch
-	const float max_pitch = 89.0f * Math_PI / 180.0f;  
-	const float min_pitch = -89.0f * Math_PI / 180.0f; 
+	const float max_pitch = 89.0f * Math_PI / 180.0f;
+	const float min_pitch = -89.0f * Math_PI / 180.0f;
 
 	// Calculate the current pitch relative to the forward vector
-	Vector3 forward = GetForward();
+	Vector3 forward = our_quaternion.xform(Vector3(0, 0, -1)); 
 	float current_pitch = Math::asin(forward.y); 
 
-	// Clamp the pitch angle to prevent over-rotation
+	// Calculate the new pitch and clamp it
 	float new_pitch = Math::clamp(current_pitch + angle, min_pitch, max_pitch);
+	float delta_pitch = new_pitch - current_pitch;
 
-	// Calculate the change in pitch and apply the new rotation
-	angle = new_pitch - current_pitch;
-	Quaternion rotation = Quaternion(GetSide(), angle);
-	our_quaternion = (rotation * our_quaternion).normalized();
-	set_quaternion((rotation * get_quaternion()).normalized());
+	// Apply the clamped pitch rotation
+	Quaternion pitch_rotation = Quaternion(GetSide(), delta_pitch);
+	our_quaternion = (pitch_rotation * our_quaternion).normalized();
+	set_quaternion(our_quaternion);
 }
 
 void QuatCamera::Yaw(float angle) {
