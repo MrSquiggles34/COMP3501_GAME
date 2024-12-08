@@ -1,13 +1,15 @@
 #ifndef COLLECTABLE_ITEM_ABSTRACT
 #define COLLECTABLE_ITEM_ABSTRACT
 
-#include <godot_cpp/classes/mesh_instance3d.hpp>
+#include <godot_cpp/classes/node3d.hpp>
 
 #include <godot_cpp/variant/vector3.hpp>
 #include <godot_cpp/variant/color.hpp>
 #include <godot_cpp/classes/standard_material3d.hpp>
 #include <godot_cpp/classes/shader_material.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
+#include <godot_cpp/classes/resource_loader.hpp>
+#include <godot_cpp/classes/packed_scene.hpp>
 
 #include "create_and_add_as_child.h"
 #include "defs.h"
@@ -16,8 +18,8 @@
 
 // everything in gdextension is defined in this namespace
 namespace godot {
-	class CollectableItemAbstract : public MeshInstance3D {
-		GDCLASS(CollectableItemAbstract, MeshInstance3D);
+	class CollectableItemAbstract : public Node3D {
+		GDCLASS(CollectableItemAbstract, Node3D);
 
 	private:
 		bool in_inventory;

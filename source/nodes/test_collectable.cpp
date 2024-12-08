@@ -22,18 +22,10 @@ void TestCollectable::_enter_tree() {
 void TestCollectable::_ready() {
     if (DEBUG) UtilityFunctions::print("Ready - TestCollectable.");
 
-    SphereMesh* self_mesh = memnew(SphereMesh);
-    self_mesh->set_radius(radius);
-    self_mesh->set_height(radius * 2.0);
+    Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/9v_battery.glb");
+    Node3D *model_instance = Object::cast_to<Node3D>(scene->instantiate());
+    add_child(model_instance);
 
-    StandardMaterial3D* material = memnew(StandardMaterial3D);
-    material->set_albedo(Color(1.0, 1.0, 0.0, 1.0f));
-    self_mesh->surface_set_material(0, material);
-
-    set_mesh(self_mesh);
-
-    // Need to find a good way to set uniforms
-    //indicator->set_amount(100);
 }
 
 void TestCollectable::_process(double delta) {
