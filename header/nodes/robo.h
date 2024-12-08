@@ -41,6 +41,8 @@ namespace godot {
 		RoboBase* pinch1;
 		RoboBase* pinch2;
 
+		bool is_paused;
+
 	protected:
 		// a static function that Godot will call to find out which methods can be called and which properties it exposes
 		static void _bind_methods();
@@ -58,6 +60,7 @@ namespace godot {
 		// search defines whether the scenetree should be checked for an instance
 		template <class T>
 		bool create_and_add_as_child(T*& pointer, String name, bool search = false);
+		void toggle_pause(bool paused);
 
 	};
 

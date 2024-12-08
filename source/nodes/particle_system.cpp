@@ -1,3 +1,4 @@
+
 #include "particle_system.h"
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/classes/mesh.hpp>
@@ -72,3 +73,4 @@ ParticleSystem::~ParticleSystem() {
 void ParticleSystem::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
 }
+

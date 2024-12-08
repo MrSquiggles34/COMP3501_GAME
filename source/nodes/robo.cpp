@@ -8,7 +8,9 @@ void Robo::_bind_methods() {
 
 }
 
-Robo::Robo() : Node3D() {}
+Robo::Robo() : Node3D() {
+	is_paused = false;
+}
 
 Robo::~Robo() {
 	// Add cleanup here, if you have any. I don't, typically. 
@@ -83,38 +85,40 @@ void Robo::_ready() {
 void Robo::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return;
 	
+	if (!is_paused) {
 
-	float rotation_speed = 0.02f; 
-	float amplitude = 1.0f;       
+		float rotation_speed = 0.02f;
+		float amplitude = 1.0f;
 
-	// Parameters to control motion cycles
-	float pause_duration = 3.0f; 
-	float move_duration = 2.0f;   
-	float total_cycle_time = pause_duration + move_duration;
+		// Parameters to control motion cycles
+		float pause_duration = 3.0f;
+		float move_duration = 2.0f;
+		float total_cycle_time = pause_duration + move_duration;
 
-	// Update time
-	base2->set_time_passed(base2->get_time_passed() + delta);
+		// Update time
+		base2->set_time_passed(base2->get_time_passed() + delta);
 
-	// Calculate the current phase within the cycle
-	float current_time_in_cycle = fmod(base2->get_time_passed(), total_cycle_time);
+		// Calculate the current phase within the cycle
+		float current_time_in_cycle = fmod(base2->get_time_passed(), total_cycle_time);
 
-	// Calculate swaying motion with wider arcs
-	Quaternion y_rotation = Quaternion(
-		Vector3(0, 1, 0),
-		amplitude * sin(base2->get_time_passed() * Math_PI * 2.0) * rotation_speed
-	);
+		// Calculate swaying motion with wider arcs
+		Quaternion y_rotation = Quaternion(
+			Vector3(0, 1, 0),
+			amplitude * sin(base2->get_time_passed() * Math_PI * 2.0) * rotation_speed
+		);
 
-	// Check phases
-	if (current_time_in_cycle < move_duration) {
-		base2->set_local_rotation(base2->get_local_rotation() * y_rotation);
+		// Check phases
+		if (current_time_in_cycle < move_duration) {
+			base2->set_local_rotation(base2->get_local_rotation() * y_rotation);
+		}
+		else {
+			head->set_local_rotation(head->get_local_rotation() * y_rotation);
+		}
+
+		// Update the global transform
+		base2->set_global_transform(base2->get_transformation_matrix());
+		head->set_global_transform(head->get_transformation_matrix());
 	}
-	else {
-		head->set_local_rotation(head->get_local_rotation() * y_rotation);
-	}
-
-	// Update the global transform
-	base2->set_global_transform(base2->get_transformation_matrix());
-	head->set_global_transform(head->get_transformation_matrix());
 
 }
 
@@ -145,3 +149,10 @@ bool Robo::create_and_add_as_child(T*& pointer, String name, bool search) {
 	}
 }
 
+void Robo::toggle_pause(bool paused) {
+	is_paused = paused;
+
+	// Propogate Pause 
+
+	if (DEBUG) UtilityFunctions::print(is_paused ? "Robo Paused" : "Robo Resumed");
+}

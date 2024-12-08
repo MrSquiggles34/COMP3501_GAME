@@ -31,7 +31,8 @@ private:
     Vector<CustomMesh*> building_list;
 
 	Robo* robo1;
-	Robo* robo2;
+
+	bool is_paused;
 	
 protected:
 	static void _bind_methods();
@@ -45,6 +46,7 @@ public:
     void add_building (float x1, float y1, float x2, float y2, float h=0);
 	void setup_starting_area (float width, float depth, float x, float y); // Coordinates based on bottom middle
 	void setup_housing_area (float x, float y, Vector<Vector<int>> houses); // Coordinates based on bottom left
+	void toggle_pause(bool paused);
 };
 
 }

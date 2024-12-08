@@ -25,7 +25,7 @@ void QuatCamera::_enter_tree(){
 	quad_mesh->set_flip_faces(true);
 
 	screen_space_shader_material = memnew(ShaderMaterial);
-	Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/no-effect.gdshader", "Shader"); 
+	Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/simple.gdshader", "Shader"); 
 	screen_space_shader_material->set_shader(shader);
 	quad_mesh->surface_set_material(0, screen_space_shader_material);
 	screen_quad_instance->set_mesh(quad_mesh);
