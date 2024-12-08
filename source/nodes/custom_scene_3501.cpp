@@ -34,7 +34,7 @@ void CustomScene3501::_enter_tree() {
 		create_and_add_as_child(obj_group, test_obj, vformat("Test%d", i), true);
 	}
 
-	// ADD PARTICLE SYSTEMS HERE (EX:)
+	// PARTICLE SYSTEMS
 	create_particle_system(this, "Snow", "snow");
 
 }
@@ -58,7 +58,6 @@ void CustomScene3501::_ready() {
 
 		// this should never be needed, but can't hurt to have. 
 		if (particle_system == nullptr) continue;
-
 		
 		ShaderMaterial* shader_material = dynamic_cast<ShaderMaterial*>(*particle_system->get_draw_pass_mesh(0)->surface_get_material(0));
 		switch (index) {
@@ -68,16 +67,12 @@ void CustomScene3501::_ready() {
 			particle_system->set_global_position(Vector3(0.0f, 2.0f, -4.0f));
 			break;
 		}
-		
 
 	}
 }
 
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return;
-
-	// Particles follow player
-	if (player == nullptr) return;
 
 	// Make the snow follow the player
 	if (!particle_systems.is_empty() && particle_systems[0] != nullptr) {
@@ -86,7 +81,6 @@ void CustomScene3501::_process(double delta) {
 		particle_systems[0]->set_global_position(player_position + offset);
 	}
 
-	// For each object, check collision
 	// For each collectable, check collision
 	for (int i=0; i<test_list.size(); i++){
 		if (test_list[i]->in_range(player->get_global_position())){
@@ -108,6 +102,6 @@ void CustomScene3501::toggle_pause(bool paused) {
 
 void CustomScene3501::create_particle_system(Node* parent, String node_name, String shader_name) {
 	ParticleSystem* system = memnew(ParticleSystem(shader_name));
-	create_and_add_as_child(parent, system, node_name, true);
+	create_and_add_as_child(parent, system, node_name, true, false);
 	particle_systems.push_back(system);
 }

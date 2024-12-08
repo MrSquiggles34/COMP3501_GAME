@@ -7,9 +7,9 @@
 namespace godot {
 
     template <class T>
-    bool create_and_add_as_child(Node* parent, T*& pointer, String name, bool search) {
+    bool create_and_add_as_child(Node* parent, T*& pointer, String name, bool search, bool makeNew = true) {
         if (search == false) {
-            pointer = memnew(T);
+            if (makeNew) {pointer = memnew(T);}
             pointer->set_name(name);
             parent->add_child(pointer);
             pointer->set_owner(parent->get_tree()->get_edited_scene_root());
@@ -18,7 +18,7 @@ namespace godot {
 
         Node* child = parent->find_child(name);
         if (child == nullptr) {
-            pointer = memnew(T);
+            if (makeNew) {pointer = memnew(T);}
             pointer->set_name(name);
             parent->add_child(pointer);
             pointer->set_owner(parent->get_tree()->get_edited_scene_root());
