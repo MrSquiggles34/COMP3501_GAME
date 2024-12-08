@@ -100,7 +100,7 @@ void Player::_ready() {
 	// now that we have set the camera's starting state, let's reinitialize its variables
 	main_camera->_ready();
 
-    this->set_global_position(Vector3(0.0, 1.0, 0.0)); // Position the player
+    this->set_global_position(Vector3(0.0, 2.0, 0.0)); // Position the player
 
     // Set collision layer and mask
     set_collision_mask(1); // For Player
