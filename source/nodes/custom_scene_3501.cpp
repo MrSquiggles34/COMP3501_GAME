@@ -98,7 +98,7 @@ void CustomScene3501::_process(double delta) {
 	}
 
 	// For each collectable, check collision
-	UtilityFunctions::print("HIIHIHIHI");
+	player_position.y -= 1;
 	for (int i=0; i<test_list.size(); i++){
 		if (test_list[i]->in_range(player_position)){
 			test_list[i]->set_visible(false);
