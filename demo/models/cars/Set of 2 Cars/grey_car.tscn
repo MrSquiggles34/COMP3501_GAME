@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddcs5rj1a4sfo"]
+
+[ext_resource type="PackedScene" uid="uid://cu3q0uv31ctl1" path="res://models/cars/Set of 2 Cars/free_-_sci-fi_lods_-_sf6wv01_sf4wv01_-_cc0.glb" id="1_0vqch"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_0vqch")]
+
+[node name="Shadow_M_Shadow_0" parent="Sketchfab_model/3a645867358e4c37aeb74e48d9a1aa5e_fbx/RootNode/Shadow" index="0"]
+visible = false
+
+[node name="SF_WV_01_sci-fi_LOD_0" parent="Sketchfab_model/3a645867358e4c37aeb74e48d9a1aa5e_fbx/RootNode/SF_WV_01" index="0"]
+visible = false
+
+[node name="Wheel_FL_sci-fi_LOD_0" parent="Sketchfab_model/3a645867358e4c37aeb74e48d9a1aa5e_fbx/RootNode/Wheel_FL" index="0"]
+visible = false
+
+[node name="Wheel_FR_sci-fi_LOD_0" parent="Sketchfab_model/3a645867358e4c37aeb74e48d9a1aa5e_fbx/RootNode/Wheel_FR" index="0"]
+visible = false
+
+[node name="Wheel_RL_sci-fi_LOD_0" parent="Sketchfab_model/3a645867358e4c37aeb74e48d9a1aa5e_fbx/RootNode/Wheel_RL" index="0"]
+visible = false
+
+[node name="Wheel_RR_sci-fi_LOD_0" parent="Sketchfab_model/3a645867358e4c37aeb74e48d9a1aa5e_fbx/RootNode/Wheel_RR" index="0"]
+visible = false

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1en722lvb7hh"]
+
+[ext_resource type="PackedScene" uid="uid://01fsagoqea1y" path="res://models/buildings/Mechanic Building/cyberpunk_building_by_concept_jessealso.glb" id="1_3r86x"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_3r86x")]
+
+[node name="Plane_Material_023_0" parent="Sketchfab_model/e0a70189e74c4543a5d2c352938c2c92_fbx/RootNode/Plane" index="0"]
+visible = false
+
+[node name="Plane_001_Material_013_0" parent="Sketchfab_model/e0a70189e74c4543a5d2c352938c2c92_fbx/RootNode/Plane_001" index="0"]
+visible = false

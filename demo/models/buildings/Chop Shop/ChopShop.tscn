@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0ddwat5nbyjj"]
+
+[ext_resource type="PackedScene" uid="uid://b6fiwv07ikykp" path="res://models/buildings/Chop Shop/sony_robot_challenge_-_lucky_cat_chop_house.glb" id="1_o8kon"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_o8kon")]
+
+[node name="Cutouts" parent="Sketchfab_model/LuckyCat_fbx/Object_2/RootNode" index="13"]
+visible = false
+
+[node name="Cutouts_Cutouts_0" parent="Sketchfab_model/LuckyCat_fbx/Object_2/RootNode/Cutouts" index="0"]
+visible = false

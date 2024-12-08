@@ -1,0 +1,4132 @@
+[gd_scene load_steps=552 format=3 uid="uid://d4fts1qdc5ny6"]
+
+[ext_resource type="Shader" path="res://shaders/lighting.gdshader" id="1_nquvp"]
+[ext_resource type="PackedScene" uid="uid://dvybpnc5jl1qd" path="res://models/buildings/Tower/sci-fi_tower.glb" id="2_pq7xj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dc2jb"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 20.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_e1kfn"]
+material = SubResource("ShaderMaterial_dc2jb")
+size = Vector3(250, 1, 250)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2rc5j"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ayphq"]
+material = SubResource("ShaderMaterial_2rc5j")
+size = Vector3(10, 19.8629, 18)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w46km"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8thxl"]
+material = SubResource("ShaderMaterial_w46km")
+size = Vector3(4, 13.8925, 7.2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_km7ac"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_f5hwm"]
+material = SubResource("ShaderMaterial_km7ac")
+size = Vector3(14, 5.64961, 10.8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wxw1j"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_bo76g"]
+material = SubResource("ShaderMaterial_wxw1j")
+size = Vector3(29.5, 9.20836, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kbjr7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4usfa"]
+material = SubResource("ShaderMaterial_kbjr7")
+size = Vector3(14.5, 19.0313, 20)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rvve5"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1gmfg"]
+material = SubResource("ShaderMaterial_rvve5")
+size = Vector3(8, 12.8298, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_52ynx"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jc76r"]
+material = SubResource("ShaderMaterial_52ynx")
+size = Vector3(8, 19.6055, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_auteh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_hjr3e"]
+material = SubResource("ShaderMaterial_auteh")
+size = Vector3(8, 7.20997, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ccfon"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_s1sy2"]
+material = SubResource("ShaderMaterial_ccfon")
+size = Vector3(8, 15.6441, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3xhhh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_v8y2d"]
+material = SubResource("ShaderMaterial_3xhhh")
+size = Vector3(8, 9.64788, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g7kse"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_s705m"]
+material = SubResource("ShaderMaterial_g7kse")
+size = Vector3(8, 5.12234, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_344y8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_d4whl"]
+material = SubResource("ShaderMaterial_344y8")
+size = Vector3(8, 11.3675, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jjutd"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rnvpy"]
+material = SubResource("ShaderMaterial_jjutd")
+size = Vector3(8, 13.1561, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3pbyi"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_mdfkq"]
+material = SubResource("ShaderMaterial_3pbyi")
+size = Vector3(8, 6.15455, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fomq5"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vm5px"]
+material = SubResource("ShaderMaterial_fomq5")
+size = Vector3(8, 11.9683, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eoww0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_70my5"]
+material = SubResource("ShaderMaterial_eoww0")
+size = Vector3(8, 14.3738, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4e6qk"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_i3iau"]
+material = SubResource("ShaderMaterial_4e6qk")
+size = Vector3(8, 6.40763, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5qxj3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_guvpx"]
+material = SubResource("ShaderMaterial_5qxj3")
+size = Vector3(8, 11.8031, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f4kny"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_q1s83"]
+material = SubResource("ShaderMaterial_f4kny")
+size = Vector3(8, 9.28003, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_raeot"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_o55ul"]
+material = SubResource("ShaderMaterial_raeot")
+size = Vector3(8, 5.45708, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sxojq"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_byarc"]
+material = SubResource("ShaderMaterial_sxojq")
+size = Vector3(8, 12.4474, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iqw2e"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_chwfc"]
+material = SubResource("ShaderMaterial_iqw2e")
+size = Vector3(8, 13.4046, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6v3cm"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8y4fk"]
+material = SubResource("ShaderMaterial_6v3cm")
+size = Vector3(8, 8.2766, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ehv28"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jvr6i"]
+material = SubResource("ShaderMaterial_ehv28")
+size = Vector3(8, 6.02899, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8c8aa"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_phisc"]
+material = SubResource("ShaderMaterial_8c8aa")
+size = Vector3(8, 9.92258, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v2bqy"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ptct4"]
+material = SubResource("ShaderMaterial_v2bqy")
+size = Vector3(8, 14.5504, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xo7rm"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3ikb2"]
+material = SubResource("ShaderMaterial_xo7rm")
+size = Vector3(8, 8.47573, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t03n8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ug47u"]
+material = SubResource("ShaderMaterial_t03n8")
+size = Vector3(8, 13.5973, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k2ypi"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_v75i6"]
+material = SubResource("ShaderMaterial_k2ypi")
+size = Vector3(8, 11.9115, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_svjts"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rmfrk"]
+material = SubResource("ShaderMaterial_svjts")
+size = Vector3(8, 18.1823, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lmlwm"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4as7n"]
+material = SubResource("ShaderMaterial_lmlwm")
+size = Vector3(8, 16.1266, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i72cd"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_e4yac"]
+material = SubResource("ShaderMaterial_i72cd")
+size = Vector3(8, 8.50306, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m10e4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ss4yb"]
+material = SubResource("ShaderMaterial_m10e4")
+size = Vector3(8, 8.96942, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8irff"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_r1ybk"]
+material = SubResource("ShaderMaterial_8irff")
+size = Vector3(8, 7.94973, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u7cfl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ad0d8"]
+material = SubResource("ShaderMaterial_u7cfl")
+size = Vector3(8, 6.98978, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_06vrf"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3cqln"]
+material = SubResource("ShaderMaterial_06vrf")
+size = Vector3(8, 10.1119, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_auefn"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ar3at"]
+material = SubResource("ShaderMaterial_auefn")
+size = Vector3(8, 17.8674, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lp4qx"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_aedgp"]
+material = SubResource("ShaderMaterial_lp4qx")
+size = Vector3(8, 16.8229, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vxhs0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_dbt8h"]
+material = SubResource("ShaderMaterial_vxhs0")
+size = Vector3(8, 16.1984, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ggqs8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_nrwbi"]
+material = SubResource("ShaderMaterial_ggqs8")
+size = Vector3(8, 5.39054, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nntum"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_shngm"]
+material = SubResource("ShaderMaterial_nntum")
+size = Vector3(8, 17.7979, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vssh3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_g1eim"]
+material = SubResource("ShaderMaterial_vssh3")
+size = Vector3(8, 19.1139, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1dtoo"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_33kwb"]
+material = SubResource("ShaderMaterial_1dtoo")
+size = Vector3(8, 8.64546, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_75x4x"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3gjjd"]
+material = SubResource("ShaderMaterial_75x4x")
+size = Vector3(8, 6.70202, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jm4h8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_wey6a"]
+material = SubResource("ShaderMaterial_jm4h8")
+size = Vector3(8, 18.4166, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f5alv"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6hnbl"]
+material = SubResource("ShaderMaterial_f5alv")
+size = Vector3(8, 12.2536, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dkug1"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6i2w0"]
+material = SubResource("ShaderMaterial_dkug1")
+size = Vector3(8, 18.598, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_030ll"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_42u3w"]
+material = SubResource("ShaderMaterial_030ll")
+size = Vector3(8, 13.9802, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mnwmp"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4m0p5"]
+material = SubResource("ShaderMaterial_mnwmp")
+size = Vector3(8, 9.19134, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lfldl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ahx5"]
+material = SubResource("ShaderMaterial_lfldl")
+size = Vector3(8, 13.4135, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qkta0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0stjg"]
+material = SubResource("ShaderMaterial_qkta0")
+size = Vector3(8, 5.00675, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k8nce"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vxjdu"]
+material = SubResource("ShaderMaterial_k8nce")
+size = Vector3(8, 11.3405, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6cpji"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_j6yml"]
+material = SubResource("ShaderMaterial_6cpji")
+size = Vector3(8, 16.8217, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_42sf7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2mtuv"]
+material = SubResource("ShaderMaterial_42sf7")
+size = Vector3(8, 6.71791, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k1el6"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_7cpla"]
+material = SubResource("ShaderMaterial_k1el6")
+size = Vector3(8, 7.43398, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5gq7y"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_uaci6"]
+material = SubResource("ShaderMaterial_5gq7y")
+size = Vector3(8, 19.7786, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7q7fc"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3m4u5"]
+material = SubResource("ShaderMaterial_7q7fc")
+size = Vector3(8, 15.9341, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hwy6h"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_i58iw"]
+material = SubResource("ShaderMaterial_hwy6h")
+size = Vector3(8, 18.3379, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ik5wh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_cjcu7"]
+material = SubResource("ShaderMaterial_ik5wh")
+size = Vector3(8, 17.8819, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w4mir"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_s8nnm"]
+material = SubResource("ShaderMaterial_w4mir")
+size = Vector3(8, 13.7654, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lr8ev"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ipvja"]
+material = SubResource("ShaderMaterial_lr8ev")
+size = Vector3(8, 8.50718, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ur3v"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jfnvu"]
+material = SubResource("ShaderMaterial_2ur3v")
+size = Vector3(8, 6.80393, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ndqmv"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ll7s2"]
+material = SubResource("ShaderMaterial_ndqmv")
+size = Vector3(8, 9.7957, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8h6h0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_485vc"]
+material = SubResource("ShaderMaterial_8h6h0")
+size = Vector3(8, 11.3946, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rpjwh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_gd8e7"]
+material = SubResource("ShaderMaterial_rpjwh")
+size = Vector3(8, 8.6721, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_esxts"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_64et0"]
+material = SubResource("ShaderMaterial_esxts")
+size = Vector3(8, 6.54101, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0mgrj"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_t7ehy"]
+material = SubResource("ShaderMaterial_0mgrj")
+size = Vector3(8, 10.5305, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ok6l8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_irsca"]
+material = SubResource("ShaderMaterial_ok6l8")
+size = Vector3(8, 11.5584, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1x3qu"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_yvhob"]
+material = SubResource("ShaderMaterial_1x3qu")
+size = Vector3(8, 7.31705, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sgnt4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rnni1"]
+material = SubResource("ShaderMaterial_sgnt4")
+size = Vector3(8, 15.141, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5et1m"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6pg3a"]
+material = SubResource("ShaderMaterial_5et1m")
+size = Vector3(8, 18.8762, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w235c"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_fse1x"]
+material = SubResource("ShaderMaterial_w235c")
+size = Vector3(8, 19.3588, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fifri"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2rmel"]
+material = SubResource("ShaderMaterial_fifri")
+size = Vector3(8, 19.5559, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4ih05"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ywt34"]
+material = SubResource("ShaderMaterial_4ih05")
+size = Vector3(8, 10.2905, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n7f24"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6y451"]
+material = SubResource("ShaderMaterial_n7f24")
+size = Vector3(8, 12.7134, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_evfpr"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_lyfwk"]
+material = SubResource("ShaderMaterial_evfpr")
+size = Vector3(8, 14.3125, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k5ojl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_55n6m"]
+material = SubResource("ShaderMaterial_k5ojl")
+size = Vector3(8, 12.7012, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8pkdm"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_py56g"]
+material = SubResource("ShaderMaterial_8pkdm")
+size = Vector3(8, 17.398, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hfn4v"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_n8ggn"]
+material = SubResource("ShaderMaterial_hfn4v")
+size = Vector3(8, 14.1191, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_su7on"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_23ujw"]
+material = SubResource("ShaderMaterial_su7on")
+size = Vector3(8, 5.29541, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p06g7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_mh0pg"]
+material = SubResource("ShaderMaterial_p06g7")
+size = Vector3(8, 6.6394, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dt6dc"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_oh1de"]
+material = SubResource("ShaderMaterial_dt6dc")
+size = Vector3(8, 11.5755, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1c6sd"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_kxy8l"]
+material = SubResource("ShaderMaterial_1c6sd")
+size = Vector3(8, 7.73768, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hkeyp"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_nak4q"]
+material = SubResource("ShaderMaterial_hkeyp")
+size = Vector3(8, 13.7865, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d7bhw"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vvija"]
+material = SubResource("ShaderMaterial_d7bhw")
+size = Vector3(8, 5.22005, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l1ta4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ye4hr"]
+material = SubResource("ShaderMaterial_l1ta4")
+size = Vector3(8, 13.191, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0bfpv"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qtv25"]
+material = SubResource("ShaderMaterial_0bfpv")
+size = Vector3(8, 18.0865, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0qiq0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qex8s"]
+material = SubResource("ShaderMaterial_0qiq0")
+size = Vector3(8, 18.4077, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_puc0h"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_68t6r"]
+material = SubResource("ShaderMaterial_puc0h")
+size = Vector3(8, 13.8921, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v3at3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_r4mcf"]
+material = SubResource("ShaderMaterial_v3at3")
+size = Vector3(8, 17.3285, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pjmb3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_bq404"]
+material = SubResource("ShaderMaterial_pjmb3")
+size = Vector3(8, 17.4994, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ad2br"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rriwy"]
+material = SubResource("ShaderMaterial_ad2br")
+size = Vector3(8, 18.6704, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r2v0p"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_pucjw"]
+material = SubResource("ShaderMaterial_r2v0p")
+size = Vector3(8, 8.36081, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_55fvg"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4vo2l"]
+material = SubResource("ShaderMaterial_55fvg")
+size = Vector3(8, 14.0498, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_udyp7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_cvgu3"]
+material = SubResource("ShaderMaterial_udyp7")
+size = Vector3(8, 8.27606, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vnfh7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_e8jpw"]
+material = SubResource("ShaderMaterial_vnfh7")
+size = Vector3(8, 17.0813, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cg0ag"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_bepaa"]
+material = SubResource("ShaderMaterial_cg0ag")
+size = Vector3(8, 9.93539, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q3mv2"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jc7jr"]
+material = SubResource("ShaderMaterial_q3mv2")
+size = Vector3(8, 12.756, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qik2x"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_f0vvm"]
+material = SubResource("ShaderMaterial_qik2x")
+size = Vector3(8, 11.5894, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0qrug"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_aeomh"]
+material = SubResource("ShaderMaterial_0qrug")
+size = Vector3(8, 15.1022, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o58bj"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_767od"]
+material = SubResource("ShaderMaterial_o58bj")
+size = Vector3(8, 6.73601, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qcnrb"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_nioat"]
+material = SubResource("ShaderMaterial_qcnrb")
+size = Vector3(8, 6.35646, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ior32"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_sppux"]
+material = SubResource("ShaderMaterial_ior32")
+size = Vector3(8, 19.7816, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2nquk"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8gc2e"]
+material = SubResource("ShaderMaterial_2nquk")
+size = Vector3(8, 9.25323, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i3ppp"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vq3dy"]
+material = SubResource("ShaderMaterial_i3ppp")
+size = Vector3(8, 10.1604, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u6xmn"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_h6asn"]
+material = SubResource("ShaderMaterial_u6xmn")
+size = Vector3(8, 8.16144, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3n6wy"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_p8sm3"]
+material = SubResource("ShaderMaterial_3n6wy")
+size = Vector3(8, 17.8912, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gu3lw"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_t2bxj"]
+material = SubResource("ShaderMaterial_gu3lw")
+size = Vector3(8, 18.6602, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_82vt1"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_urb1r"]
+material = SubResource("ShaderMaterial_82vt1")
+size = Vector3(8, 8.08642, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tc6bq"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_r0y1t"]
+material = SubResource("ShaderMaterial_tc6bq")
+size = Vector3(8, 13.2128, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n12le"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_xphs5"]
+material = SubResource("ShaderMaterial_n12le")
+size = Vector3(8, 17.7959, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dlg0b"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_svr2g"]
+material = SubResource("ShaderMaterial_dlg0b")
+size = Vector3(8, 18.3489, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7bny1"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1n40k"]
+material = SubResource("ShaderMaterial_7bny1")
+size = Vector3(8, 8.69456, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cnbkk"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8bytb"]
+material = SubResource("ShaderMaterial_cnbkk")
+size = Vector3(8, 16.979, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nakip"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_u08jv"]
+material = SubResource("ShaderMaterial_nakip")
+size = Vector3(8, 8.01953, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uqqgv"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_aiybu"]
+material = SubResource("ShaderMaterial_uqqgv")
+size = Vector3(8, 16.4529, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jaj7y"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vdoem"]
+material = SubResource("ShaderMaterial_jaj7y")
+size = Vector3(8, 11.6703, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_614ji"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_yxmo4"]
+material = SubResource("ShaderMaterial_614ji")
+size = Vector3(8, 8.85455, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c0jel"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_f06ai"]
+material = SubResource("ShaderMaterial_c0jel")
+size = Vector3(8, 14.4472, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2whjl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgl6n"]
+material = SubResource("ShaderMaterial_2whjl")
+size = Vector3(8, 12.1888, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hn6ks"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_gb4xs"]
+material = SubResource("ShaderMaterial_hn6ks")
+size = Vector3(8, 18.6829, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q8alt"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_awtom"]
+material = SubResource("ShaderMaterial_q8alt")
+size = Vector3(8, 6.78068, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ul7u1"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4acem"]
+material = SubResource("ShaderMaterial_ul7u1")
+size = Vector3(8, 11.439, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6fqwk"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_a6a5y"]
+material = SubResource("ShaderMaterial_6fqwk")
+size = Vector3(8, 11.8441, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aaeqv"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_h0f67"]
+material = SubResource("ShaderMaterial_aaeqv")
+size = Vector3(8, 7.31405, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mil26"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qpxpm"]
+material = SubResource("ShaderMaterial_mil26")
+size = Vector3(8, 10.7709, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c8sjy"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_eam70"]
+material = SubResource("ShaderMaterial_c8sjy")
+size = Vector3(8, 5.7258, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n3iek"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_twq4o"]
+material = SubResource("ShaderMaterial_n3iek")
+size = Vector3(8, 16.9799, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qemju"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6j3sh"]
+material = SubResource("ShaderMaterial_qemju")
+size = Vector3(8, 13.5878, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bpvm8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_xpetu"]
+material = SubResource("ShaderMaterial_bpvm8")
+size = Vector3(8, 14.3418, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gyjb8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3forj"]
+material = SubResource("ShaderMaterial_gyjb8")
+size = Vector3(8, 15.4522, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uppb5"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_poks6"]
+material = SubResource("ShaderMaterial_uppb5")
+size = Vector3(8, 8.22844, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a46w0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_tem5q"]
+material = SubResource("ShaderMaterial_a46w0")
+size = Vector3(8, 8.73581, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ciya"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_b8wib"]
+material = SubResource("ShaderMaterial_1ciya")
+size = Vector3(8, 7.4614, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_00vqx"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_40fjo"]
+material = SubResource("ShaderMaterial_00vqx")
+size = Vector3(8, 18.5944, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_edhpu"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3c42g"]
+material = SubResource("ShaderMaterial_edhpu")
+size = Vector3(8, 5.28276, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vru4h"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vk6ku"]
+material = SubResource("ShaderMaterial_vru4h")
+size = Vector3(8, 5.98208, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfre7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_wcaex"]
+material = SubResource("ShaderMaterial_tfre7")
+size = Vector3(8, 12.2581, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5ex41"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_igam6"]
+material = SubResource("ShaderMaterial_5ex41")
+size = Vector3(8, 18.0681, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1bdwe"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_r58aa"]
+material = SubResource("ShaderMaterial_1bdwe")
+size = Vector3(8, 14.3068, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m3ecs"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_33n4q"]
+material = SubResource("ShaderMaterial_m3ecs")
+size = Vector3(8, 8.29541, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tb4cb"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_u1mtu"]
+material = SubResource("ShaderMaterial_tb4cb")
+size = Vector3(8, 17.5036, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gv6xw"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1stnp"]
+material = SubResource("ShaderMaterial_gv6xw")
+size = Vector3(8, 5.03652, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a4pu0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_7q2tl"]
+material = SubResource("ShaderMaterial_a4pu0")
+size = Vector3(8, 6.37829, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2mu8s"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3sclj"]
+material = SubResource("ShaderMaterial_2mu8s")
+size = Vector3(8, 7.52292, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bl34d"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_382l2"]
+material = SubResource("ShaderMaterial_bl34d")
+size = Vector3(8, 8.31774, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qm5f4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qcwpk"]
+material = SubResource("ShaderMaterial_qm5f4")
+size = Vector3(8, 6.22828, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m40hj"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_aye0n"]
+material = SubResource("ShaderMaterial_m40hj")
+size = Vector3(8, 5.05278, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l4u0l"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qch5h"]
+material = SubResource("ShaderMaterial_l4u0l")
+size = Vector3(8, 8.29758, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q4pwl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_w44sb"]
+material = SubResource("ShaderMaterial_q4pwl")
+size = Vector3(8, 11.3288, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o2rvt"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_nam6c"]
+material = SubResource("ShaderMaterial_o2rvt")
+size = Vector3(8, 6.94881, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_360g6"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_samvl"]
+material = SubResource("ShaderMaterial_360g6")
+size = Vector3(8, 6.76082, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e405y"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_mi41w"]
+material = SubResource("ShaderMaterial_e405y")
+size = Vector3(8, 17.3498, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rcqxy"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_udkwi"]
+material = SubResource("ShaderMaterial_rcqxy")
+size = Vector3(8, 17.6113, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qscjo"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_cpcfp"]
+material = SubResource("ShaderMaterial_qscjo")
+size = Vector3(8, 8.1166, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7hjtb"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_h1nsn"]
+material = SubResource("ShaderMaterial_7hjtb")
+size = Vector3(8, 8.12865, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n5e2o"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_lxkdt"]
+material = SubResource("ShaderMaterial_n5e2o")
+size = Vector3(8, 11.7067, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qe0l0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_i3qt0"]
+material = SubResource("ShaderMaterial_qe0l0")
+size = Vector3(8, 8.63405, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aqu26"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_80jcm"]
+material = SubResource("ShaderMaterial_aqu26")
+size = Vector3(8, 19.7665, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rq48k"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_wujag"]
+material = SubResource("ShaderMaterial_rq48k")
+size = Vector3(8, 12.1606, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xkr6n"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jo1or"]
+material = SubResource("ShaderMaterial_xkr6n")
+size = Vector3(8, 9.51013, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1b6xg"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_yp4v8"]
+material = SubResource("ShaderMaterial_1b6xg")
+size = Vector3(8, 10.1888, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0nmgp"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_krbvw"]
+material = SubResource("ShaderMaterial_0nmgp")
+size = Vector3(8, 7.89234, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l4yrg"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_uxwen"]
+material = SubResource("ShaderMaterial_l4yrg")
+size = Vector3(8, 5.69361, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_13eo8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_a4t4s"]
+material = SubResource("ShaderMaterial_13eo8")
+size = Vector3(8, 5.38975, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rqlbw"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_d7x7u"]
+material = SubResource("ShaderMaterial_rqlbw")
+size = Vector3(8, 18.2494, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_plngq"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1pldv"]
+material = SubResource("ShaderMaterial_plngq")
+size = Vector3(8, 7.14852, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ijx8e"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_o6vu3"]
+material = SubResource("ShaderMaterial_ijx8e")
+size = Vector3(8, 14.831, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_40m8q"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_msgib"]
+material = SubResource("ShaderMaterial_40m8q")
+size = Vector3(8, 8.14271, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hit4w"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_tif2y"]
+material = SubResource("ShaderMaterial_hit4w")
+size = Vector3(8, 13.359, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fni8i"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0bbht"]
+material = SubResource("ShaderMaterial_fni8i")
+size = Vector3(8, 10.1404, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vobgd"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_07icd"]
+material = SubResource("ShaderMaterial_vobgd")
+size = Vector3(8, 6.72383, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oqe82"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4dg4v"]
+material = SubResource("ShaderMaterial_oqe82")
+size = Vector3(8, 18.6972, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1v4tr"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ylhf5"]
+material = SubResource("ShaderMaterial_1v4tr")
+size = Vector3(8, 15.4528, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_htmh0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_k5mid"]
+material = SubResource("ShaderMaterial_htmh0")
+size = Vector3(8, 7.26841, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4qveu"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_633mh"]
+material = SubResource("ShaderMaterial_4qveu")
+size = Vector3(8, 9.142, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vagec"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_wxg1s"]
+material = SubResource("ShaderMaterial_vagec")
+size = Vector3(8, 13.517, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dhafm"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_co4lv"]
+material = SubResource("ShaderMaterial_dhafm")
+size = Vector3(8, 7.22549, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p676j"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ch7kq"]
+material = SubResource("ShaderMaterial_p676j")
+size = Vector3(8, 15.2923, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_co7oh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_mgmyl"]
+material = SubResource("ShaderMaterial_co7oh")
+size = Vector3(8, 6.72669, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vyvg1"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_mg24n"]
+material = SubResource("ShaderMaterial_vyvg1")
+size = Vector3(8, 15.5949, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yd8s5"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_uv167"]
+material = SubResource("ShaderMaterial_yd8s5")
+size = Vector3(8, 13.6549, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rf7ek"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_nt88a"]
+material = SubResource("ShaderMaterial_rf7ek")
+size = Vector3(8, 7.95959, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_770uh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_itw4n"]
+material = SubResource("ShaderMaterial_770uh")
+size = Vector3(8, 11.6393, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a88sa"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_7nflo"]
+material = SubResource("ShaderMaterial_a88sa")
+size = Vector3(8, 10.6423, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_luigl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ffygv"]
+material = SubResource("ShaderMaterial_luigl")
+size = Vector3(8, 18.5501, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_au2el"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_87pja"]
+material = SubResource("ShaderMaterial_au2el")
+size = Vector3(8, 12.89, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qbll0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrnju"]
+material = SubResource("ShaderMaterial_qbll0")
+size = Vector3(8, 16.2655, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8fcfw"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_75j7s"]
+material = SubResource("ShaderMaterial_8fcfw")
+size = Vector3(8, 17.3674, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgu0j"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0uyfj"]
+material = SubResource("ShaderMaterial_cgu0j")
+size = Vector3(8, 15.7048, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2g4mf"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ax1i0"]
+material = SubResource("ShaderMaterial_2g4mf")
+size = Vector3(8, 10.9774, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v3n31"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0y7cb"]
+material = SubResource("ShaderMaterial_v3n31")
+size = Vector3(8, 7.00397, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ex8hr"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_h3vx1"]
+material = SubResource("ShaderMaterial_ex8hr")
+size = Vector3(8, 14.8944, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h4ovf"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ibvtf"]
+material = SubResource("ShaderMaterial_h4ovf")
+size = Vector3(8, 17.0574, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_31ext"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ntumb"]
+material = SubResource("ShaderMaterial_31ext")
+size = Vector3(8, 16.2059, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g3i4l"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_w7pno"]
+material = SubResource("ShaderMaterial_g3i4l")
+size = Vector3(8, 16.0833, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pcjj1"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3lrq3"]
+material = SubResource("ShaderMaterial_pcjj1")
+size = Vector3(8, 13.6545, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1rnnk"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_o81gp"]
+material = SubResource("ShaderMaterial_1rnnk")
+size = Vector3(8, 9.20908, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mc2x3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_154nx"]
+material = SubResource("ShaderMaterial_mc2x3")
+size = Vector3(8, 8.60575, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_upkk4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ag2hv"]
+material = SubResource("ShaderMaterial_upkk4")
+size = Vector3(8, 15.132, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_et5kh"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_r2mvm"]
+material = SubResource("ShaderMaterial_et5kh")
+size = Vector3(8, 19.8186, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xx5u4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_yysof"]
+material = SubResource("ShaderMaterial_xx5u4")
+size = Vector3(8, 14.9634, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mvplw"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6h71c"]
+material = SubResource("ShaderMaterial_mvplw")
+size = Vector3(8, 15.7653, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a2q3m"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_34sr3"]
+material = SubResource("ShaderMaterial_a2q3m")
+size = Vector3(8, 19.574, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wv0bo"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0ubts"]
+material = SubResource("ShaderMaterial_wv0bo")
+size = Vector3(8, 18.4562, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6afyg"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_q17ln"]
+material = SubResource("ShaderMaterial_6afyg")
+size = Vector3(8, 19.058, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gcid3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_v0thh"]
+material = SubResource("ShaderMaterial_gcid3")
+size = Vector3(8, 5.52746, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_giqo8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_gasgi"]
+material = SubResource("ShaderMaterial_giqo8")
+size = Vector3(8, 15.6257, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nxkvl"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0cehj"]
+material = SubResource("ShaderMaterial_nxkvl")
+size = Vector3(8, 11.2781, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cjsj0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_wmo4t"]
+material = SubResource("ShaderMaterial_cjsj0")
+size = Vector3(8, 16.5581, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q5867"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_b6vbf"]
+material = SubResource("ShaderMaterial_q5867")
+size = Vector3(8, 7.40612, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nn8bn"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_d535f"]
+material = SubResource("ShaderMaterial_nn8bn")
+size = Vector3(8, 12.5137, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ako34"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_duru3"]
+material = SubResource("ShaderMaterial_ako34")
+size = Vector3(8, 8.32172, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ssgkx"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_48b3l"]
+material = SubResource("ShaderMaterial_ssgkx")
+size = Vector3(8, 6.50055, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_elj26"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_02hmw"]
+material = SubResource("ShaderMaterial_elj26")
+size = Vector3(8, 18.0276, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mrhdd"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ex4j8"]
+material = SubResource("ShaderMaterial_mrhdd")
+size = Vector3(8, 16.0259, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xdyou"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_o4gti"]
+material = SubResource("ShaderMaterial_xdyou")
+size = Vector3(8, 11.9029, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wmrju"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3vswl"]
+material = SubResource("ShaderMaterial_wmrju")
+size = Vector3(8, 9.7843, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v4oqs"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8q6jc"]
+material = SubResource("ShaderMaterial_v4oqs")
+size = Vector3(8, 16.5305, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p1nel"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vsem6"]
+material = SubResource("ShaderMaterial_p1nel")
+size = Vector3(8, 13.9431, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ro0kc"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_7k7ih"]
+material = SubResource("ShaderMaterial_ro0kc")
+size = Vector3(8, 10.6581, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vcgli"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_v8y2b"]
+material = SubResource("ShaderMaterial_vcgli")
+size = Vector3(8, 12.9654, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8vnof"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_f4t4e"]
+material = SubResource("ShaderMaterial_8vnof")
+size = Vector3(8, 12.0114, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_20u8g"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_frrhk"]
+material = SubResource("ShaderMaterial_20u8g")
+size = Vector3(8, 15.2853, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yoay3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_m17rt"]
+material = SubResource("ShaderMaterial_yoay3")
+size = Vector3(8, 16.1937, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5r62k"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1rdc6"]
+material = SubResource("ShaderMaterial_5r62k")
+size = Vector3(8, 11.1285, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dwelt"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_or0ab"]
+material = SubResource("ShaderMaterial_dwelt")
+size = Vector3(8, 15.6079, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mw65b"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_u363b"]
+material = SubResource("ShaderMaterial_mw65b")
+size = Vector3(8, 12.7264, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2y7v0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_tbydm"]
+material = SubResource("ShaderMaterial_2y7v0")
+size = Vector3(8, 10.4979, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3aeu4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_k7f3a"]
+material = SubResource("ShaderMaterial_3aeu4")
+size = Vector3(8, 15.6328, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_we2o0"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2yi7d"]
+material = SubResource("ShaderMaterial_we2o0")
+size = Vector3(8, 14.3353, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fdemm"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_lmylp"]
+material = SubResource("ShaderMaterial_fdemm")
+size = Vector3(8, 10.5633, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w0m4a"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8kb8u"]
+material = SubResource("ShaderMaterial_w0m4a")
+size = Vector3(8, 12.0524, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jw0vc"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_dy0kw"]
+material = SubResource("ShaderMaterial_jw0vc")
+size = Vector3(8, 6.80734, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_05per"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2a8la"]
+material = SubResource("ShaderMaterial_05per")
+size = Vector3(8, 18.5835, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gx3gx"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_e08l3"]
+material = SubResource("ShaderMaterial_gx3gx")
+size = Vector3(8, 17.2161, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sdi70"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_7eb8h"]
+material = SubResource("ShaderMaterial_sdi70")
+size = Vector3(8, 9.63741, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dn8bv"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_13do5"]
+material = SubResource("ShaderMaterial_dn8bv")
+size = Vector3(8, 15.1547, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0hty2"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rhf6j"]
+material = SubResource("ShaderMaterial_0hty2")
+size = Vector3(8, 12.3045, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rqwd8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_12b2b"]
+material = SubResource("ShaderMaterial_rqwd8")
+size = Vector3(8, 16.8062, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yeoqo"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ibfej"]
+material = SubResource("ShaderMaterial_yeoqo")
+size = Vector3(8, 16.2281, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mn84f"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_oh1q7"]
+material = SubResource("ShaderMaterial_mn84f")
+size = Vector3(8, 19.8254, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6qv56"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_xyric"]
+material = SubResource("ShaderMaterial_6qv56")
+size = Vector3(8, 9.30051, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wk5o3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_r35eo"]
+material = SubResource("ShaderMaterial_wk5o3")
+size = Vector3(8, 19.2313, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ykbs6"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_nqirf"]
+material = SubResource("ShaderMaterial_ykbs6")
+size = Vector3(8, 10.0397, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pteo3"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8820n"]
+material = SubResource("ShaderMaterial_pteo3")
+size = Vector3(8, 12.3556, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h6epa"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qb04g"]
+material = SubResource("ShaderMaterial_h6epa")
+size = Vector3(8, 10.9919, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bgd3m"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_bvd70"]
+material = SubResource("ShaderMaterial_bgd3m")
+size = Vector3(8, 5.1543, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wfqor"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_q8dv0"]
+material = SubResource("ShaderMaterial_wfqor")
+size = Vector3(8, 6.16369, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ts0m"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0g0o7"]
+material = SubResource("ShaderMaterial_2ts0m")
+size = Vector3(8, 19.5742, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p2qd8"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_dclm3"]
+material = SubResource("ShaderMaterial_p2qd8")
+size = Vector3(8, 5.46789, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_06pj5"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_fp1k3"]
+material = SubResource("ShaderMaterial_06pj5")
+size = Vector3(8, 17.1008, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_whd5s"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_vhquo"]
+material = SubResource("ShaderMaterial_whd5s")
+size = Vector3(8, 7.12221, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_efo00"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qbtik"]
+material = SubResource("ShaderMaterial_efo00")
+size = Vector3(8, 13.1005, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_21beo"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8oyih"]
+material = SubResource("ShaderMaterial_21beo")
+size = Vector3(8, 18.1827, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_12rb4"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_6wdi3"]
+material = SubResource("ShaderMaterial_12rb4")
+size = Vector3(8, 7.1385, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f2l77"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_bv6mi"]
+material = SubResource("ShaderMaterial_f2l77")
+size = Vector3(8, 9.86865, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gitj7"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_gw2os"]
+material = SubResource("ShaderMaterial_gitj7")
+size = Vector3(8, 13.3449, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_44f33"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4muyw"]
+material = SubResource("ShaderMaterial_44f33")
+size = Vector3(8, 8.53323, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xri26"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jqgpp"]
+material = SubResource("ShaderMaterial_xri26")
+size = Vector3(8, 17.0426, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m7lkg"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8aoe5"]
+material = SubResource("ShaderMaterial_m7lkg")
+size = Vector3(8, 13.8844, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ecid"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_bg7on"]
+material = SubResource("ShaderMaterial_1ecid")
+size = Vector3(8, 17.6933, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bqdec"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_wumr8"]
+material = SubResource("ShaderMaterial_bqdec")
+size = Vector3(8, 19.1546, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qvtpq"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_743k1"]
+material = SubResource("ShaderMaterial_qvtpq")
+size = Vector3(8, 7.97951, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ekuy5"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1w2eo"]
+material = SubResource("ShaderMaterial_ekuy5")
+size = Vector3(8, 10.7752, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ues4n"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3e8eb"]
+material = SubResource("ShaderMaterial_ues4n")
+size = Vector3(8, 19.841, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y8c0s"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_uchdp"]
+material = SubResource("ShaderMaterial_y8c0s")
+size = Vector3(8, 15.3898, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mkuyr"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ishhi"]
+material = SubResource("ShaderMaterial_mkuyr")
+size = Vector3(8, 16.9135, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pxjvp"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qwbky"]
+material = SubResource("ShaderMaterial_pxjvp")
+size = Vector3(8, 5.53557, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vmu2t"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2vmtf"]
+material = SubResource("ShaderMaterial_vmu2t")
+size = Vector3(8, 19.0904, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vjr01"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_4wxig"]
+material = SubResource("ShaderMaterial_vjr01")
+size = Vector3(8, 19.1827, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5lo52"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_aaolh"]
+material = SubResource("ShaderMaterial_5lo52")
+size = Vector3(8, 17.8981, 8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_skwvf"]
+render_priority = 0
+shader = ExtResource("1_nquvp")
+shader_parameter/color_in = null
+shader_parameter/light_position = Vector3(0, 5, 0)
+shader_parameter/specular_power = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_my4gm"]
+material = SubResource("ShaderMaterial_skwvf")
+size = Vector3(24, 16.2116, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1i4lb"]
+size = Vector3(8.28396, 26.2726, 11.5464)
+
+[node name="Map" type="Map"]
+
+[node name="Ground" type="CustomMesh" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -100)
+mesh = SubResource("BoxMesh_e1kfn")
+
+[node name="Buildings" type="Node" parent="."]
+
+[node name="Building1" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 9.93143, -9)
+mesh = SubResource("BoxMesh_ayphq")
+
+[node name="Building2" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.94626, -3.6)
+mesh = SubResource("BoxMesh_8thxl")
+
+[node name="Building3" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 2.8248, -12.6)
+mesh = SubResource("BoxMesh_f5hwm")
+
+[node name="Building4" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.25, 4.60418, -23)
+mesh = SubResource("BoxMesh_bo76g")
+
+[node name="Building5" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.75, 9.51565, -28)
+mesh = SubResource("BoxMesh_4usfa")
+
+[node name="Building6" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 6.4149, -31)
+mesh = SubResource("BoxMesh_1gmfg")
+
+[node name="Building7" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 9.80276, -31)
+mesh = SubResource("BoxMesh_jc76r")
+
+[node name="Building8" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 3.60499, -31)
+mesh = SubResource("BoxMesh_hjr3e")
+
+[node name="Building9" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 7.82206, -31)
+mesh = SubResource("BoxMesh_s1sy2")
+
+[node name="Building10" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4.82394, -31)
+mesh = SubResource("BoxMesh_v8y2d")
+
+[node name="Building11" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2.56117, -31)
+mesh = SubResource("BoxMesh_s705m")
+
+[node name="Building12" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 5.68374, -31)
+mesh = SubResource("BoxMesh_d4whl")
+
+[node name="Building13" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 6.57803, -31)
+mesh = SubResource("BoxMesh_rnvpy")
+
+[node name="Building14" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3.07727, -31)
+mesh = SubResource("BoxMesh_mdfkq")
+
+[node name="Building15" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 5.98414, -31)
+mesh = SubResource("BoxMesh_vm5px")
+
+[node name="Building16" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 7.18691, -31)
+mesh = SubResource("BoxMesh_70my5")
+
+[node name="Building17" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 3.20381, -31)
+mesh = SubResource("BoxMesh_i3iau")
+
+[node name="Building18" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 5.90153, -31)
+mesh = SubResource("BoxMesh_guvpx")
+
+[node name="Building19" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 4.64001, -31)
+mesh = SubResource("BoxMesh_q1s83")
+
+[node name="Building20" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 2.72854, -31)
+mesh = SubResource("BoxMesh_o55ul")
+
+[node name="Building21" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 6.2237, -31)
+mesh = SubResource("BoxMesh_byarc")
+
+[node name="Building22" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 6.7023, -31)
+mesh = SubResource("BoxMesh_chwfc")
+
+[node name="Building23" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 4.1383, -31)
+mesh = SubResource("BoxMesh_8y4fk")
+
+[node name="Building24" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82, 3.0145, -31)
+mesh = SubResource("BoxMesh_jvr6i")
+
+[node name="Building25" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 4.96129, -31)
+mesh = SubResource("BoxMesh_phisc")
+
+[node name="Building26" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 7.27518, -39)
+mesh = SubResource("BoxMesh_ptct4")
+
+[node name="Building27" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 4.23786, -39)
+mesh = SubResource("BoxMesh_3ikb2")
+
+[node name="Building28" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 6.79864, -39)
+mesh = SubResource("BoxMesh_ug47u")
+
+[node name="Building29" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 5.95577, -47)
+mesh = SubResource("BoxMesh_v75i6")
+
+[node name="Building30" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 9.09113, -47)
+mesh = SubResource("BoxMesh_rmfrk")
+
+[node name="Building31" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 8.06331, -47)
+mesh = SubResource("BoxMesh_4as7n")
+
+[node name="Building32" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 4.25153, -47)
+mesh = SubResource("BoxMesh_e4yac")
+
+[node name="Building33" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 4.48471, -47)
+mesh = SubResource("BoxMesh_ss4yb")
+
+[node name="Building34" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 3.97487, -47)
+mesh = SubResource("BoxMesh_r1ybk")
+
+[node name="Building35" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3.49489, -47)
+mesh = SubResource("BoxMesh_ad0d8")
+
+[node name="Building36" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 5.05596, -47)
+mesh = SubResource("BoxMesh_3cqln")
+
+[node name="Building37" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 8.93369, -47)
+mesh = SubResource("BoxMesh_ar3at")
+
+[node name="Building38" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 8.41145, -47)
+mesh = SubResource("BoxMesh_aedgp")
+
+[node name="Building39" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 8.09921, -47)
+mesh = SubResource("BoxMesh_dbt8h")
+
+[node name="Building40" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2.69527, -47)
+mesh = SubResource("BoxMesh_nrwbi")
+
+[node name="Building41" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 8.89896, -47)
+mesh = SubResource("BoxMesh_shngm")
+
+[node name="Building42" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 9.55695, -47)
+mesh = SubResource("BoxMesh_g1eim")
+
+[node name="Building43" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 4.32273, -47)
+mesh = SubResource("BoxMesh_33kwb")
+
+[node name="Building44" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 3.35101, -47)
+mesh = SubResource("BoxMesh_3gjjd")
+
+[node name="Building45" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 9.20832, -47)
+mesh = SubResource("BoxMesh_wey6a")
+
+[node name="Building46" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 6.12678, -47)
+mesh = SubResource("BoxMesh_6hnbl")
+
+[node name="Building47" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 9.299, -47)
+mesh = SubResource("BoxMesh_6i2w0")
+
+[node name="Building48" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 6.99008, -55)
+mesh = SubResource("BoxMesh_42u3w")
+
+[node name="Building49" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 4.59567, -55)
+mesh = SubResource("BoxMesh_4m0p5")
+
+[node name="Building50" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 6.70673, -55)
+mesh = SubResource("BoxMesh_4ahx5")
+
+[node name="Building51" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 2.50338, -55)
+mesh = SubResource("BoxMesh_0stjg")
+
+[node name="Building52" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 5.67027, -55)
+mesh = SubResource("BoxMesh_vxjdu")
+
+[node name="Building53" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 8.41085, -63)
+mesh = SubResource("BoxMesh_j6yml")
+
+[node name="Building54" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 3.35896, -63)
+mesh = SubResource("BoxMesh_2mtuv")
+
+[node name="Building55" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 3.71699, -63)
+mesh = SubResource("BoxMesh_7cpla")
+
+[node name="Building56" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 9.88928, -63)
+mesh = SubResource("BoxMesh_uaci6")
+
+[node name="Building57" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 7.96704, -63)
+mesh = SubResource("BoxMesh_3m4u5")
+
+[node name="Building58" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 9.16893, -63)
+mesh = SubResource("BoxMesh_i58iw")
+
+[node name="Building59" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 8.94096, -63)
+mesh = SubResource("BoxMesh_cjcu7")
+
+[node name="Building60" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 6.88271, -63)
+mesh = SubResource("BoxMesh_s8nnm")
+
+[node name="Building61" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4.25359, -63)
+mesh = SubResource("BoxMesh_ipvja")
+
+[node name="Building62" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3.40196, -63)
+mesh = SubResource("BoxMesh_jfnvu")
+
+[node name="Building63" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 4.89785, -63)
+mesh = SubResource("BoxMesh_ll7s2")
+
+[node name="Building64" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5.6973, -63)
+mesh = SubResource("BoxMesh_485vc")
+
+[node name="Building65" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 4.33605, -63)
+mesh = SubResource("BoxMesh_gd8e7")
+
+[node name="Building66" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 3.2705, -63)
+mesh = SubResource("BoxMesh_64et0")
+
+[node name="Building67" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 5.26527, -63)
+mesh = SubResource("BoxMesh_t7ehy")
+
+[node name="Building68" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 5.77921, -63)
+mesh = SubResource("BoxMesh_irsca")
+
+[node name="Building69" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 3.65852, -63)
+mesh = SubResource("BoxMesh_yvhob")
+
+[node name="Building70" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 7.57049, -63)
+mesh = SubResource("BoxMesh_rnni1")
+
+[node name="Building71" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 9.43811, -71)
+mesh = SubResource("BoxMesh_6pg3a")
+
+[node name="Building72" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 9.67939, -71)
+mesh = SubResource("BoxMesh_fse1x")
+
+[node name="Building73" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 9.77797, -71)
+mesh = SubResource("BoxMesh_2rmel")
+
+[node name="Building74" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5.14526, -71)
+mesh = SubResource("BoxMesh_ywt34")
+
+[node name="Building75" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 6.35668, -71)
+mesh = SubResource("BoxMesh_6y451")
+
+[node name="Building76" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 7.15627, -71)
+mesh = SubResource("BoxMesh_lyfwk")
+
+[node name="Building77" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 6.35061, -71)
+mesh = SubResource("BoxMesh_55n6m")
+
+[node name="Building78" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 8.69898, -79)
+mesh = SubResource("BoxMesh_py56g")
+
+[node name="Building79" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 7.05955, -79)
+mesh = SubResource("BoxMesh_n8ggn")
+
+[node name="Building80" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2.6477, -79)
+mesh = SubResource("BoxMesh_23ujw")
+
+[node name="Building81" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 3.3197, -79)
+mesh = SubResource("BoxMesh_mh0pg")
+
+[node name="Building82" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 5.78777, -79)
+mesh = SubResource("BoxMesh_oh1de")
+
+[node name="Building83" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 3.86884, -79)
+mesh = SubResource("BoxMesh_kxy8l")
+
+[node name="Building84" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 6.89323, -79)
+mesh = SubResource("BoxMesh_nak4q")
+
+[node name="Building85" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.61002, -79)
+mesh = SubResource("BoxMesh_vvija")
+
+[node name="Building86" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.59552, -79)
+mesh = SubResource("BoxMesh_ye4hr")
+
+[node name="Building87" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 9.04323, -79)
+mesh = SubResource("BoxMesh_qtv25")
+
+[node name="Building88" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 9.20387, -79)
+mesh = SubResource("BoxMesh_qex8s")
+
+[node name="Building89" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 6.94603, -79)
+mesh = SubResource("BoxMesh_68t6r")
+
+[node name="Building90" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 8.66423, -79)
+mesh = SubResource("BoxMesh_r4mcf")
+
+[node name="Building91" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 8.74972, -79)
+mesh = SubResource("BoxMesh_bq404")
+
+[node name="Building92" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 9.33522, -79)
+mesh = SubResource("BoxMesh_rriwy")
+
+[node name="Building93" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 4.18041, -87)
+mesh = SubResource("BoxMesh_pucjw")
+
+[node name="Building94" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 7.02489, -87)
+mesh = SubResource("BoxMesh_4vo2l")
+
+[node name="Building95" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 4.13803, -87)
+mesh = SubResource("BoxMesh_cvgu3")
+
+[node name="Building96" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 8.54064, -87)
+mesh = SubResource("BoxMesh_e8jpw")
+
+[node name="Building97" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 4.9677, -87)
+mesh = SubResource("BoxMesh_bepaa")
+
+[node name="Building98" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 6.37799, -87)
+mesh = SubResource("BoxMesh_jc7jr")
+
+[node name="Building99" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 5.79469, -87)
+mesh = SubResource("BoxMesh_f0vvm")
+
+[node name="Building100" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 7.5511, -87)
+mesh = SubResource("BoxMesh_aeomh")
+
+[node name="Building101" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 3.36801, -87)
+mesh = SubResource("BoxMesh_767od")
+
+[node name="Building102" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 3.17823, -95)
+mesh = SubResource("BoxMesh_nioat")
+
+[node name="Building103" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 9.89078, -95)
+mesh = SubResource("BoxMesh_sppux")
+
+[node name="Building104" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4.62661, -95)
+mesh = SubResource("BoxMesh_8gc2e")
+
+[node name="Building105" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 5.0802, -95)
+mesh = SubResource("BoxMesh_vq3dy")
+
+[node name="Building106" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 4.08072, -95)
+mesh = SubResource("BoxMesh_h6asn")
+
+[node name="Building107" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 8.9456, -95)
+mesh = SubResource("BoxMesh_p8sm3")
+
+[node name="Building108" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 9.3301, -95)
+mesh = SubResource("BoxMesh_t2bxj")
+
+[node name="Building109" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4.04321, -95)
+mesh = SubResource("BoxMesh_urb1r")
+
+[node name="Building110" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.60639, -95)
+mesh = SubResource("BoxMesh_r0y1t")
+
+[node name="Building111" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 8.89794, -95)
+mesh = SubResource("BoxMesh_xphs5")
+
+[node name="Building112" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 9.17445, -95)
+mesh = SubResource("BoxMesh_svr2g")
+
+[node name="Building113" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 4.34728, -95)
+mesh = SubResource("BoxMesh_1n40k")
+
+[node name="Building114" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 8.48951, -95)
+mesh = SubResource("BoxMesh_8bytb")
+
+[node name="Building115" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 4.00976, -95)
+mesh = SubResource("BoxMesh_u08jv")
+
+[node name="Building116" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 8.22643, -95)
+mesh = SubResource("BoxMesh_aiybu")
+
+[node name="Building117" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 5.83514, -95)
+mesh = SubResource("BoxMesh_vdoem")
+
+[node name="Building118" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 4.42727, -103)
+mesh = SubResource("BoxMesh_yxmo4")
+
+[node name="Building119" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 7.22358, -103)
+mesh = SubResource("BoxMesh_f06ai")
+
+[node name="Building120" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 6.0944, -103)
+mesh = SubResource("BoxMesh_lgl6n")
+
+[node name="Building121" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 9.34146, -103)
+mesh = SubResource("BoxMesh_gb4xs")
+
+[node name="Building122" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3.39034, -103)
+mesh = SubResource("BoxMesh_awtom")
+
+[node name="Building123" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 5.71948, -103)
+mesh = SubResource("BoxMesh_4acem")
+
+[node name="Building124" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 5.92204, -103)
+mesh = SubResource("BoxMesh_a6a5y")
+
+[node name="Building125" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 3.65702, -103)
+mesh = SubResource("BoxMesh_h0f67")
+
+[node name="Building126" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 5.38543, -103)
+mesh = SubResource("BoxMesh_qpxpm")
+
+[node name="Building127" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82, 2.8629, -103)
+mesh = SubResource("BoxMesh_eam70")
+
+[node name="Building128" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 8.48997, -103)
+mesh = SubResource("BoxMesh_twq4o")
+
+[node name="Building129" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 6.79389, -111)
+mesh = SubResource("BoxMesh_6j3sh")
+
+[node name="Building130" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 7.1709, -111)
+mesh = SubResource("BoxMesh_xpetu")
+
+[node name="Building131" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 7.7261, -111)
+mesh = SubResource("BoxMesh_3forj")
+
+[node name="Building132" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 4.11422, -111)
+mesh = SubResource("BoxMesh_poks6")
+
+[node name="Building133" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 4.3679, -111)
+mesh = SubResource("BoxMesh_tem5q")
+
+[node name="Building134" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 3.7307, -111)
+mesh = SubResource("BoxMesh_b8wib")
+
+[node name="Building135" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 9.29719, -111)
+mesh = SubResource("BoxMesh_40fjo")
+
+[node name="Building136" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2.64138, -111)
+mesh = SubResource("BoxMesh_3c42g")
+
+[node name="Building137" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2.99104, -111)
+mesh = SubResource("BoxMesh_vk6ku")
+
+[node name="Building138" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 6.12907, -111)
+mesh = SubResource("BoxMesh_wcaex")
+
+[node name="Building139" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 9.03407, -111)
+mesh = SubResource("BoxMesh_igam6")
+
+[node name="Building140" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 7.15338, -119)
+mesh = SubResource("BoxMesh_r58aa")
+
+[node name="Building141" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 4.1477, -119)
+mesh = SubResource("BoxMesh_33n4q")
+
+[node name="Building142" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 8.75181, -119)
+mesh = SubResource("BoxMesh_u1mtu")
+
+[node name="Building143" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2.51826, -119)
+mesh = SubResource("BoxMesh_1stnp")
+
+[node name="Building144" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3.18915, -119)
+mesh = SubResource("BoxMesh_7q2tl")
+
+[node name="Building145" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 3.76146, -119)
+mesh = SubResource("BoxMesh_3sclj")
+
+[node name="Building146" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 4.15887, -119)
+mesh = SubResource("BoxMesh_382l2")
+
+[node name="Building147" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 3.11414, -119)
+mesh = SubResource("BoxMesh_qcwpk")
+
+[node name="Building148" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 2.52639, -119)
+mesh = SubResource("BoxMesh_aye0n")
+
+[node name="Building149" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 4.14879, -127)
+mesh = SubResource("BoxMesh_qch5h")
+
+[node name="Building150" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 5.66442, -127)
+mesh = SubResource("BoxMesh_w44sb")
+
+[node name="Building151" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 3.47441, -127)
+mesh = SubResource("BoxMesh_nam6c")
+
+[node name="Building152" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 3.38041, -127)
+mesh = SubResource("BoxMesh_samvl")
+
+[node name="Building153" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 8.67489, -127)
+mesh = SubResource("BoxMesh_mi41w")
+
+[node name="Building154" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 8.80567, -127)
+mesh = SubResource("BoxMesh_udkwi")
+
+[node name="Building155" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 4.0583, -127)
+mesh = SubResource("BoxMesh_cpcfp")
+
+[node name="Building156" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 4.06433, -127)
+mesh = SubResource("BoxMesh_h1nsn")
+
+[node name="Building157" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 5.85336, -127)
+mesh = SubResource("BoxMesh_lxkdt")
+
+[node name="Building158" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 4.31702, -127)
+mesh = SubResource("BoxMesh_i3qt0")
+
+[node name="Building159" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 9.88326, -135)
+mesh = SubResource("BoxMesh_80jcm")
+
+[node name="Building160" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 6.08031, -135)
+mesh = SubResource("BoxMesh_wujag")
+
+[node name="Building161" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4.75507, -135)
+mesh = SubResource("BoxMesh_jo1or")
+
+[node name="Building162" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 5.09441, -135)
+mesh = SubResource("BoxMesh_yp4v8")
+
+[node name="Building163" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3.94617, -135)
+mesh = SubResource("BoxMesh_krbvw")
+
+[node name="Building164" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2.84681, -135)
+mesh = SubResource("BoxMesh_uxwen")
+
+[node name="Building165" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.69487, -135)
+mesh = SubResource("BoxMesh_a4t4s")
+
+[node name="Building166" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 9.1247, -135)
+mesh = SubResource("BoxMesh_d7x7u")
+
+[node name="Building167" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3.57426, -135)
+mesh = SubResource("BoxMesh_1pldv")
+
+[node name="Building168" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 7.41548, -135)
+mesh = SubResource("BoxMesh_o6vu3")
+
+[node name="Building169" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 4.07135, -135)
+mesh = SubResource("BoxMesh_msgib")
+
+[node name="Building170" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 6.6795, -135)
+mesh = SubResource("BoxMesh_tif2y")
+
+[node name="Building171" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 5.0702, -135)
+mesh = SubResource("BoxMesh_0bbht")
+
+[node name="Building172" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 3.36192, -135)
+mesh = SubResource("BoxMesh_07icd")
+
+[node name="Building173" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 9.34861, -143)
+mesh = SubResource("BoxMesh_4dg4v")
+
+[node name="Building174" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 7.72642, -143)
+mesh = SubResource("BoxMesh_ylhf5")
+
+[node name="Building175" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 3.63421, -143)
+mesh = SubResource("BoxMesh_k5mid")
+
+[node name="Building176" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 4.571, -143)
+mesh = SubResource("BoxMesh_633mh")
+
+[node name="Building177" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 6.75848, -143)
+mesh = SubResource("BoxMesh_wxg1s")
+
+[node name="Building178" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 3.61275, -143)
+mesh = SubResource("BoxMesh_co4lv")
+
+[node name="Building179" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 7.64615, -143)
+mesh = SubResource("BoxMesh_ch7kq")
+
+[node name="Building180" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 3.36334, -143)
+mesh = SubResource("BoxMesh_mgmyl")
+
+[node name="Building181" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 7.79745, -151)
+mesh = SubResource("BoxMesh_mg24n")
+
+[node name="Building182" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 6.82745, -151)
+mesh = SubResource("BoxMesh_uv167")
+
+[node name="Building183" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 3.9798, -151)
+mesh = SubResource("BoxMesh_nt88a")
+
+[node name="Building184" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 5.81966, -151)
+mesh = SubResource("BoxMesh_itw4n")
+
+[node name="Building185" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 5.32117, -151)
+mesh = SubResource("BoxMesh_7nflo")
+
+[node name="Building186" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 9.27506, -151)
+mesh = SubResource("BoxMesh_ffygv")
+
+[node name="Building187" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 6.44502, -151)
+mesh = SubResource("BoxMesh_87pja")
+
+[node name="Building188" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 8.13277, -151)
+mesh = SubResource("BoxMesh_xrnju")
+
+[node name="Building189" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 8.6837, -151)
+mesh = SubResource("BoxMesh_75j7s")
+
+[node name="Building190" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7.85238, -151)
+mesh = SubResource("BoxMesh_0uyfj")
+
+[node name="Building191" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5.48872, -151)
+mesh = SubResource("BoxMesh_ax1i0")
+
+[node name="Building192" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 3.50198, -151)
+mesh = SubResource("BoxMesh_0y7cb")
+
+[node name="Building193" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 7.44718, -151)
+mesh = SubResource("BoxMesh_h3vx1")
+
+[node name="Building194" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 8.5287, -151)
+mesh = SubResource("BoxMesh_ibvtf")
+
+[node name="Building195" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 8.10295, -151)
+mesh = SubResource("BoxMesh_ntumb")
+
+[node name="Building196" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 8.04167, -151)
+mesh = SubResource("BoxMesh_w7pno")
+
+[node name="Building197" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 6.82727, -151)
+mesh = SubResource("BoxMesh_3lrq3")
+
+[node name="Building198" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 4.60454, -159)
+mesh = SubResource("BoxMesh_o81gp")
+
+[node name="Building199" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 4.30288, -159)
+mesh = SubResource("BoxMesh_154nx")
+
+[node name="Building200" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 7.56598, -159)
+mesh = SubResource("BoxMesh_ag2hv")
+
+[node name="Building201" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 9.90932, -159)
+mesh = SubResource("BoxMesh_r2mvm")
+
+[node name="Building202" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 7.48171, -159)
+mesh = SubResource("BoxMesh_yysof")
+
+[node name="Building203" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 7.88264, -159)
+mesh = SubResource("BoxMesh_6h71c")
+
+[node name="Building204" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 9.78702, -167)
+mesh = SubResource("BoxMesh_34sr3")
+
+[node name="Building205" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 9.2281, -167)
+mesh = SubResource("BoxMesh_0ubts")
+
+[node name="Building206" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 9.52901, -167)
+mesh = SubResource("BoxMesh_q17ln")
+
+[node name="Building207" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2.76373, -167)
+mesh = SubResource("BoxMesh_v0thh")
+
+[node name="Building208" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 7.81285, -167)
+mesh = SubResource("BoxMesh_gasgi")
+
+[node name="Building209" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 5.63906, -167)
+mesh = SubResource("BoxMesh_0cehj")
+
+[node name="Building210" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 8.27905, -167)
+mesh = SubResource("BoxMesh_wmo4t")
+
+[node name="Building211" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3.70306, -167)
+mesh = SubResource("BoxMesh_b6vbf")
+
+[node name="Building212" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.25683, -167)
+mesh = SubResource("BoxMesh_d535f")
+
+[node name="Building213" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 4.16086, -167)
+mesh = SubResource("BoxMesh_duru3")
+
+[node name="Building214" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 3.25027, -167)
+mesh = SubResource("BoxMesh_48b3l")
+
+[node name="Building215" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 9.01382, -167)
+mesh = SubResource("BoxMesh_02hmw")
+
+[node name="Building216" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 8.01296, -167)
+mesh = SubResource("BoxMesh_ex4j8")
+
+[node name="Building217" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 5.95145, -167)
+mesh = SubResource("BoxMesh_o4gti")
+
+[node name="Building218" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 4.89215, -167)
+mesh = SubResource("BoxMesh_3vswl")
+
+[node name="Building219" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 8.26523, -167)
+mesh = SubResource("BoxMesh_8q6jc")
+
+[node name="Building220" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 6.97153, -167)
+mesh = SubResource("BoxMesh_vsem6")
+
+[node name="Building221" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 5.32906, -175)
+mesh = SubResource("BoxMesh_7k7ih")
+
+[node name="Building222" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 6.48269, -175)
+mesh = SubResource("BoxMesh_v8y2b")
+
+[node name="Building223" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 6.00568, -175)
+mesh = SubResource("BoxMesh_f4t4e")
+
+[node name="Building224" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 7.64266, -175)
+mesh = SubResource("BoxMesh_frrhk")
+
+[node name="Building225" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 8.09683, -175)
+mesh = SubResource("BoxMesh_m17rt")
+
+[node name="Building226" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 5.56425, -183)
+mesh = SubResource("BoxMesh_1rdc6")
+
+[node name="Building227" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 7.80397, -183)
+mesh = SubResource("BoxMesh_or0ab")
+
+[node name="Building228" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 6.36319, -183)
+mesh = SubResource("BoxMesh_u363b")
+
+[node name="Building229" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 5.24893, -183)
+mesh = SubResource("BoxMesh_tbydm")
+
+[node name="Building230" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 7.8164, -183)
+mesh = SubResource("BoxMesh_k7f3a")
+
+[node name="Building231" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 7.16767, -183)
+mesh = SubResource("BoxMesh_2yi7d")
+
+[node name="Building232" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 5.28166, -183)
+mesh = SubResource("BoxMesh_lmylp")
+
+[node name="Building233" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 6.02618, -183)
+mesh = SubResource("BoxMesh_8kb8u")
+
+[node name="Building234" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 3.40367, -183)
+mesh = SubResource("BoxMesh_dy0kw")
+
+[node name="Building235" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 9.29175, -183)
+mesh = SubResource("BoxMesh_2a8la")
+
+[node name="Building236" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 8.60804, -183)
+mesh = SubResource("BoxMesh_e08l3")
+
+[node name="Building237" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 4.81871, -183)
+mesh = SubResource("BoxMesh_7eb8h")
+
+[node name="Building238" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 7.57735, -183)
+mesh = SubResource("BoxMesh_13do5")
+
+[node name="Building239" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 6.15226, -183)
+mesh = SubResource("BoxMesh_rhf6j")
+
+[node name="Building240" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 8.40309, -183)
+mesh = SubResource("BoxMesh_12b2b")
+
+[node name="Building241" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 8.11407, -183)
+mesh = SubResource("BoxMesh_ibfej")
+
+[node name="Building242" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 9.91272, -183)
+mesh = SubResource("BoxMesh_oh1q7")
+
+[node name="Building243" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 4.65025, -183)
+mesh = SubResource("BoxMesh_xyric")
+
+[node name="Building244" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 9.61563, -183)
+mesh = SubResource("BoxMesh_r35eo")
+
+[node name="Building245" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 5.01985, -183)
+mesh = SubResource("BoxMesh_nqirf")
+
+[node name="Building246" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 6.17778, -183)
+mesh = SubResource("BoxMesh_8820n")
+
+[node name="Building247" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 5.49593, -191)
+mesh = SubResource("BoxMesh_qb04g")
+
+[node name="Building248" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2.57715, -191)
+mesh = SubResource("BoxMesh_bvd70")
+
+[node name="Building249" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 3.08185, -191)
+mesh = SubResource("BoxMesh_q8dv0")
+
+[node name="Building250" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 9.78708, -199)
+mesh = SubResource("BoxMesh_0g0o7")
+
+[node name="Building251" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2.73395, -199)
+mesh = SubResource("BoxMesh_dclm3")
+
+[node name="Building252" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 8.55042, -199)
+mesh = SubResource("BoxMesh_fp1k3")
+
+[node name="Building253" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 3.5611, -199)
+mesh = SubResource("BoxMesh_vhquo")
+
+[node name="Building254" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 6.55023, -199)
+mesh = SubResource("BoxMesh_qbtik")
+
+[node name="Building255" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 9.09133, -199)
+mesh = SubResource("BoxMesh_8oyih")
+
+[node name="Building256" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 3.56925, -199)
+mesh = SubResource("BoxMesh_6wdi3")
+
+[node name="Building257" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 4.93433, -199)
+mesh = SubResource("BoxMesh_bv6mi")
+
+[node name="Building258" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 6.67246, -199)
+mesh = SubResource("BoxMesh_gw2os")
+
+[node name="Building259" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 4.26662, -199)
+mesh = SubResource("BoxMesh_4muyw")
+
+[node name="Building260" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 8.52131, -199)
+mesh = SubResource("BoxMesh_jqgpp")
+
+[node name="Building261" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.94222, -199)
+mesh = SubResource("BoxMesh_8aoe5")
+
+[node name="Building262" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 8.84664, -199)
+mesh = SubResource("BoxMesh_bg7on")
+
+[node name="Building263" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 9.57729, -199)
+mesh = SubResource("BoxMesh_wumr8")
+
+[node name="Building264" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 3.98975, -199)
+mesh = SubResource("BoxMesh_743k1")
+
+[node name="Building265" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 5.38758, -199)
+mesh = SubResource("BoxMesh_1w2eo")
+
+[node name="Building266" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 9.9205, -199)
+mesh = SubResource("BoxMesh_3e8eb")
+
+[node name="Building267" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 7.6949, -199)
+mesh = SubResource("BoxMesh_uchdp")
+
+[node name="Building268" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 8.45677, -199)
+mesh = SubResource("BoxMesh_ishhi")
+
+[node name="Building269" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2.76779, -199)
+mesh = SubResource("BoxMesh_qwbky")
+
+[node name="Building270" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 9.54518, -199)
+mesh = SubResource("BoxMesh_2vmtf")
+
+[node name="Building271" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82, 9.59134, -199)
+mesh = SubResource("BoxMesh_4wxig")
+
+[node name="Building272" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 8.94904, -199)
+mesh = SubResource("BoxMesh_aaolh")
+
+[node name="Building0" type="CustomMesh" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.1058, 5)
+mesh = SubResource("BoxMesh_my4gm")
+
+[node name="Tower" type="StaticBody3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 13.086, 5.72967, -128.288)
+metadata/_edit_group_ = true
+
+[node name="Sketchfab_Scene" parent="Tower" instance=ExtResource("2_pq7xj")]
+transform = Transform3D(-1.74846e-10, 0, 0.004, 0, 0.004, 0, -0.004, 0, -1.74846e-10, -3.58784, -1.57549, 3.73027)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tower"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.15126, 11.5803, 4.23123)
+shape = SubResource("BoxShape3D_1i4lb")

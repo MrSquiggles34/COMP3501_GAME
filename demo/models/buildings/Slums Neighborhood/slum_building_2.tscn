@@ -1,0 +1,3362 @@
+[gd_scene load_steps=2 format=3 uid="uid://digy53r2n3k3"]
+
+[ext_resource type="PackedScene" uid="uid://bgsji3e4f3cjr" path="res://models/buildings/Slums Neighborhood/hw_4_cyberpunk_sci-fi_building.glb" id="1_ygm70"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_ygm70")]
+
+[node name="Object_4" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_220_0" index="0"]
+visible = false
+
+[node name="Object_6" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_221_1" index="0"]
+visible = false
+
+[node name="Object_7" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_221_1" index="1"]
+visible = false
+
+[node name="Object_8" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_221_1" index="2"]
+visible = false
+
+[node name="Object_10" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_222_2" index="0"]
+visible = false
+
+[node name="Object_12" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_229_3" index="0"]
+visible = false
+
+[node name="Object_14" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_231_4" index="0"]
+visible = false
+
+[node name="Object_16" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_232_5" index="0"]
+visible = false
+
+[node name="Object_18" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_270_6" index="0"]
+visible = false
+
+[node name="Object_20" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_013_7" index="0"]
+visible = false
+
+[node name="Object_21" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_013_7" index="1"]
+visible = false
+
+[node name="Object_22" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_013_7" index="2"]
+visible = false
+
+[node name="Object_24" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_016_8" index="0"]
+visible = false
+
+[node name="Object_25" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_016_8" index="1"]
+visible = false
+
+[node name="Object_26" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_016_8" index="2"]
+visible = false
+
+[node name="Object_28" parent="Sketchfab_model/root/GLTF_SceneRootNode/Circle_003_9" index="0"]
+visible = false
+
+[node name="Object_30" parent="Sketchfab_model/root/GLTF_SceneRootNode/Columns_004_10" index="0"]
+visible = false
+
+[node name="Object_32" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_276_11" index="0"]
+visible = false
+
+[node name="Object_33" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_276_11" index="1"]
+visible = false
+
+[node name="Object_35" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_277_12" index="0"]
+visible = false
+
+[node name="Object_36" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_277_12" index="1"]
+visible = false
+
+[node name="Object_38" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_278_13" index="0"]
+visible = false
+
+[node name="Object_39" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_278_13" index="1"]
+visible = false
+
+[node name="Object_41" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_279_14" index="0"]
+visible = false
+
+[node name="Object_43" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_280_15" index="0"]
+visible = false
+
+[node name="Object_45" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_281_16" index="0"]
+visible = false
+
+[node name="Object_47" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_282_17" index="0"]
+visible = false
+
+[node name="Object_49" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_283_18" index="0"]
+visible = false
+
+[node name="Object_51" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_284_19" index="0"]
+visible = false
+
+[node name="Object_52" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_284_19" index="1"]
+visible = false
+
+[node name="Object_54" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_285_20" index="0"]
+visible = false
+
+[node name="Object_56" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_286_21" index="0"]
+visible = false
+
+[node name="Object_58" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_287_22" index="0"]
+visible = false
+
+[node name="Object_60" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_288_23" index="0"]
+visible = false
+
+[node name="Object_62" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_289_24" index="0"]
+visible = false
+
+[node name="Object_64" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_290_25" index="0"]
+visible = false
+
+[node name="Object_66" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_291_26" index="0"]
+visible = false
+
+[node name="Object_68" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_292_27" index="0"]
+visible = false
+
+[node name="Object_69" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_292_27" index="1"]
+visible = false
+
+[node name="Object_70" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_292_27" index="2"]
+visible = false
+
+[node name="Object_72" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_293_28" index="0"]
+visible = false
+
+[node name="Object_74" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_294_29" index="0"]
+visible = false
+
+[node name="Object_76" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_295_30" index="0"]
+visible = false
+
+[node name="Object_78" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_296_31" index="0"]
+visible = false
+
+[node name="Object_80" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_297_32" index="0"]
+visible = false
+
+[node name="Object_82" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_298_33" index="0"]
+visible = false
+
+[node name="Object_83" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_298_33" index="1"]
+visible = false
+
+[node name="Object_85" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_299_34" index="0"]
+visible = false
+
+[node name="Object_87" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_300_35" index="0"]
+visible = false
+
+[node name="Object_88" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_300_35" index="1"]
+visible = false
+
+[node name="Object_89" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_300_35" index="2"]
+visible = false
+
+[node name="Object_91" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_301_36" index="0"]
+visible = false
+
+[node name="Object_93" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_302_37" index="0"]
+visible = false
+
+[node name="Object_94" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_302_37" index="1"]
+visible = false
+
+[node name="Object_95" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_302_37" index="2"]
+visible = false
+
+[node name="Object_96" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_302_37" index="3"]
+visible = false
+
+[node name="Object_98" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_303_38" index="0"]
+visible = false
+
+[node name="Object_100" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_304_39" index="0"]
+visible = false
+
+[node name="Object_102" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_305_40" index="0"]
+visible = false
+
+[node name="Object_104" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_306_41" index="0"]
+visible = false
+
+[node name="Object_105" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_306_41" index="1"]
+visible = false
+
+[node name="Object_107" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_307_42" index="0"]
+visible = false
+
+[node name="Object_108" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_307_42" index="1"]
+visible = false
+
+[node name="Object_110" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_308_43" index="0"]
+visible = false
+
+[node name="Object_111" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_308_43" index="1"]
+visible = false
+
+[node name="Object_113" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_309_44" index="0"]
+visible = false
+
+[node name="Object_115" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_310_45" index="0"]
+visible = false
+
+[node name="Object_117" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_311_46" index="0"]
+visible = false
+
+[node name="Object_119" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_312_47" index="0"]
+visible = false
+
+[node name="Object_121" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_313_48" index="0"]
+visible = false
+
+[node name="Object_123" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_314_49" index="0"]
+visible = false
+
+[node name="Object_125" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_315_50" index="0"]
+visible = false
+
+[node name="Object_127" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_316_51" index="0"]
+visible = false
+
+[node name="Object_129" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_317_52" index="0"]
+visible = false
+
+[node name="Object_130" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_317_52" index="1"]
+visible = false
+
+[node name="Object_132" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_318_53" index="0"]
+visible = false
+
+[node name="Object_133" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_318_53" index="1"]
+visible = false
+
+[node name="Object_135" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_319_54" index="0"]
+visible = false
+
+[node name="Object_137" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_320_55" index="0"]
+visible = false
+
+[node name="Object_139" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_321_56" index="0"]
+visible = false
+
+[node name="Object_140" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_321_56" index="1"]
+visible = false
+
+[node name="Object_142" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_322_57" index="0"]
+visible = false
+
+[node name="Object_143" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_322_57" index="1"]
+visible = false
+
+[node name="Object_145" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_323_58" index="0"]
+visible = false
+
+[node name="Object_147" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_324_59" index="0"]
+visible = false
+
+[node name="Object_149" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_325_60" index="0"]
+visible = false
+
+[node name="Object_151" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_326_61" index="0"]
+visible = false
+
+[node name="Object_152" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_326_61" index="1"]
+visible = false
+
+[node name="Object_154" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_327_62" index="0"]
+visible = false
+
+[node name="Object_155" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_327_62" index="1"]
+visible = false
+
+[node name="Object_157" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_328_63" index="0"]
+visible = false
+
+[node name="Object_159" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_329_64" index="0"]
+visible = false
+
+[node name="Object_160" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_329_64" index="1"]
+visible = false
+
+[node name="Object_162" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_330_65" index="0"]
+visible = false
+
+[node name="Object_163" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_330_65" index="1"]
+visible = false
+
+[node name="Object_165" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_152_66" index="0"]
+visible = false
+
+[node name="Object_167" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_153_67" index="0"]
+visible = false
+
+[node name="Object_169" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_154_68" index="0"]
+visible = false
+
+[node name="Object_171" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_155_69" index="0"]
+visible = false
+
+[node name="Object_173" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_156_70" index="0"]
+visible = false
+
+[node name="Object_175" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_157_71" index="0"]
+visible = false
+
+[node name="Object_177" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_158_72" index="0"]
+visible = false
+
+[node name="Object_179" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_159_73" index="0"]
+visible = false
+
+[node name="Object_181" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_160_74" index="0"]
+visible = false
+
+[node name="Object_183" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_161_75" index="0"]
+visible = false
+
+[node name="Object_185" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_162_76" index="0"]
+visible = false
+
+[node name="Object_187" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_164_77" index="0"]
+visible = false
+
+[node name="Object_189" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_165_78" index="0"]
+visible = false
+
+[node name="Object_190" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_165_78" index="1"]
+visible = false
+
+[node name="Object_192" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_166_79" index="0"]
+visible = false
+
+[node name="Object_194" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_167_80" index="0"]
+visible = false
+
+[node name="Object_196" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_168_81" index="0"]
+visible = false
+
+[node name="Object_198" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_169_82" index="0"]
+visible = false
+
+[node name="Object_199" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_169_82" index="1"]
+visible = false
+
+[node name="Object_201" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_178_83" index="0"]
+visible = false
+
+[node name="Object_202" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_178_83" index="1"]
+visible = false
+
+[node name="Object_203" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_178_83" index="2"]
+visible = false
+
+[node name="Object_205" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_179_84" index="0"]
+visible = false
+
+[node name="Object_206" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_179_84" index="1"]
+visible = false
+
+[node name="Object_207" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_179_84" index="2"]
+visible = false
+
+[node name="Object_209" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_180_85" index="0"]
+visible = false
+
+[node name="Object_210" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_180_85" index="1"]
+visible = false
+
+[node name="Object_211" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_180_85" index="2"]
+visible = false
+
+[node name="Object_213" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_181_86" index="0"]
+visible = false
+
+[node name="Object_214" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_181_86" index="1"]
+visible = false
+
+[node name="Object_216" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_184_87" index="0"]
+visible = false
+
+[node name="Object_217" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_184_87" index="1"]
+visible = false
+
+[node name="Object_219" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_185_88" index="0"]
+visible = false
+
+[node name="Object_221" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_210_89" index="0"]
+visible = false
+
+[node name="Object_223" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_211_90" index="0"]
+visible = false
+
+[node name="Object_225" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_212_91" index="0"]
+visible = false
+
+[node name="Object_227" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_213_92" index="0"]
+visible = false
+
+[node name="Object_229" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_214_93" index="0"]
+visible = false
+
+[node name="Object_230" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_214_93" index="1"]
+visible = false
+
+[node name="Object_232" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_215_94" index="0"]
+visible = false
+
+[node name="Object_233" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_215_94" index="1"]
+visible = false
+
+[node name="Object_235" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_216_95" index="0"]
+visible = false
+
+[node name="Object_236" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_216_95" index="1"]
+visible = false
+
+[node name="Object_238" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_217_96" index="0"]
+visible = false
+
+[node name="Object_240" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_219_97" index="0"]
+visible = false
+
+[node name="Object_242" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_220_98" index="0"]
+visible = false
+
+[node name="Object_243" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_220_98" index="1"]
+visible = false
+
+[node name="Object_245" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_221_99" index="0"]
+visible = false
+
+[node name="Object_247" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_222_100" index="0"]
+visible = false
+
+[node name="Object_249" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_005_101" index="0"]
+visible = false
+
+[node name="Object_250" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_005_101" index="1"]
+visible = false
+
+[node name="Object_252" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_039_114" index="0"]
+visible = false
+
+[node name="Object_254" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_041_115" index="0"]
+visible = false
+
+[node name="Object_256" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_047_116" index="0"]
+visible = false
+
+[node name="Object_258" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_048_117" index="0"]
+visible = false
+
+[node name="Object_260" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_049_118" index="0"]
+visible = false
+
+[node name="Object_262" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_050_119" index="0"]
+visible = false
+
+[node name="Object_264" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_051_120" index="0"]
+visible = false
+
+[node name="Object_266" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_052_121" index="0"]
+visible = false
+
+[node name="Object_267" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_052_121" index="1"]
+visible = false
+
+[node name="Object_269" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_053_122" index="0"]
+visible = false
+
+[node name="Object_271" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_054_123" index="0"]
+visible = false
+
+[node name="Object_273" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_055_124" index="0"]
+visible = false
+
+[node name="Object_275" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_056_125" index="0"]
+visible = false
+
+[node name="Object_277" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_005_126" index="0"]
+visible = false
+
+[node name="Object_278" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_005_126" index="1"]
+visible = false
+
+[node name="Object_279" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_005_126" index="2"]
+visible = false
+
+[node name="Object_281" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_010_127" index="0"]
+visible = false
+
+[node name="Object_282" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_010_127" index="1"]
+visible = false
+
+[node name="Object_284" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_022_128" index="0"]
+visible = false
+
+[node name="Object_286" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_023_129" index="0"]
+visible = false
+
+[node name="Object_288" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_024_130" index="0"]
+visible = false
+
+[node name="Object_290" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_012_131" index="0"]
+visible = false
+
+[node name="Object_292" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_013_132" index="0"]
+visible = false
+
+[node name="Object_294" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_015_133" index="0"]
+visible = false
+
+[node name="Object_296" parent="Sketchfab_model/root/GLTF_SceneRootNode/pugsushi_134" index="0"]
+visible = false
+
+[node name="Object_297" parent="Sketchfab_model/root/GLTF_SceneRootNode/pugsushi_134" index="1"]
+visible = false
+
+[node name="Object_299" parent="Sketchfab_model/root/GLTF_SceneRootNode/sushi_135" index="0"]
+visible = false
+
+[node name="Object_301" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_274_136" index="0"]
+visible = false
+
+[node name="Object_303" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_275_137" index="0"]
+visible = false
+
+[node name="Object_305" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_223_138" index="0"]
+visible = false
+
+[node name="Object_307" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_331_139" index="0"]
+visible = false
+
+[node name="Object_309" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_333_140" index="0"]
+visible = false
+
+[node name="Object_311" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_334_141" index="0"]
+visible = false
+
+[node name="Object_313" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_335_142" index="0"]
+visible = false
+
+[node name="Object_315" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_336_143" index="0"]
+visible = false
+
+[node name="Object_317" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_224_144" index="0"]
+visible = false
+
+[node name="Object_319" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_332_145" index="0"]
+visible = false
+
+[node name="Object_321" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_337_146" index="0"]
+visible = false
+
+[node name="Object_323" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_338_147" index="0"]
+visible = false
+
+[node name="Object_325" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_339_148" index="0"]
+visible = false
+
+[node name="Object_327" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_340_149" index="0"]
+visible = false
+
+[node name="Object_329" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_225_150" index="0"]
+visible = false
+
+[node name="Object_331" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_341_151" index="0"]
+visible = false
+
+[node name="Object_333" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_342_152" index="0"]
+visible = false
+
+[node name="Object_335" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_343_153" index="0"]
+visible = false
+
+[node name="Object_337" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_344_154" index="0"]
+visible = false
+
+[node name="Object_339" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_345_155" index="0"]
+visible = false
+
+[node name="Object_341" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_346_156" index="0"]
+visible = false
+
+[node name="Object_343" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_347_157" index="0"]
+visible = false
+
+[node name="Object_345" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_348_158" index="0"]
+visible = false
+
+[node name="Object_347" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_349_159" index="0"]
+visible = false
+
+[node name="Object_349" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_350_160" index="0"]
+visible = false
+
+[node name="Object_351" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_351_161" index="0"]
+visible = false
+
+[node name="Object_353" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_352_162" index="0"]
+visible = false
+
+[node name="Object_355" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_353_163" index="0"]
+visible = false
+
+[node name="Object_357" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_226_164" index="0"]
+visible = false
+
+[node name="Object_359" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_227_165" index="0"]
+visible = false
+
+[node name="Object_361" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_228_166" index="0"]
+visible = false
+
+[node name="Object_363" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_229_167" index="0"]
+visible = false
+
+[node name="Object_364" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_229_167" index="1"]
+visible = false
+
+[node name="Object_365" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_229_167" index="2"]
+visible = false
+
+[node name="Object_367" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_230_168" index="0"]
+visible = false
+
+[node name="Object_369" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_231_169" index="0"]
+visible = false
+
+[node name="Object_371" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_232_170" index="0"]
+visible = false
+
+[node name="Object_372" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_232_170" index="1"]
+visible = false
+
+[node name="Object_374" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_233_171" index="0"]
+visible = false
+
+[node name="Object_375" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_233_171" index="1"]
+visible = false
+
+[node name="Object_377" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_016_172" index="0"]
+visible = false
+
+[node name="Object_379" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_017_173" index="0"]
+visible = false
+
+[node name="Object_381" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_018_174" index="0"]
+visible = false
+
+[node name="Object_383" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_019_175" index="0"]
+visible = false
+
+[node name="Object_385" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_020_176" index="0"]
+visible = false
+
+[node name="Object_387" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_011_177" index="0"]
+visible = false
+
+[node name="Object_388" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_011_177" index="1"]
+visible = false
+
+[node name="Object_390" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_098_178" index="0"]
+visible = false
+
+[node name="Object_392" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_099_179" index="0"]
+visible = false
+
+[node name="Object_394" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_100_180" index="0"]
+visible = false
+
+[node name="Object_396" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_101_181" index="0"]
+visible = false
+
+[node name="Object_398" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_102_182" index="0"]
+visible = false
+
+[node name="Object_400" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_103_183" index="0"]
+visible = false
+
+[node name="Object_402" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_104_184" index="0"]
+visible = false
+
+[node name="Object_404" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_105_185" index="0"]
+visible = false
+
+[node name="Object_406" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_106_186" index="0"]
+visible = false
+
+[node name="Object_408" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_107_187" index="0"]
+visible = false
+
+[node name="Object_410" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_108_188" index="0"]
+visible = false
+
+[node name="Object_412" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_109_189" index="0"]
+visible = false
+
+[node name="Object_414" parent="Sketchfab_model/root/GLTF_SceneRootNode/Circle_002_190" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4213, 0, 0)
+
+[node name="Object_416" parent="Sketchfab_model/root/GLTF_SceneRootNode/Columns_003_191" index="0"]
+transform = Transform3D(1, 4.29281e-10, 9.31323e-10, 4.51109e-10, 1, 0, 2.79397e-09, 1.86265e-09, 1, -11.4986, 0.392003, -0.117475)
+
+[node name="Object_418" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_158_192" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.626, 0, 0)
+
+[node name="Object_419" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_158_192" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.626, 0, 0)
+
+[node name="Object_421" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_208_193" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -106.022)
+
+[node name="Object_422" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_208_193" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -106.022)
+
+[node name="Object_424" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_209_194" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.10743)
+
+[node name="Object_425" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_209_194" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.10743)
+
+[node name="Object_427" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_210_195" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.10743)
+
+[node name="Object_429" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_217_196" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_431" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_218_197" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_433" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_223_198" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_435" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_224_199" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_437" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_225_200" index="0"]
+transform = Transform3D(1, -7.27596e-11, 0, -7.27596e-11, 1, 0, 0, 0, 1, -11.5051, 0.0547838, -0.118854)
+
+[node name="Object_438" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_225_200" index="1"]
+transform = Transform3D(1, -7.27596e-11, 0, -7.27596e-11, 1, 0, 0, 0, 1, -11.5051, 0.0547838, -0.118854)
+
+[node name="Object_440" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_226_201" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.9235, 0, 0)
+
+[node name="Object_442" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_227_202" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_444" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_228_203" index="0"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, -8.88178e-16, 0, 1, -4.76837e-07, 7.59959e-07, 11.5059)
+
+[node name="Object_446" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_230_204" index="0"]
+transform = Transform3D(1, -1.67487e-15, 0, -1.71787e-15, 1, 0, 2.84217e-14, 0, 1, -1.43051e-06, -26.0897, 2.6226e-06)
+
+[node name="Object_448" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_233_205" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_450" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_234_206" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_452" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_235_207" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_454" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_163_208" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, -16.9528, 0, 0)
+
+[node name="Object_456" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_170_209" index="0"]
+transform = Transform3D(1, -5.21541e-08, 3.35276e-08, 7.45058e-09, 1, -1.49012e-07, -1.11759e-08, 2.98023e-08, 1, -27.4177, -2.06263, 7.69786)
+
+[node name="Object_458" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_171_210" index="0"]
+transform = Transform3D(1, -6.42613e-08, 7.45058e-09, 1.14087e-07, 1, -1.11759e-08, -3.72529e-08, 0, 1, 6.27983, -21.6049, 1.07288e-06)
+
+[node name="Object_460" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_172_211" index="0"]
+transform = Transform3D(1, 1.86265e-08, -2.79397e-08, -4.84288e-08, 1, -8.9407e-08, -1.13621e-07, 0, 1, -26.4769, -2.76607, 10.3231)
+
+[node name="Object_462" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_173_212" index="0"]
+transform = Transform3D(1, 0, 4.74975e-08, 3.35276e-08, 1, 8.9407e-08, -6.14673e-08, 0, 1, -27.4177, -2.06264, 7.69787)
+
+[node name="Object_464" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_174_213" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.9528, 0, 0)
+
+[node name="Object_466" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_175_214" index="0"]
+transform = Transform3D(1, -1.11759e-08, -2.98023e-08, -9.87202e-08, 1, 0, -6.33299e-08, 2.98023e-08, 1, 6.47283, -18.3784, -11.2494)
+
+[node name="Object_468" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_176_215" index="0"]
+transform = Transform3D(1, 2.84217e-14, 0, -2.84217e-14, 1, 0, 0, 0, 1, -1.52588e-05, -174.355, 0)
+
+[node name="Object_470" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_177_216" index="0"]
+transform = Transform3D(1, 2.84217e-14, 0, -2.84217e-14, 1, 0, 0, 0, 1, -1.52588e-05, -174.355, 0)
+
+[node name="Object_472" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_182_217" index="0"]
+transform = Transform3D(0.999999, -7.45058e-09, -3.72529e-09, -2.98023e-08, 1, 1.19209e-07, -2.23517e-08, 2.98023e-08, 1, -209.568, -16.6617, -32.1871)
+
+[node name="Object_474" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_183_218" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_476" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_031_231" index="0"]
+transform = Transform3D(1, 0, -3.18455e-17, 0, 1, -8.88178e-16, -2.98023e-08, -4.44089e-16, 1, -253.55, -1.90735e-06, 23.6189)
+
+[node name="Object_478" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_032_232" index="0"]
+transform = Transform3D(1, -2.84217e-14, -3.05622e-14, -2.84217e-14, 1, 2.84217e-14, -6.2966e-15, 1.42109e-14, 1, -74.528, -1.71661e-05, 152.166)
+
+[node name="Object_480" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_033_233" index="0"]
+transform = Transform3D(1, 5.68434e-14, -5.96047e-08, -1.42109e-14, 1, -7.10543e-15, -2.98023e-08, 7.10543e-15, 1, 94.6541, -1.14441e-05, 149.843)
+
+[node name="Object_482" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_034_234" index="0"]
+transform = Transform3D(1, 0, -1.19209e-07, 0, 1, 3.55271e-15, 2.98023e-08, 0, 1, -118.718, -2.86102e-06, 113.241)
+
+[node name="Object_484" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_040_235" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_486" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_042_236" index="0"]
+transform = Transform3D(1, 2.4869e-14, -1.49012e-08, -2.84217e-14, 1, -1.55431e-14, 1.49012e-08, 1.5099e-14, 1, 5.96046e-07, -11.2297, 2.38419e-06)
+
+[node name="Object_488" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_043_237" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 8.88178e-16, 0, 8.88178e-16, 1, 1.78814e-07, -9.10743, 2.38419e-07)
+
+[node name="Object_490" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_014_238" index="0"]
+transform = Transform3D(1, 0, 1.45519e-11, 0, 1, 0, -1.45519e-11, 0, 1, -13.4037, 0, -0.00124598)
+
+[node name="Object_491" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_014_238" index="1"]
+transform = Transform3D(1, 0, 1.45519e-11, 0, 1, 0, -1.45519e-11, 0, 1, -13.4037, 0, -0.00124598)
+
+[node name="Object_493" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_015_239" index="0"]
+transform = Transform3D(1, 0, -1.45519e-11, 0, 1, 0, 1.45519e-11, 0, 1, -16.723, 0, -0.00155449)
+
+[node name="Object_495" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_014_240" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00107265, 0, -11.5059)
+
+[node name="Object_497" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_017_241" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00107265, 0, -4.74586)
+
+[node name="Object_499" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_014_242" index="0"]
+transform = Transform3D(1, 2.66454e-14, 0, -2.84217e-14, 1, -1.42109e-14, 0, 7.10543e-15, 1, 3.8147e-06, -52.5935, 1.90735e-06)
+
+[node name="Object_501" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_236_243" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_502" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_236_243" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_503" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_236_243" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_505" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_237_244" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_507" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_238_245" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_509" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_239_246" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_511" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_240_247" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_513" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_241_248" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_515" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_242_249" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_516" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_242_249" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_518" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_243_250" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_520" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_244_251" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_521" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_244_251" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_522" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_244_251" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_524" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_245_252" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_526" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_246_253" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_527" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_246_253" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_528" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_246_253" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_529" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_246_253" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_531" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_247_254" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_533" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_248_255" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_535" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_249_256" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_537" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_250_257" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_538" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_250_257" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_540" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_251_258" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_541" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_251_258" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_543" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_252_259" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_544" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_252_259" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_546" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_253_260" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_548" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_254_261" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_550" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_255_262" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_552" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_256_263" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_554" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_257_264" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_556" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_258_265" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_558" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_259_266" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_560" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_260_267" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_562" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_261_268" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_563" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_261_268" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_565" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_262_269" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_566" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_262_269" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_568" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_263_270" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_570" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_264_271" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.74904e-06)
+
+[node name="Object_572" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_265_272" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_573" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_265_272" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_575" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_266_273" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_576" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_266_273" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_578" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_267_274" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_580" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_269_275" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_582" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_186_276" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_584" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_187_277" index="0"]
+transform = Transform3D(1, -1.42109e-14, 0, -2.84217e-14, 1, 0, 0, 0, 1, -1.14441e-05, -135.024, 0)
+
+[node name="Object_585" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_187_277" index="1"]
+transform = Transform3D(1, -1.42109e-14, 0, -2.84217e-14, 1, 0, 0, 0, 1, -1.14441e-05, -135.024, 0)
+
+[node name="Object_587" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_188_278" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_589" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_189_279" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_591" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_190_280" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_593" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_191_281" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_594" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_191_281" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_596" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_192_282" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_597" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_192_282" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_598" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_192_282" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_600" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_193_283" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_601" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_193_283" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_602" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_193_283" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_604" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_194_284" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_605" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_194_284" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_606" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_194_284" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 3.75509e-06)
+
+[node name="Object_608" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_195_285" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_609" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_195_285" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_611" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_196_286" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_612" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_196_286" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_614" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_197_287" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_616" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_198_288" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_618" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_199_289" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_620" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_200_290" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_622" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_201_291" index="0"]
+transform = Transform3D(1, 0, 8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, -4.76837e-07, 4.76837e-07, -11.5059)
+
+[node name="Object_624" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_202_292" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_625" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_202_292" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_627" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_203_293" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_628" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_203_293" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_630" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_204_294" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_631" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_204_294" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -11.5059, 0)
+
+[node name="Object_633" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_205_295" index="0"]
+transform = Transform3D(1, 0, 8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, -4.76837e-07, 3.57628e-07, -11.5059)
+
+[node name="Object_635" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_206_296" index="0"]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 5.32907e-15, 0, -3.01981e-14, 1, 6.30204, -9.62651, 9.53674e-07)
+
+[node name="Object_636" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_206_296" index="1"]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 5.32907e-15, 0, -3.01981e-14, 1, 6.30204, -9.62651, 9.53674e-07)
+
+[node name="Object_637" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_206_296" index="2"]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 5.32907e-15, 0, -3.01981e-14, 1, 6.30204, -9.62651, 9.53674e-07)
+
+[node name="Object_638" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_206_296" index="3"]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 5.32907e-15, 0, -3.01981e-14, 1, 6.30204, -9.62651, 9.53674e-07)
+
+[node name="Object_639" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_206_296" index="4"]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 5.32907e-15, 0, -3.01981e-14, 1, 6.30204, -9.62651, 9.53674e-07)
+
+[node name="Object_641" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_207_297" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_643" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_208_298" index="0"]
+transform = Transform3D(1, -2.13163e-14, 0, 2.57572e-14, 1, 1.42109e-14, 0, 5.32907e-15, 1, 9.53674e-07, -11.5059, 4.76837e-07)
+
+[node name="Object_644" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_208_298" index="1"]
+transform = Transform3D(1, -2.13163e-14, 0, 2.57572e-14, 1, 1.42109e-14, 0, 5.32907e-15, 1, 9.53674e-07, -11.5059, 4.76837e-07)
+
+[node name="Object_646" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_004_299" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, -0.00106952)
+
+[node name="Object_647" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_004_299" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, -0.00106952)
+
+[node name="Object_649" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_044_300" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_650" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_044_300" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_652" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_004_301" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25419, 0, -10.2361)
+
+[node name="Object_653" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_004_301" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25419, 0, -10.2361)
+
+[node name="Object_654" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_004_301" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25419, 0, -10.2361)
+
+[node name="Object_656" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_018_302" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 0.0010736)
+
+[node name="Object_658" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_273_303" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_660" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_272_304" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.7304, 0, 0)
+
+[node name="Object_661" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_272_304" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.7304, 0, 0)
+
+[node name="Object_663" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_271_305" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_664" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_271_305" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_666" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_209_306" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.2283, 0, 0)
+
+[node name="Object_668" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_046_307" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1871, 0, 0)
+
+[node name="Object_670" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_045_308" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_672" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_016_309" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.1201, 0, 43.621)
+
+[node name="Object_674" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_012_310" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00107265, 0, -11.5059)
+
+[node name="Object_676" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_204_311" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_678" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_205_312" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.7304, 0, 0)
+
+[node name="Object_679" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_205_312" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.7304, 0, 0)
+
+[node name="Object_681" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_206_313" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_682" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_206_313" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_684" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_149_314" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.2283, 0, 0)
+
+[node name="Object_686" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_035_315" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1871, 0, 0)
+
+[node name="Object_688" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_036_316" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_690" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_011_317" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.3302, 0, 50.3717)
+
+[node name="Object_692" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_319" index="0"]
+transform = Transform3D(1, -8.88178e-16, 2.98023e-08, 8.88178e-16, 1, 1.66533e-16, -2.98023e-08, -1.38778e-17, 1, -40.327, 0, -2.84827)
+
+[node name="Object_694" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_037_320" index="0"]
+transform = Transform3D(1, -5.68989e-15, 1.88543e-17, -3.44169e-15, 1, 3.55271e-14, 1.88544e-17, 7.10543e-15, 1, -57.132, -9.53674e-07, -14.1924)
+
+[node name="Object_696" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_038_321" index="0"]
+transform = Transform3D(1, -4.44089e-16, -3.72529e-08, 0, 1, 2.77556e-17, 3.72529e-08, -5.55112e-17, 1, -45.6263, -4.76837e-07, 3.65036)
+
+[node name="Object_698" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_322" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -590.879, 26.3564, 0)
+
+[node name="Object_700" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_203_323" index="0"]
+transform = Transform3D(1, 5.96046e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, -584.851, -45.5281, 0)
+
+[node name="Object_702" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_207_324" index="0"]
+transform = Transform3D(1, 1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -593.057, -13.9032, 0)
+
+[node name="Object_704" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_211_325" index="0"]
+transform = Transform3D(1, -5.96046e-08, 0, -1.49012e-08, 0.999999, 0, 0, 0, 1, -590.808, 26.6637, 0)
+
+[node name="Object_706" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_212_326" index="0"]
+transform = Transform3D(1, 1.19209e-07, 0, -2.23517e-08, 1, 0, 0, 0, 1, -580.328, 55.656, 0)
+
+[node name="Object_708" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_213_327" index="0"]
+transform = Transform3D(1, 0, 0, 1.49012e-08, 1, 0, 0, 0, 1, -572.114, 70.2735, 0)
+
+[node name="Object_710" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_216_328" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3778, 0, -4.96859)
+
+[node name="Object_711" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_216_328" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3778, 0, -4.96859)
+
+[node name="Object_712" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_216_328" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3778, 0, -4.96859)
+
+[node name="Object_713" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_216_328" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3778, 0, -4.96859)
+
+[node name="Object_715" parent="Sketchfab_model/root/GLTF_SceneRootNode/Sphere_329" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.1445, 0, 0)
+
+[node name="Object_717" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_151_330" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.4343, 0, 0)
+
+[node name="Object_718" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_151_330" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.4343, 0, 0)
+
+[node name="Object_719" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_151_330" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.4343, 0, 0)
+
+[node name="Object_720" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_151_330" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.4343, 0, 0)
+
+[node name="Object_722" parent="Sketchfab_model/root/GLTF_SceneRootNode/chalkk_331" index="0"]
+transform = Transform3D(1, 0, 2.17054e-21, 0, 1, 0, 2.15389e-21, 0, 1, 11.5059, 1.90735e-06, 1.43051e-06)
+
+[node name="Object_724" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_214_332" index="0"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 0, 0, 1, -146.494, 0, 436.472)
+
+[node name="Object_726" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_219_333" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.729, 0, 582.443)
+
+[node name="Object_728" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_012_334" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0148, 0, 0)
+
+[node name="Object_730" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_013_335" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0148, 0, 0)
+
+[node name="Object_732" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_014_336" index="0"]
+transform = Transform3D(1, 0, -1.11022e-16, 0, 1, 2.13163e-14, 5.55112e-17, 0, 1, -14.9952, -0.126606, 0)
+
+[node name="Object_734" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_015_337" index="0"]
+transform = Transform3D(1, 0, 2.09889e-15, 1.06581e-14, 1, 4.9738e-14, 1.17069e-13, -3.55271e-14, 1, -1.09673e-05, 5.24521e-06, 41.2163)
+
+[node name="Object_736" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_085_338" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_738" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_086_339" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_740" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_087_340" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_742" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_088_341" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.5059)
+
+[node name="Object_744" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_089_342" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_746" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_090_343" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_748" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_091_344" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_750" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_092_345" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_752" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_093_346" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_754" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_094_347" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_756" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_095_348" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_758" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_096_349" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_760" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_097_350" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_762" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_351" index="0"]
+visible = false
+
+[node name="Object_764" parent="Sketchfab_model/root/GLTF_SceneRootNode/Circle_001_352" index="0"]
+visible = false
+
+[node name="Object_766" parent="Sketchfab_model/root/GLTF_SceneRootNode/Columns_002_353" index="0"]
+visible = false
+
+[node name="Object_768" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_010_354" index="0"]
+visible = false
+
+[node name="Object_769" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_010_354" index="1"]
+visible = false
+
+[node name="Object_771" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_011_355" index="0"]
+visible = false
+
+[node name="Object_772" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_011_355" index="1"]
+visible = false
+
+[node name="Object_774" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_015_356" index="0"]
+visible = false
+
+[node name="Object_775" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_015_356" index="1"]
+visible = false
+
+[node name="Object_777" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_017_357" index="0"]
+visible = false
+
+[node name="Object_778" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_017_357" index="1"]
+visible = false
+
+[node name="Object_780" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_018_358" index="0"]
+visible = false
+
+[node name="Object_782" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_023_359" index="0"]
+visible = false
+
+[node name="Object_784" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_041_360" index="0"]
+visible = false
+
+[node name="Object_786" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_129_361" index="0"]
+visible = false
+
+[node name="Object_788" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_130_362" index="0"]
+visible = false
+
+[node name="Object_789" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_130_362" index="1"]
+visible = false
+
+[node name="Object_791" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_131_363" index="0"]
+visible = false
+
+[node name="Object_792" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_131_363" index="1"]
+visible = false
+
+[node name="Object_794" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_132_364" index="0"]
+visible = false
+
+[node name="Object_795" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_132_364" index="1"]
+visible = false
+
+[node name="Object_797" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_133_365" index="0"]
+visible = false
+
+[node name="Object_799" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_134_366" index="0"]
+visible = false
+
+[node name="Object_800" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_134_366" index="1"]
+visible = false
+
+[node name="Object_802" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_135_367" index="0"]
+visible = false
+
+[node name="Object_803" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_135_367" index="1"]
+visible = false
+
+[node name="Object_805" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_136_368" index="0"]
+visible = false
+
+[node name="Object_807" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_137_369" index="0"]
+visible = false
+
+[node name="Object_808" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_137_369" index="1"]
+visible = false
+
+[node name="Object_810" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_138_370" index="0"]
+visible = false
+
+[node name="Object_811" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_138_370" index="1"]
+visible = false
+
+[node name="Object_813" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_139_371" index="0"]
+visible = false
+
+[node name="Object_815" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_140_372" index="0"]
+visible = false
+
+[node name="Object_817" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_142_373" index="0"]
+visible = false
+
+[node name="Object_818" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_142_373" index="1"]
+visible = false
+
+[node name="Object_819" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_142_373" index="2"]
+visible = false
+
+[node name="Object_820" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_142_373" index="3"]
+visible = false
+
+[node name="Object_821" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_142_373" index="4"]
+visible = false
+
+[node name="Object_822" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_142_373" index="5"]
+visible = false
+
+[node name="Object_824" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_143_374" index="0"]
+visible = false
+
+[node name="Object_826" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_144_375" index="0"]
+visible = false
+
+[node name="Object_828" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_145_376" index="0"]
+visible = false
+
+[node name="Object_830" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_146_377" index="0"]
+visible = false
+
+[node name="Object_831" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_146_377" index="1"]
+visible = false
+
+[node name="Object_833" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_147_378" index="0"]
+visible = false
+
+[node name="Object_835" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_148_379" index="0"]
+visible = false
+
+[node name="Object_837" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_149_380" index="0"]
+visible = false
+
+[node name="Object_839" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_150_381" index="0"]
+visible = false
+
+[node name="Object_841" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_151_382" index="0"]
+visible = false
+
+[node name="Object_842" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_151_382" index="1"]
+visible = false
+
+[node name="Object_844" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_152_383" index="0"]
+visible = false
+
+[node name="Object_846" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_153_384" index="0"]
+visible = false
+
+[node name="Object_848" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_154_385" index="0"]
+visible = false
+
+[node name="Object_850" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_155_386" index="0"]
+visible = false
+
+[node name="Object_852" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_156_387" index="0"]
+visible = false
+
+[node name="Object_854" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_157_388" index="0"]
+visible = false
+
+[node name="Object_856" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_159_389" index="0"]
+visible = false
+
+[node name="Object_858" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_160_390" index="0"]
+visible = false
+
+[node name="Object_860" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_161_391" index="0"]
+visible = false
+
+[node name="Object_862" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_002_392" index="0"]
+visible = false
+
+[node name="Object_864" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_004_393" index="0"]
+visible = false
+
+[node name="Object_866" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_007_394" index="0"]
+visible = false
+
+[node name="Object_868" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_008_395" index="0"]
+visible = false
+
+[node name="Object_870" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_014_396" index="0"]
+visible = false
+
+[node name="Object_872" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_019_397" index="0"]
+visible = false
+
+[node name="Object_874" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_091_398" index="0"]
+visible = false
+
+[node name="Object_876" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_092_399" index="0"]
+visible = false
+
+[node name="Object_878" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_093_400" index="0"]
+visible = false
+
+[node name="Object_880" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_094_401" index="0"]
+visible = false
+
+[node name="Object_882" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_095_402" index="0"]
+visible = false
+
+[node name="Object_884" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_096_403" index="0"]
+visible = false
+
+[node name="Object_886" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_097_404" index="0"]
+visible = false
+
+[node name="Object_888" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_098_405" index="0"]
+visible = false
+
+[node name="Object_890" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_099_406" index="0"]
+visible = false
+
+[node name="Object_892" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_100_407" index="0"]
+visible = false
+
+[node name="Object_894" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_101_408" index="0"]
+visible = false
+
+[node name="Object_896" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_102_409" index="0"]
+visible = false
+
+[node name="Object_898" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_103_410" index="0"]
+visible = false
+
+[node name="Object_900" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_104_411" index="0"]
+visible = false
+
+[node name="Object_902" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_105_412" index="0"]
+visible = false
+
+[node name="Object_904" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_106_413" index="0"]
+visible = false
+
+[node name="Object_906" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_107_414" index="0"]
+visible = false
+
+[node name="Object_908" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_108_415" index="0"]
+visible = false
+
+[node name="Object_910" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_109_416" index="0"]
+visible = false
+
+[node name="Object_912" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_110_417" index="0"]
+visible = false
+
+[node name="Object_914" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_111_418" index="0"]
+visible = false
+
+[node name="Object_916" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_112_419" index="0"]
+visible = false
+
+[node name="Object_918" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_114_420" index="0"]
+visible = false
+
+[node name="Object_919" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_114_420" index="1"]
+visible = false
+
+[node name="Object_920" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_114_420" index="2"]
+visible = false
+
+[node name="Object_922" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_115_421" index="0"]
+visible = false
+
+[node name="Object_923" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_115_421" index="1"]
+visible = false
+
+[node name="Object_924" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_115_421" index="2"]
+visible = false
+
+[node name="Object_926" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_116_422" index="0"]
+visible = false
+
+[node name="Object_927" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_116_422" index="1"]
+visible = false
+
+[node name="Object_928" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_116_422" index="2"]
+visible = false
+
+[node name="Object_930" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_117_423" index="0"]
+visible = false
+
+[node name="Object_932" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_118_424" index="0"]
+visible = false
+
+[node name="Object_934" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_119_425" index="0"]
+visible = false
+
+[node name="Object_936" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_120_426" index="0"]
+visible = false
+
+[node name="Object_938" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_016_442" index="0"]
+visible = false
+
+[node name="Object_940" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_018_443" index="0"]
+visible = false
+
+[node name="Object_942" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_019_444" index="0"]
+visible = false
+
+[node name="Object_944" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_020_445" index="0"]
+visible = false
+
+[node name="Object_946" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_021_446" index="0"]
+visible = false
+
+[node name="Object_948" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_022_447" index="0"]
+visible = false
+
+[node name="Object_950" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_023_448" index="0"]
+visible = false
+
+[node name="Object_952" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_024_449" index="0"]
+visible = false
+
+[node name="Object_954" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_025_450" index="0"]
+visible = false
+
+[node name="Object_956" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_026_451" index="0"]
+visible = false
+
+[node name="Object_958" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_027_452" index="0"]
+visible = false
+
+[node name="Object_960" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_028_453" index="0"]
+visible = false
+
+[node name="Object_962" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_029_454" index="0"]
+visible = false
+
+[node name="Object_964" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_001_455" index="0"]
+visible = false
+
+[node name="Object_965" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_001_455" index="1"]
+visible = false
+
+[node name="Object_967" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_002_456" index="0"]
+visible = false
+
+[node name="Object_968" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_002_456" index="1"]
+visible = false
+
+[node name="Object_970" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_006_457" index="0"]
+visible = false
+
+[node name="Object_971" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_006_457" index="1"]
+visible = false
+
+[node name="Object_973" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_003_458" index="0"]
+visible = false
+
+[node name="Object_974" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_003_458" index="1"]
+visible = false
+
+[node name="Object_975" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_003_458" index="2"]
+visible = false
+
+[node name="Object_977" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_010_459" index="0"]
+visible = false
+
+[node name="Object_978" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_010_459" index="1"]
+visible = false
+
+[node name="Object_979" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_010_459" index="2"]
+visible = false
+
+[node name="Object_981" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_004_460" index="0"]
+visible = false
+
+[node name="Object_983" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_007_461" index="0"]
+visible = false
+
+[node name="Object_985" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_008_462" index="0"]
+visible = false
+
+[node name="Object_987" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_009_463" index="0"]
+visible = false
+
+[node name="Object_989" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_010_464" index="0"]
+visible = false
+
+[node name="Object_991" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_162_465" index="0"]
+visible = false
+
+[node name="Object_992" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_162_465" index="1"]
+visible = false
+
+[node name="Object_993" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_162_465" index="2"]
+visible = false
+
+[node name="Object_995" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_163_466" index="0"]
+visible = false
+
+[node name="Object_997" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_164_467" index="0"]
+visible = false
+
+[node name="Object_999" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_165_468" index="0"]
+visible = false
+
+[node name="Object_1001" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_166_469" index="0"]
+visible = false
+
+[node name="Object_1003" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_167_470" index="0"]
+visible = false
+
+[node name="Object_1005" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_168_471" index="0"]
+visible = false
+
+[node name="Object_1006" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_168_471" index="1"]
+visible = false
+
+[node name="Object_1008" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_169_472" index="0"]
+visible = false
+
+[node name="Object_1010" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_170_473" index="0"]
+visible = false
+
+[node name="Object_1011" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_170_473" index="1"]
+visible = false
+
+[node name="Object_1012" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_170_473" index="2"]
+visible = false
+
+[node name="Object_1014" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_171_474" index="0"]
+visible = false
+
+[node name="Object_1016" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_172_475" index="0"]
+visible = false
+
+[node name="Object_1017" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_172_475" index="1"]
+visible = false
+
+[node name="Object_1018" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_172_475" index="2"]
+visible = false
+
+[node name="Object_1019" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_172_475" index="3"]
+visible = false
+
+[node name="Object_1021" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_173_476" index="0"]
+visible = false
+
+[node name="Object_1023" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_174_477" index="0"]
+visible = false
+
+[node name="Object_1025" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_175_478" index="0"]
+visible = false
+
+[node name="Object_1027" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_176_479" index="0"]
+visible = false
+
+[node name="Object_1028" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_176_479" index="1"]
+visible = false
+
+[node name="Object_1030" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_177_480" index="0"]
+visible = false
+
+[node name="Object_1031" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_177_480" index="1"]
+visible = false
+
+[node name="Object_1033" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_178_481" index="0"]
+visible = false
+
+[node name="Object_1034" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_178_481" index="1"]
+visible = false
+
+[node name="Object_1036" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_179_482" index="0"]
+visible = false
+
+[node name="Object_1038" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_180_483" index="0"]
+visible = false
+
+[node name="Object_1040" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_181_484" index="0"]
+visible = false
+
+[node name="Object_1042" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_182_485" index="0"]
+visible = false
+
+[node name="Object_1044" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_183_486" index="0"]
+visible = false
+
+[node name="Object_1046" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_184_487" index="0"]
+visible = false
+
+[node name="Object_1048" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_185_488" index="0"]
+visible = false
+
+[node name="Object_1050" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_186_489" index="0"]
+visible = false
+
+[node name="Object_1052" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_187_490" index="0"]
+visible = false
+
+[node name="Object_1053" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_187_490" index="1"]
+visible = false
+
+[node name="Object_1055" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_188_491" index="0"]
+visible = false
+
+[node name="Object_1056" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_188_491" index="1"]
+visible = false
+
+[node name="Object_1058" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_189_492" index="0"]
+visible = false
+
+[node name="Object_1060" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_190_493" index="0"]
+visible = false
+
+[node name="Object_1062" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_191_494" index="0"]
+visible = false
+
+[node name="Object_1063" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_191_494" index="1"]
+visible = false
+
+[node name="Object_1065" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_192_495" index="0"]
+visible = false
+
+[node name="Object_1066" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_192_495" index="1"]
+visible = false
+
+[node name="Object_1068" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_193_496" index="0"]
+visible = false
+
+[node name="Object_1070" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_194_497" index="0"]
+visible = false
+
+[node name="Object_1071" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_194_497" index="1"]
+visible = false
+
+[node name="Object_1072" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_194_497" index="2"]
+visible = false
+
+[node name="Object_1074" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_195_498" index="0"]
+visible = false
+
+[node name="Object_1076" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_196_499" index="0"]
+visible = false
+
+[node name="Object_1078" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_121_500" index="0"]
+visible = false
+
+[node name="Object_1080" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_122_501" index="0"]
+visible = false
+
+[node name="Object_1081" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_122_501" index="1"]
+visible = false
+
+[node name="Object_1083" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_123_502" index="0"]
+visible = false
+
+[node name="Object_1085" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_124_503" index="0"]
+visible = false
+
+[node name="Object_1087" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_125_504" index="0"]
+visible = false
+
+[node name="Object_1089" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_126_505" index="0"]
+visible = false
+
+[node name="Object_1090" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_126_505" index="1"]
+visible = false
+
+[node name="Object_1092" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_127_506" index="0"]
+visible = false
+
+[node name="Object_1093" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_127_506" index="1"]
+visible = false
+
+[node name="Object_1094" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_127_506" index="2"]
+visible = false
+
+[node name="Object_1096" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_128_507" index="0"]
+visible = false
+
+[node name="Object_1097" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_128_507" index="1"]
+visible = false
+
+[node name="Object_1098" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_128_507" index="2"]
+visible = false
+
+[node name="Object_1100" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_129_508" index="0"]
+visible = false
+
+[node name="Object_1101" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_129_508" index="1"]
+visible = false
+
+[node name="Object_1102" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_129_508" index="2"]
+visible = false
+
+[node name="Object_1104" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_130_509" index="0"]
+visible = false
+
+[node name="Object_1105" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_130_509" index="1"]
+visible = false
+
+[node name="Object_1107" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_131_510" index="0"]
+visible = false
+
+[node name="Object_1108" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_131_510" index="1"]
+visible = false
+
+[node name="Object_1110" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_132_511" index="0"]
+visible = false
+
+[node name="Object_1112" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_133_512" index="0"]
+visible = false
+
+[node name="Object_1114" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_134_513" index="0"]
+visible = false
+
+[node name="Object_1116" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_135_514" index="0"]
+visible = false
+
+[node name="Object_1118" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_136_515" index="0"]
+visible = false
+
+[node name="Object_1120" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_137_516" index="0"]
+visible = false
+
+[node name="Object_1121" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_137_516" index="1"]
+visible = false
+
+[node name="Object_1123" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_138_517" index="0"]
+visible = false
+
+[node name="Object_1124" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_138_517" index="1"]
+visible = false
+
+[node name="Object_1126" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_139_518" index="0"]
+visible = false
+
+[node name="Object_1127" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_139_518" index="1"]
+visible = false
+
+[node name="Object_1129" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_140_519" index="0"]
+visible = false
+
+[node name="Object_1131" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_142_520" index="0"]
+visible = false
+
+[node name="Object_1133" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_143_521" index="0"]
+visible = false
+
+[node name="Object_1134" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_143_521" index="1"]
+visible = false
+
+[node name="Object_1136" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_003_522" index="0"]
+visible = false
+
+[node name="Object_1137" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_003_522" index="1"]
+visible = false
+
+[node name="Object_1139" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_030_523" index="0"]
+visible = false
+
+[node name="Object_1140" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_030_523" index="1"]
+visible = false
+
+[node name="Object_1142" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_003_524" index="0"]
+visible = false
+
+[node name="Object_1143" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_003_524" index="1"]
+visible = false
+
+[node name="Object_1144" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_003_524" index="2"]
+visible = false
+
+[node name="Object_1146" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_015_525" index="0"]
+visible = false
+
+[node name="Object_1148" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_001_526" index="0"]
+visible = false
+
+[node name="Object_1150" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_002_527" index="0"]
+visible = false
+
+[node name="Object_1152" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_003_528" index="0"]
+visible = false
+
+[node name="Object_1154" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_004_529" index="0"]
+visible = false
+
+[node name="Object_1156" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_005_530" index="0"]
+visible = false
+
+[node name="Object_1158" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_006_531" index="0"]
+visible = false
+
+[node name="Object_1160" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_532" index="0"]
+visible = false
+
+[node name="Object_1162" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_113_533" index="0"]
+visible = false
+
+[node name="Object_1164" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_150_534" index="0"]
+visible = false
+
+[node name="Object_1166" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_144_535" index="0"]
+visible = false
+
+[node name="Object_1168" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_145_536" index="0"]
+visible = false
+
+[node name="Object_1170" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_146_537" index="0"]
+visible = false
+
+[node name="Object_1172" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_147_538" index="0"]
+visible = false
+
+[node name="Object_1174" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_007_539" index="0"]
+visible = false
+
+[node name="Object_1176" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_008_540" index="0"]
+visible = false
+
+[node name="Object_1178" parent="Sketchfab_model/root/GLTF_SceneRootNode/fade_009_541" index="0"]
+visible = false
+
+[node name="Object_1180" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_008_542" index="0"]
+visible = false
+
+[node name="Object_1182" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_009_543" index="0"]
+visible = false
+
+[node name="Object_1184" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_148_544" index="0"]
+visible = false
+
+[node name="Object_1186" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_011_545" index="0"]
+visible = false
+
+[node name="Object_1188" parent="Sketchfab_model/root/GLTF_SceneRootNode/Asset 28_546" index="0"]
+visible = false
+
+[node name="Object_1190" parent="Sketchfab_model/root/GLTF_SceneRootNode/Asset 41_547" index="0"]
+visible = false
+
+[node name="Object_1192" parent="Sketchfab_model/root/GLTF_SceneRootNode/Asset 34_548" index="0"]
+visible = false
+
+[node name="Object_1194" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_070_549" index="0"]
+visible = false
+
+[node name="Object_1196" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_071_550" index="0"]
+visible = false
+
+[node name="Object_1198" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_072_551" index="0"]
+visible = false
+
+[node name="Object_1200" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_073_552" index="0"]
+visible = false
+
+[node name="Object_1202" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_074_553" index="0"]
+visible = false
+
+[node name="Object_1204" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_075_554" index="0"]
+visible = false
+
+[node name="Object_1206" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_076_555" index="0"]
+visible = false
+
+[node name="Object_1208" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_077_556" index="0"]
+visible = false
+
+[node name="Object_1210" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_078_557" index="0"]
+visible = false
+
+[node name="Object_1212" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_079_558" index="0"]
+visible = false
+
+[node name="Object_1214" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_080_559" index="0"]
+visible = false
+
+[node name="Object_1216" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_081_560" index="0"]
+visible = false
+
+[node name="Object_1218" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_082_561" index="0"]
+visible = false
+
+[node name="Object_1220" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_083_562" index="0"]
+visible = false
+
+[node name="Object_1222" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_084_563" index="0"]
+visible = false
+
+[node name="Object_1224" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_112_564" index="0"]
+visible = false
+
+[node name="Object_1225" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_112_564" index="1"]
+visible = false
+
+[node name="Object_1226" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_112_564" index="2"]
+visible = false
+
+[node name="Object_1228" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_111_565" index="0"]
+visible = false
+
+[node name="Object_1230" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_007_566" index="0"]
+visible = false
+
+[node name="Object_1232" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_006_567" index="0"]
+visible = false
+
+[node name="Object_1234" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_005_568" index="0"]
+visible = false
+
+[node name="Object_1236" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_002_569" index="0"]
+visible = false
+
+[node name="Object_1238" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_110_570" index="0"]
+visible = false
+
+[node name="Object_1240" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_109_571" index="0"]
+visible = false
+
+[node name="Object_1242" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_108_572" index="0"]
+visible = false
+
+[node name="Object_1244" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_107_573" index="0"]
+visible = false
+
+[node name="Object_1246" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_106_574" index="0"]
+visible = false
+
+[node name="Object_1248" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_105_575" index="0"]
+visible = false
+
+[node name="Object_1250" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_104_576" index="0"]
+visible = false
+
+[node name="Object_1252" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_103_577" index="0"]
+visible = false
+
+[node name="Object_1254" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_102_578" index="0"]
+visible = false
+
+[node name="Object_1255" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_102_578" index="1"]
+visible = false
+
+[node name="Object_1257" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_101_579" index="0"]
+visible = false
+
+[node name="Object_1259" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_100_580" index="0"]
+visible = false
+
+[node name="Object_1261" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_082_581" index="0"]
+visible = false
+
+[node name="Object_1263" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_081_582" index="0"]
+visible = false
+
+[node name="Object_1264" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_081_582" index="1"]
+visible = false
+
+[node name="Object_1266" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_013_583" index="0"]
+visible = false
+
+[node name="Object_1267" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_013_583" index="1"]
+visible = false
+
+[node name="Object_1269" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_099_584" index="0"]
+visible = false
+
+[node name="Object_1270" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_099_584" index="1"]
+visible = false
+
+[node name="Object_1271" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_099_584" index="2"]
+visible = false
+
+[node name="Object_1273" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_098_585" index="0"]
+visible = false
+
+[node name="Object_1275" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_097_586" index="0"]
+visible = false
+
+[node name="Object_1276" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_097_586" index="1"]
+visible = false
+
+[node name="Object_1277" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_097_586" index="2"]
+visible = false
+
+[node name="Object_1279" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_096_587" index="0"]
+visible = false
+
+[node name="Object_1281" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_095_588" index="0"]
+visible = false
+
+[node name="Object_1283" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_094_589" index="0"]
+visible = false
+
+[node name="Object_1285" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_093_590" index="0"]
+visible = false
+
+[node name="Object_1286" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_093_590" index="1"]
+visible = false
+
+[node name="Object_1288" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_092_591" index="0"]
+visible = false
+
+[node name="Object_1289" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_092_591" index="1"]
+visible = false
+
+[node name="Object_1291" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_091_592" index="0"]
+visible = false
+
+[node name="Object_1292" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_091_592" index="1"]
+visible = false
+
+[node name="Object_1294" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_090_593" index="0"]
+visible = false
+
+[node name="Object_1296" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_089_594" index="0"]
+visible = false
+
+[node name="Object_1298" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_088_595" index="0"]
+visible = false
+
+[node name="Object_1300" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_087_596" index="0"]
+visible = false
+
+[node name="Object_1302" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_086_597" index="0"]
+visible = false
+
+[node name="Object_1304" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_085_598" index="0"]
+visible = false
+
+[node name="Object_1306" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_084_599" index="0"]
+visible = false
+
+[node name="Object_1308" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_083_600" index="0"]
+visible = false
+
+[node name="Object_1310" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_082_601" index="0"]
+visible = false
+
+[node name="Object_1312" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_081_602" index="0"]
+visible = false
+
+[node name="Object_1313" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_081_602" index="1"]
+visible = false
+
+[node name="Object_1315" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_080_603" index="0"]
+visible = false
+
+[node name="Object_1316" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_080_603" index="1"]
+visible = false
+
+[node name="Object_1318" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_079_604" index="0"]
+visible = false
+
+[node name="Object_1320" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_078_605" index="0"]
+visible = false
+
+[node name="Object_1322" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_077_606" index="0"]
+visible = false
+
+[node name="Object_1324" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_067_607" index="0"]
+visible = false
+
+[node name="Object_1325" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_067_607" index="1"]
+visible = false
+
+[node name="Object_1327" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_059_608" index="0"]
+visible = false
+
+[node name="Object_1328" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_059_608" index="1"]
+visible = false
+
+[node name="Object_1330" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_056_609" index="0"]
+visible = false
+
+[node name="Object_1332" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_049_610" index="0"]
+visible = false
+
+[node name="Object_1333" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_049_610" index="1"]
+visible = false
+
+[node name="Object_1334" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_049_610" index="2"]
+visible = false
+
+[node name="Object_1336" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_080_611" index="0"]
+visible = false
+
+[node name="Object_1338" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_079_612" index="0"]
+visible = false
+
+[node name="Object_1340" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_078_613" index="0"]
+visible = false
+
+[node name="Object_1342" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_077_614" index="0"]
+visible = false
+
+[node name="Object_1343" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_077_614" index="1"]
+visible = false
+
+[node name="Object_1345" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_076_615" index="0"]
+visible = false
+
+[node name="Object_1346" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_076_615" index="1"]
+visible = false
+
+[node name="Object_1347" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_076_615" index="2"]
+visible = false
+
+[node name="Object_1349" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_075_616" index="0"]
+visible = false
+
+[node name="Object_1350" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_075_616" index="1"]
+visible = false
+
+[node name="Object_1351" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_075_616" index="2"]
+visible = false
+
+[node name="Object_1353" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_074_617" index="0"]
+visible = false
+
+[node name="Object_1354" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_074_617" index="1"]
+visible = false
+
+[node name="Object_1355" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_074_617" index="2"]
+visible = false
+
+[node name="Object_1357" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_073_618" index="0"]
+visible = false
+
+[node name="Object_1358" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_073_618" index="1"]
+visible = false
+
+[node name="Object_1360" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_072_619" index="0"]
+visible = false
+
+[node name="Object_1361" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_072_619" index="1"]
+visible = false
+
+[node name="Object_1363" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_071_620" index="0"]
+visible = false
+
+[node name="Object_1365" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_070_621" index="0"]
+visible = false
+
+[node name="Object_1367" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_069_622" index="0"]
+visible = false
+
+[node name="Object_1369" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_068_623" index="0"]
+visible = false
+
+[node name="Object_1371" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_067_624" index="0"]
+visible = false
+
+[node name="Object_1373" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_066_625" index="0"]
+visible = false
+
+[node name="Object_1374" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_066_625" index="1"]
+visible = false
+
+[node name="Object_1376" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_065_626" index="0"]
+visible = false
+
+[node name="Object_1377" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_065_626" index="1"]
+visible = false
+
+[node name="Object_1379" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_064_627" index="0"]
+visible = false
+
+[node name="Object_1380" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_064_627" index="1"]
+visible = false
+
+[node name="Object_1382" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_063_628" index="0"]
+visible = false
+
+[node name="Object_1384" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_062_629" index="0"]
+visible = false
+
+[node name="Object_1385" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_062_629" index="1"]
+visible = false
+
+[node name="Object_1386" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_062_629" index="2"]
+visible = false
+
+[node name="Object_1387" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_062_629" index="3"]
+visible = false
+
+[node name="Object_1388" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_062_629" index="4"]
+visible = false
+
+[node name="Object_1390" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_061_630" index="0"]
+visible = false
+
+[node name="Object_1392" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_060_631" index="0"]
+visible = false
+
+[node name="Object_1393" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_060_631" index="1"]
+visible = false
+
+[node name="Object_1395" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_001_633" index="0"]
+visible = false
+
+[node name="Object_1396" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_001_633" index="1"]
+visible = false
+
+[node name="Object_1398" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_002_634" index="0"]
+visible = false
+
+[node name="Object_1399" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_002_634" index="1"]
+visible = false
+
+[node name="Object_1400" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_002_634" index="2"]
+visible = false
+
+[node name="Object_1402" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_009_635" index="0"]
+visible = false
+
+[node name="Object_1403" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_009_635" index="1"]
+visible = false
+
+[node name="Object_1404" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_009_635" index="2"]
+visible = false
+
+[node name="Object_1406" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_008_636" index="0"]
+visible = false
+
+[node name="Object_1407" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_008_636" index="1"]
+visible = false
+
+[node name="Object_1408" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_008_636" index="2"]
+visible = false
+
+[node name="Object_1410" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_007_637" index="0"]
+visible = false
+
+[node name="Object_1412" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_117_639" index="0"]
+visible = false
+
+[node name="Object_1414" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_005_640" index="0"]
+visible = false
+
+[node name="Object_1415" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_005_640" index="1"]
+visible = false
+
+[node name="Object_1416" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_005_640" index="2"]
+visible = false
+
+[node name="Object_1418" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_010_641" index="0"]
+visible = false
+
+[node name="Object_1420" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_008_642" index="0"]
+visible = false
+
+[node name="Object_1422" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_012_643" index="0"]
+visible = false
+
+[node name="Object_1424" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_014_644" index="0"]
+visible = false
+
+[node name="Object_1426" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_016_645" index="0"]
+visible = false
+
+[node name="Object_1428" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_019_646" index="0"]
+visible = false
+
+[node name="Object_1430" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_020_647" index="0"]
+visible = false
+
+[node name="Object_1431" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_020_647" index="1"]
+visible = false
+
+[node name="Object_1433" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_021_648" index="0"]
+visible = false
+
+[node name="Object_1435" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_003_649" index="0"]
+visible = false
+
+[node name="Object_1437" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_005_650" index="0"]
+visible = false
+
+[node name="Object_1438" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_005_650" index="1"]
+visible = false
+
+[node name="Object_1440" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_024_651" index="0"]
+visible = false
+
+[node name="Object_1441" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_024_651" index="1"]
+visible = false
+
+[node name="Object_1442" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_024_651" index="2"]
+visible = false
+
+[node name="Object_1444" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_026_652" index="0"]
+visible = false
+
+[node name="Object_1446" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_027_653" index="0"]
+visible = false
+
+[node name="Object_1447" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_027_653" index="1"]
+visible = false
+
+[node name="Object_1448" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_027_653" index="2"]
+visible = false
+
+[node name="Object_1449" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_027_653" index="3"]
+visible = false
+
+[node name="Object_1451" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_029_654" index="0"]
+visible = false
+
+[node name="Object_1453" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_030_655" index="0"]
+visible = false
+
+[node name="Object_1455" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_031_656" index="0"]
+visible = false
+
+[node name="Object_1457" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_032_657" index="0"]
+visible = false
+
+[node name="Object_1458" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_032_657" index="1"]
+visible = false
+
+[node name="Object_1460" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_033_658" index="0"]
+visible = false
+
+[node name="Object_1461" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_033_658" index="1"]
+visible = false
+
+[node name="Object_1463" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_034_659" index="0"]
+visible = false
+
+[node name="Object_1464" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_034_659" index="1"]
+visible = false
+
+[node name="Object_1466" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_035_660" index="0"]
+visible = false
+
+[node name="Object_1468" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_036_661" index="0"]
+visible = false
+
+[node name="Object_1470" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_037_662" index="0"]
+visible = false
+
+[node name="Object_1472" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_038_663" index="0"]
+visible = false
+
+[node name="Object_1474" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_039_664" index="0"]
+visible = false
+
+[node name="Object_1476" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_040_665" index="0"]
+visible = false
+
+[node name="Object_1478" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_118_666" index="0"]
+visible = false
+
+[node name="Object_1480" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_119_667" index="0"]
+visible = false
+
+[node name="Object_1482" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_120_668" index="0"]
+visible = false
+
+[node name="Object_1483" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_120_668" index="1"]
+visible = false
+
+[node name="Object_1485" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_121_669" index="0"]
+visible = false
+
+[node name="Object_1486" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_121_669" index="1"]
+visible = false
+
+[node name="Object_1488" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_122_670" index="0"]
+visible = false
+
+[node name="Object_1490" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_123_671" index="0"]
+visible = false
+
+[node name="Object_1492" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_124_672" index="0"]
+visible = false
+
+[node name="Object_1493" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_124_672" index="1"]
+visible = false
+
+[node name="Object_1495" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_125_673" index="0"]
+visible = false
+
+[node name="Object_1496" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_125_673" index="1"]
+visible = false
+
+[node name="Object_1498" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_126_674" index="0"]
+visible = false
+
+[node name="Object_1500" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_127_675" index="0"]
+visible = false
+
+[node name="Object_1501" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_127_675" index="1"]
+visible = false
+
+[node name="Object_1502" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_127_675" index="2"]
+visible = false
+
+[node name="Object_1504" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_006_676" index="0"]
+visible = false
+
+[node name="Object_1506" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_009_677" index="0"]
+visible = false
+
+[node name="Object_1508" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_010_678" index="0"]
+visible = false
+
+[node name="Object_1510" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_011_679" index="0"]
+visible = false
+
+[node name="Object_1511" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_011_679" index="1"]
+visible = false
+
+[node name="Object_1513" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_012_680" index="0"]
+visible = false
+
+[node name="Object_1514" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_012_680" index="1"]
+visible = false
+
+[node name="Object_1515" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_012_680" index="2"]
+visible = false
+
+[node name="Object_1517" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_013_681" index="0"]
+visible = false
+
+[node name="Object_1518" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_013_681" index="1"]
+visible = false
+
+[node name="Object_1519" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_013_681" index="2"]
+visible = false
+
+[node name="Object_1521" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_015_682" index="0"]
+visible = false
+
+[node name="Object_1522" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_015_682" index="1"]
+visible = false
+
+[node name="Object_1523" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_015_682" index="2"]
+visible = false
+
+[node name="Object_1525" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_016_683" index="0"]
+visible = false
+
+[node name="Object_1526" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_016_683" index="1"]
+visible = false
+
+[node name="Object_1528" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_017_684" index="0"]
+visible = false
+
+[node name="Object_1529" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_017_684" index="1"]
+visible = false
+
+[node name="Object_1531" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_018_685" index="0"]
+visible = false
+
+[node name="Object_1533" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_020_686" index="0"]
+visible = false
+
+[node name="Object_1535" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_024_687" index="0"]
+visible = false
+
+[node name="Object_1537" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_047_688" index="0"]
+visible = false
+
+[node name="Object_1539" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_083_689" index="0"]
+visible = false
+
+[node name="Object_1541" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_084_690" index="0"]
+visible = false
+
+[node name="Object_1542" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_084_690" index="1"]
+visible = false
+
+[node name="Object_1544" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_085_691" index="0"]
+visible = false
+
+[node name="Object_1545" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_085_691" index="1"]
+visible = false
+
+[node name="Object_1547" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_086_692" index="0"]
+visible = false
+
+[node name="Object_1548" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_086_692" index="1"]
+visible = false
+
+[node name="Object_1550" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_087_693" index="0"]
+visible = false
+
+[node name="Object_1552" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_088_694" index="0"]
+visible = false
+
+[node name="Object_1553" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_088_694" index="1"]
+visible = false
+
+[node name="Object_1554" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_088_694" index="2"]
+visible = false
+
+[node name="Object_1555" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_088_694" index="3"]
+visible = false
+
+[node name="Object_1556" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_088_694" index="4"]
+visible = false
+
+[node name="Object_1558" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_089_695" index="0"]
+visible = false
+
+[node name="Object_1560" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_090_696" index="0"]
+visible = false
+
+[node name="Object_1561" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_090_696" index="1"]
+visible = false
+
+[node name="Object_1563" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_002_697" index="0"]
+visible = false
+
+[node name="Object_1564" parent="Sketchfab_model/root/GLTF_SceneRootNode/Naves_002_697" index="1"]
+visible = false
+
+[node name="Object_1566" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_001_698" index="0"]
+visible = false
+
+[node name="Object_1567" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_001_698" index="1"]
+visible = false
+
+[node name="Object_1568" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_001_698" index="2"]
+visible = false
+
+[node name="Object_1570" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_011_699" index="0"]
+visible = false
+
+[node name="Object_1572" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_128_700" index="0"]
+visible = false
+
+[node name="Object_1574" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_009_701" index="0"]
+visible = false
+
+[node name="Object_1576" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_014_702" index="0"]
+visible = false
+
+[node name="Object_1577" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_014_702" index="1"]
+visible = false
+
+[node name="Object_1579" parent="Sketchfab_model/root/GLTF_SceneRootNode/electricity-hazard-symbol-clip-art-symbol-46a945882865ad6ff_703" index="0"]
+visible = false
+
+[node name="Object_1581" parent="Sketchfab_model/root/GLTF_SceneRootNode/electricity-hazard-symbol-clip-art-symbol-46a945882865ad6ff_001_704" index="0"]
+visible = false
+
+[node name="Object_1583" parent="Sketchfab_model/root/GLTF_SceneRootNode/pngegg_705" index="0"]
+visible = false
+
+[node name="Object_1585" parent="Sketchfab_model/root/GLTF_SceneRootNode/tag_1_706" index="0"]
+visible = false
+
+[node name="Object_1587" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_003_707" index="0"]
+visible = false
+
+[node name="Object_1589" parent="Sketchfab_model/root/GLTF_SceneRootNode/electricity-hazard-symbol-clip-art-symbol-46a945882865ad6ff_002_708" index="0"]
+visible = false
+
+[node name="Object_1591" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_141_709" index="0"]
+visible = false
+
+[node name="Object_1593" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_141_710" index="0"]
+visible = false
+
+[node name="Object_1594" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_141_710" index="1"]
+visible = false
+
+[node name="Object_1595" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_141_710" index="2"]
+visible = false
+
+[node name="Object_1596" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_141_710" index="3"]
+visible = false
+
+[node name="Object_1597" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_141_710" index="4"]
+visible = false
+
+[node name="Object_1599" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_007_711" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1601" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_215_712" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1602" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_215_712" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1603" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_215_712" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1605" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_268_713" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1607" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_197_714" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1609" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_198_715" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1611" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_199_716" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1613" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_019_717" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, -0.00106951)
+
+[node name="Object_1614" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_019_717" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, -0.00106951)
+
+[node name="Object_1615" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_019_717" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, -0.00106951)
+
+[node name="Object_1617" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_020_718" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 0.0010736)
+
+[node name="Object_1618" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_020_718" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 0.0010736)
+
+[node name="Object_1619" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_020_718" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5059, 0, 0.0010736)
+
+[node name="Object_1621" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_200_719" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1623" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_201_720" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1625" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_202_721" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5059, 0, 0)
+
+[node name="Object_1627" parent="Sketchfab_model/root/GLTF_SceneRootNode/electricity-hazard-symbol-clip-art-symbol-46a945882865ad6ff_003_722" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 8.88178e-16, 0, 8.88178e-16, 1, 1.43051e-06, 46.2508, -1.90735e-06)
+
+[node name="Object_1629" parent="Sketchfab_model/root/GLTF_SceneRootNode/electricity-hazard-symbol-clip-art-symbol-46a945882865ad6ff_004_723" index="0"]
+visible = false
+
+[node name="Object_1631" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_042_724" index="0"]
+visible = false
+
+[node name="Object_1633" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_001_725" index="0"]
+visible = false
+
+[node name="Object_1635" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_002_726" index="0"]
+visible = false
+
+[node name="Object_1637" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_003_727" index="0"]
+visible = false
+
+[node name="Object_1639" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_004_728" index="0"]
+visible = false
+
+[node name="Object_1641" parent="Sketchfab_model/root/GLTF_SceneRootNode/Circle_729" index="0"]
+visible = false
+
+[node name="Object_1643" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_043_730" index="0"]
+visible = false
+
+[node name="Object_1644" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_043_730" index="1"]
+visible = false
+
+[node name="Object_1646" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_044_731" index="0"]
+visible = false
+
+[node name="Object_1647" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_044_731" index="1"]
+visible = false
+
+[node name="Object_1649" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_001_732" index="0"]
+visible = false
+
+[node name="Object_1651" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_005_733" index="0"]
+visible = false
+
+[node name="Object_1653" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_022_734" index="0"]
+visible = false
+
+[node name="Object_1655" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_045_735" index="0"]
+visible = false
+
+[node name="Object_1656" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_045_735" index="1"]
+visible = false
+
+[node name="Object_1658" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_002_736" index="0"]
+visible = false
+
+[node name="Object_1660" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_006_737" index="0"]
+visible = false
+
+[node name="Object_1662" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_023_738" index="0"]
+visible = false
+
+[node name="Object_1664" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_046_739" index="0"]
+visible = false
+
+[node name="Object_1665" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_046_739" index="1"]
+visible = false
+
+[node name="Object_1667" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_003_740" index="0"]
+visible = false
+
+[node name="Object_1669" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_007_741" index="0"]
+visible = false
+
+[node name="Object_1671" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_025_742" index="0"]
+visible = false
+
+[node name="Object_1673" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_047_743" index="0"]
+visible = false
+
+[node name="Object_1675" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_048_744" index="0"]
+visible = false
+
+[node name="Object_1677" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_050_745" index="0"]
+visible = false
+
+[node name="Object_1679" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_052_746" index="0"]
+visible = false
+
+[node name="Object_1681" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_053_747" index="0"]
+visible = false
+
+[node name="Object_1682" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_053_747" index="1"]
+visible = false
+
+[node name="Object_1684" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_008_748" index="0"]
+visible = false
+
+[node name="Object_1686" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_054_749" index="0"]
+visible = false
+
+[node name="Object_1687" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_054_749" index="1"]
+visible = false
+
+[node name="Object_1689" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_009_750" index="0"]
+visible = false
+
+[node name="Object_1691" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_055_751" index="0"]
+visible = false
+
+[node name="Object_1692" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_055_751" index="1"]
+visible = false
+
+[node name="Object_1694" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_051_752" index="0"]
+visible = false
+
+[node name="Object_1696" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_010_753" index="0"]
+visible = false
+
+[node name="Object_1698" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_011_754" index="0"]
+visible = false
+
+[node name="Object_1700" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_029_755" index="0"]
+visible = false
+
+[node name="Object_1702" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_030_756" index="0"]
+visible = false
+
+[node name="Object_1704" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_031_757" index="0"]
+visible = false
+
+[node name="Object_1706" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_032_758" index="0"]
+visible = false
+
+[node name="Object_1708" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_033_759" index="0"]
+visible = false
+
+[node name="Object_1710" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_034_760" index="0"]
+visible = false
+
+[node name="Object_1712" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_036_761" index="0"]
+visible = false
+
+[node name="Object_1714" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_037_762" index="0"]
+visible = false
+
+[node name="Object_1716" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_038_763" index="0"]
+visible = false
+
+[node name="Object_1718" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_039_764" index="0"]
+visible = false
+
+[node name="Object_1720" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_060_765" index="0"]
+visible = false
+
+[node name="Object_1721" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_060_765" index="1"]
+visible = false
+
+[node name="Object_1723" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_005_766" index="0"]
+visible = false
+
+[node name="Object_1725" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_012_767" index="0"]
+visible = false
+
+[node name="Object_1727" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_061_768" index="0"]
+visible = false
+
+[node name="Object_1728" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_061_768" index="1"]
+visible = false
+
+[node name="Object_1730" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_015_769" index="0"]
+visible = false
+
+[node name="Object_1732" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_062_770" index="0"]
+visible = false
+
+[node name="Object_1734" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_063_771" index="0"]
+visible = false
+
+[node name="Object_1735" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_063_771" index="1"]
+visible = false
+
+[node name="Object_1737" parent="Sketchfab_model/root/GLTF_SceneRootNode/Vent_3_006_772" index="0"]
+visible = false
+
+[node name="Object_1739" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_064_773" index="0"]
+visible = false
+
+[node name="Object_1740" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_064_773" index="1"]
+visible = false
+
+[node name="Object_1742" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_017_774" index="0"]
+visible = false
+
+[node name="Object_1744" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_065_775" index="0"]
+visible = false
+
+[node name="Object_1746" parent="Sketchfab_model/root/GLTF_SceneRootNode/Columns_001_776" index="0"]
+visible = false
+
+[node name="Object_1748" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_041_777" index="0"]
+visible = false
+
+[node name="Object_1750" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_068_778" index="0"]
+visible = false
+
+[node name="Object_1752" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_040_779" index="0"]
+visible = false
+
+[node name="Object_1754" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_042_780" index="0"]
+visible = false
+
+[node name="Object_1756" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_043_781" index="0"]
+visible = false
+
+[node name="Object_1758" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_044_782" index="0"]
+visible = false
+
+[node name="Object_1760" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_045_783" index="0"]
+visible = false
+
+[node name="Object_1762" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_046_784" index="0"]
+visible = false
+
+[node name="Object_1764" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_048_785" index="0"]
+visible = false
+
+[node name="Object_1766" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_049_786" index="0"]
+visible = false
+
+[node name="Object_1768" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_050_787" index="0"]
+visible = false
+
+[node name="Object_1770" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_051_788" index="0"]
+visible = false
+
+[node name="Object_1772" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_052_789" index="0"]
+visible = false
+
+[node name="Object_1774" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_053_790" index="0"]
+visible = false
+
+[node name="Object_1776" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_054_791" index="0"]
+visible = false
+
+[node name="Object_1778" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_055_792" index="0"]
+visible = false
+
+[node name="Object_1780" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_797" index="0"]
+visible = false
+
+[node name="Object_1781" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_797" index="1"]
+visible = false
+
+[node name="Object_1783" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_001_798" index="0"]
+visible = false
+
+[node name="Object_1784" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_001_798" index="1"]
+visible = false
+
+[node name="Object_1786" parent="Sketchfab_model/root/GLTF_SceneRootNode/Text_004_799" index="0"]
+visible = false
+
+[node name="Object_1788" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_021_811" index="0"]
+visible = false
+
+[node name="Object_1789" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_021_811" index="1"]
+visible = false
+
+[node name="Object_1790" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_021_811" index="2"]
+visible = false
+
+[node name="Object_1792" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_003_812" index="0"]
+visible = false
+
+[node name="Object_1793" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_003_812" index="1"]
+visible = false
+
+[node name="Object_1795" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_004_813" index="0"]
+visible = false
+
+[node name="Object_1796" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_004_813" index="1"]
+visible = false
+
+[node name="Object_1798" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_005_814" index="0"]
+visible = false
+
+[node name="Object_1799" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_005_814" index="1"]
+visible = false
+
+[node name="Object_1801" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_007_815" index="0"]
+visible = false
+
+[node name="Object_1802" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_007_815" index="1"]
+visible = false
+
+[node name="Object_1803" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_007_815" index="2"]
+visible = false
+
+[node name="Object_1804" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_007_815" index="3"]
+visible = false
+
+[node name="Object_1805" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_007_815" index="4"]
+visible = false
+
+[node name="Object_1807" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_008_816" index="0"]
+visible = false
+
+[node name="Object_1808" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_008_816" index="1"]
+visible = false
+
+[node name="Object_1810" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_056_817" index="0"]
+visible = false
+
+[node name="Object_1811" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_056_817" index="1"]
+visible = false
+
+[node name="Object_1812" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_056_817" index="2"]
+visible = false
+
+[node name="Object_1814" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_057_818" index="0"]
+visible = false
+
+[node name="Object_1815" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_057_818" index="1"]
+visible = false
+
+[node name="Object_1816" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_057_818" index="2"]
+visible = false
+
+[node name="Object_1818" parent="Sketchfab_model/root/GLTF_SceneRootNode/Props_roof_009_819" index="0"]
+visible = false
+
+[node name="Object_1820" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_071_820" index="0"]
+visible = false
+
+[node name="Object_1821" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_071_820" index="1"]
+visible = false
+
+[node name="Object_1822" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_071_820" index="2"]
+visible = false
+
+[node name="Object_1824" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_058_821" index="0"]
+visible = false
+
+[node name="Object_1825" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_058_821" index="1"]
+visible = false
+
+[node name="Object_1826" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_058_821" index="2"]
+visible = false
+
+[node name="Object_1828" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_072_822" index="0"]
+visible = false
+
+[node name="Object_1829" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_072_822" index="1"]
+visible = false
+
+[node name="Object_1830" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_072_822" index="2"]
+visible = false
+
+[node name="Object_1831" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_072_822" index="3"]
+visible = false
+
+[node name="Object_1832" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_072_822" index="4"]
+visible = false
+
+[node name="Object_1833" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_072_822" index="5"]
+visible = false
+
+[node name="Object_1835" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_059_823" index="0"]
+visible = false
+
+[node name="Object_1837" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_001_824" index="0"]
+visible = false
+
+[node name="Object_1839" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_006_825" index="0"]
+visible = false
+
+[node name="Object_1841" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_013_826" index="0"]
+visible = false
+
+[node name="Object_1843" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_022_827" index="0"]
+visible = false
+
+[node name="Object_1844" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_022_827" index="1"]
+visible = false
+
+[node name="Object_1846" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_025_828" index="0"]
+visible = false
+
+[node name="Object_1848" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_028_829" index="0"]
+visible = false
+
+[node name="Object_1850" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_057_830" index="0"]
+visible = false
+
+[node name="Object_1852" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_058_831" index="0"]
+visible = false
+
+[node name="Object_1854" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_066_832" index="0"]
+visible = false
+
+[node name="Object_1855" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_066_832" index="1"]
+visible = false
+
+[node name="Object_1857" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_069_833" index="0"]
+visible = false
+
+[node name="Object_1859" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_070_834" index="0"]
+visible = false
+
+[node name="Object_1861" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_073_835" index="0"]
+visible = false
+
+[node name="Object_1863" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_074_836" index="0"]
+visible = false
+
+[node name="Object_1865" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_075_837" index="0"]
+visible = false
+
+[node name="Object_1867" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_076_838" index="0"]
+visible = false
+
+[node name="Object_1869" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_001_839" index="0"]
+visible = false
+
+[node name="Object_1871" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_028_841" index="0"]
+visible = false
+
+[node name="Object_1873" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_035_842" index="0"]
+visible = false
+
+[node name="Object_1875" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_001_843" index="0"]
+visible = false
+
+[node name="Object_1876" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_001_843" index="1"]
+visible = false
+
+[node name="Object_1877" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_001_843" index="2"]
+visible = false
+
+[node name="Object_1879" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_002_844" index="0"]
+visible = false
+
+[node name="Object_1880" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_002_844" index="1"]
+visible = false
+
+[node name="Object_1881" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_002_844" index="2"]
+visible = false
+
+[node name="Object_1883" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_004_845" index="0"]
+visible = false
+
+[node name="Object_1885" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_005_846" index="0"]
+visible = false
+
+[node name="Object_1887" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_006_847" index="0"]
+visible = false
+
+[node name="Object_1889" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_113_848" index="0"]
+visible = false
+
+[node name="Object_1890" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_113_848" index="1"]
+visible = false
+
+[node name="Object_1892" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_114_849" index="0"]
+visible = false
+
+[node name="Object_1894" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_115_850" index="0"]
+visible = false
+
+[node name="Object_1896" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_116_851" index="0"]
+visible = false
+
+[node name="Object_1898" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_002_852" index="0"]
+visible = false
+
+[node name="Object_1900" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_003_853" index="0"]
+visible = false
+
+[node name="Object_1902" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_004_854" index="0"]
+visible = false
+
+[node name="Object_1904" parent="Sketchfab_model/root/GLTF_SceneRootNode/Tech_side_025_855" index="0"]
+visible = false
+
+[node name="Object_1906" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_055_856" index="0"]
+visible = false
+
+[node name="Object_1908" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_056_857" index="0"]
+visible = false
+
+[node name="Object_1910" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_057_858" index="0"]
+visible = false
+
+[node name="Object_1912" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_058_859" index="0"]
+visible = false
+
+[node name="Object_1914" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_059_860" index="0"]
+visible = false
+
+[node name="Object_1916" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_060_861" index="0"]
+visible = false
+
+[node name="Object_1918" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_061_862" index="0"]
+visible = false
+
+[node name="Object_1920" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_062_863" index="0"]
+visible = false
+
+[node name="Object_1922" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_063_864" index="0"]
+visible = false
+
+[node name="Object_1924" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_064_865" index="0"]
+visible = false
+
+[node name="Object_1926" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_065_866" index="0"]
+visible = false
+
+[node name="Object_1928" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_066_867" index="0"]
+visible = false
+
+[node name="Object_1930" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_067_868" index="0"]
+visible = false
+
+[node name="Object_1932" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_068_869" index="0"]
+visible = false
+
+[node name="Object_1934" parent="Sketchfab_model/root/GLTF_SceneRootNode/NurbsPath_069_870" index="0"]
+visible = false

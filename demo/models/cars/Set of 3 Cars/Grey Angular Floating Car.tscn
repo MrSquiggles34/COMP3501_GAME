@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccykws2kb1qr4"]
+
+[ext_resource type="PackedScene" uid="uid://ehqkpgx5tssq" path="res://models/cars/Set of 3 Cars/free_-_sci-fi_lods_-_set_010_-_public_domain.glb" id="1_ncqc1"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_ncqc1")]
+
+[node name="shadow_2_012" parent="Sketchfab_model/9eb9d7f266364037abad148469efba7f_fbx/RootNode" index="1"]
+visible = false
+
+[node name="SF_LODs_set_008_02" parent="Sketchfab_model/9eb9d7f266364037abad148469efba7f_fbx/RootNode" index="2"]
+visible = false
+
+[node name="shadow_2_013" parent="Sketchfab_model/9eb9d7f266364037abad148469efba7f_fbx/RootNode" index="3"]
+visible = false
+
+[node name="SF_LODs_set_008_03" parent="Sketchfab_model/9eb9d7f266364037abad148469efba7f_fbx/RootNode" index="4"]
+visible = false
+
+[node name="shadow_1_009" parent="Sketchfab_model/9eb9d7f266364037abad148469efba7f_fbx/RootNode" index="5"]
+visible = false

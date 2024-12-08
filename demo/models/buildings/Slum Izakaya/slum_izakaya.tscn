@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0wod5p5re4ik"]
+
+[ext_resource type="PackedScene" uid="uid://cr5f1b36thvxq" path="res://models/buildings/Slum Izakaya/izakaya_-_low_poly_building.glb" id="1_nvrsm"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_nvrsm")]
+
+[node name="Floor__0" parent="Sketchfab_model/7f7f9d9d864b43218c9ba7f18123ef56_fbx/RootNode/Floor" index="0"]
+visible = false

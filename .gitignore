@@ -8,3 +8,8 @@ demo/bin/~lib*
 
 *.obj
 demo/quat.tscn
+
+# In demo\models , ignore all .import, .jpg, and .png files
+demo/models/**/*.import
+demo/models/**/*.png
+demo/models/**/*.jpg
