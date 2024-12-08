@@ -36,6 +36,7 @@ void CustomScene3501::_enter_tree() {
 
 	// PARTICLE SYSTEMS
 	create_particle_system(this, "Snow", "snow");
+	create_particle_system(this, "Pebbles", "pebbles");
 
 }
 
@@ -64,7 +65,10 @@ void CustomScene3501::_ready() {
 		case 0:
 			particle_system->set_amount(20000);
 			shader_material->set_shader_parameter("texture_image", ResourceLoader::get_singleton()->load("res://textures/flame4x4orig.png"));
-			particle_system->set_global_position(Vector3(0.0f, 2.0f, -4.0f));
+			break;
+		case 1:
+			particle_system->set_amount(6);
+			shader_material->set_shader_parameter("texture_image", ResourceLoader::get_singleton()->load("res://textures/pebble.png"));
 			break;
 		}
 
@@ -74,11 +78,24 @@ void CustomScene3501::_ready() {
 void CustomScene3501::_process(double delta) {
 	if (Engine::get_singleton()->is_editor_hint()) return;
 
+	Input* _input = Input::get_singleton();
+	Vector3 player_position = player->get_global_position();
+
 	// Make the snow follow the player
-	if (!particle_systems.is_empty() && particle_systems[0] != nullptr) {
-		Vector3 player_position = player->get_global_position();
-		Vector3 offset(0.0f, 2.0f, 0.0f);
-		particle_systems[0]->set_global_position(player_position + offset);
+	if (!particle_systems.is_empty()){
+		if (particle_systems[0] != nullptr) {
+			Vector3 player_position = player->get_global_position();
+			Vector3 offset(0.0f, 2.0f, 0.0f);
+			particle_systems[0]->set_global_position(player_position + offset);
+		}
+		if (particle_systems[1] != nullptr && (_input->is_action_pressed("move_right") || _input->is_action_pressed("move_left") || _input->is_action_pressed("move_forward") || _input->is_action_pressed("move_backward"))){
+			Vector3 offset(0.0f, -1.5f, 0.0f);
+			particle_systems[1]->set_global_position(player_position + offset);
+		}
+		else if (particle_systems[1] != nullptr){
+			Vector3 offset(0.0f, -5.95f, 0.0f);
+			particle_systems[1]->set_global_position(player_position + offset);
+		}
 	}
 
 	// For each collectable, check collision

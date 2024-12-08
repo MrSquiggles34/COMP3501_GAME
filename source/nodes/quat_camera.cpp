@@ -115,7 +115,7 @@ void QuatCamera::toggle_pause(bool paused) {
 		screen_space_shader_material->set_shader(shader);
 	}
 	else {
-		Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/simplet.gdshader", "Shader");
+		Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/simple.gdshader", "Shader");
 		screen_space_shader_material->set_shader(shader);
 	}
 
