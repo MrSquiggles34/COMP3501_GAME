@@ -25,6 +25,10 @@ void HUD::_ready() {
 
     // PAUSE LABEL
     pause_label->set_text("PAUSE");
+    pause_label->set("theme_override_colors/font_color", Color(1,1,1,1));
+    pause_label->set("theme_override_constants/outline_size", 5);
+    pause_label->set("theme_override_font_sizes/font_size", 50);
+    pause_label->set("theme_override_colors/font_outline_color", Color(0,0,0,1));
     pause_label->set_position(screen_size - pause_label->get_minimum_size() / 2);
     pause_label->set_visible(false);
 
@@ -39,6 +43,7 @@ void HUD::_ready() {
     inventory->set_size(get_viewport()->get_visible_rect().size);
     inventory->set_max_columns(5);
     inventory->set_fixed_icon_size(Vector2i(25, 25));
+    inventory->set("theme_override_font_sizes/font_size", 20);
     inventory->set_visible(false);
 
 }
