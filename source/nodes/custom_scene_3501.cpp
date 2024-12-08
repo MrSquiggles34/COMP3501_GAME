@@ -84,7 +84,6 @@ void CustomScene3501::_process(double delta) {
 	// Make the snow follow the player
 	if (!particle_systems.is_empty()){
 		if (particle_systems[0] != nullptr) {
-			Vector3 player_position = player->get_global_position();
 			Vector3 offset(0.0f, 2.0f, 0.0f);
 			particle_systems[0]->set_global_position(player_position + offset);
 		}
@@ -99,8 +98,9 @@ void CustomScene3501::_process(double delta) {
 	}
 
 	// For each collectable, check collision
+	UtilityFunctions::print("HIIHIHIHI");
 	for (int i=0; i<test_list.size(); i++){
-		if (test_list[i]->in_range(player->get_global_position())){
+		if (test_list[i]->in_range(player_position)){
 			test_list[i]->set_visible(false);
 			player->add_inventory(test_list[i]);
 			test_list.remove_at(i);
@@ -110,7 +110,6 @@ void CustomScene3501::_process(double delta) {
 
 void CustomScene3501::toggle_pause(bool paused) {
 	is_paused = paused;
-
 	// Propogate Pause 
 	map->toggle_pause(is_paused);
 

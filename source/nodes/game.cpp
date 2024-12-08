@@ -16,7 +16,7 @@ void Game::_bind_methods() {
 Game::Game() : Node() {
 
     // Used for pausing and game loop.
-    state = PLAY;
+    state = TEXT;
     is_paused = false;
     global_time_passed = 0.0;
 }
@@ -34,6 +34,7 @@ void Game::_enter_tree() {
 
 void Game::_ready() {
     UtilityFunctions::print("Game is ready.");
+    player->toggle_pause(true);
 }
 
 void Game::_process(double delta) {
@@ -49,21 +50,29 @@ void Game::_process(double delta) {
             main_scene->toggle_pause(is_paused);
             player->toggle_pause(is_paused);
 	        hud->toggle_pause_HUD();
+        } else if (state == TEXT){
+            main_scene->toggle_pause(is_paused);
+            player->toggle_pause(is_paused);
+	        hud->toggle_pause_HUD();
+            hud->toggle_dialog(!is_paused);
         }
     }
 
     if(!is_paused){
-        if (state == PLAY){
-            // E to interact
-            // Might go better elsewhere cause needs to check what it's actually interacting w/
-            // Probably should be in player?
-            if (_input->is_action_just_pressed("interact")) {
-                if(DEBUG) UtilityFunctions::print("ACTION");
+        if (state == TEXT){
+            if (_input->is_action_just_pressed("advance_dialog")) {
+                int dialogNum = hud->nextDialog();
+                if(dialogNum == -1 || dialogNum == 6){
+                    hud->toggle_dialog(false);
+                    player->toggle_pause(false);
+                    state = PLAY;
+                }
             }
-            // I to open inventory (may or may not need both)
+        } else if (state == PLAY){
+            // I to open inventory
             if (_input->is_action_just_pressed("inventory")) {
                 state = INV;
-                main_scene->toggle_pause(true);
+                //main_scene->toggle_pause(true);
                 player->toggle_pause(true);
                 hud->toggle_inventory(true, player);
                 if(DEBUG) UtilityFunctions::print("OPEN INVENTORY");
@@ -72,7 +81,7 @@ void Game::_process(double delta) {
             if (_input->is_action_just_pressed("inventory")) {
                 state = PLAY;
                 hud->toggle_inventory(false, player);
-                main_scene->toggle_pause(false);
+                //main_scene->toggle_pause(false);
                 player->toggle_pause(false);
                 if(DEBUG) UtilityFunctions::print("CLOSE INVENTORY");
             }

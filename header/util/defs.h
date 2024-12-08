@@ -14,6 +14,7 @@
 #define INV 1
 #define START 2
 #define END 3
+#define TEXT 4
 
 #define NOISE_WIDTH 1080
 #define NOISE_HEIGHT 1080
