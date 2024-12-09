@@ -53,9 +53,7 @@ void Game::_process(double delta) {
             player->toggle_pause(is_paused);
 	        hud->toggle_pause_HUD();
         } else if (state == TEXT){
-            main_scene->toggle_pause(is_paused);
-            player->toggle_pause(is_paused);
-	        hud->toggle_pause_HUD();
+            hud->toggle_pause_HUD();
             hud->toggle_dialog(!is_paused);
         }
     }
