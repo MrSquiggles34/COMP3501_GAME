@@ -20,7 +20,7 @@ void TutorialItem::_enter_tree() {
 void TutorialItem::_ready() {
     if (DEBUG) UtilityFunctions::print("Ready - Tutorial Item.");
 
-    Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/9v_battery.glb");
+    Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/objects/battery/9v_battery.glb");
     Node3D *model_instance = Object::cast_to<Node3D>(scene->instantiate());
     model_instance->set_scale(Vector3(5, 5, 5));
     add_child(model_instance);
