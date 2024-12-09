@@ -19,6 +19,8 @@
 #include "collidable_object.h"
 #include "building.h"
 
+#include "terrain_instance.h"
+
 // everything in gdextension is defined in this namespace
 namespace godot {
 class CustomScene3501 : public Node3D {
@@ -39,6 +41,8 @@ private:
 	Vector<Tabloid*> tabloid_list;
 	Vector<ParticleSystem*> particle_systems;
 	Building* building;
+
+	TerrainInstance* terrain;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes

@@ -21,6 +21,9 @@
 #include "robo_joint.h"
 #include "robo_head.h"
 
+#include "terrain_mesh.h"
+#include "terrain_instance.h"
+
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
@@ -51,6 +54,8 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<Robo>();
 	ClassDB::register_class<RoboJoint>();
 	ClassDB::register_class<RoboHead>();
+	ClassDB::register_class<TerrainMesh>();
+	ClassDB::register_class<TerrainInstance>();
 }
 
 // gets called when godot unloads our plugin
