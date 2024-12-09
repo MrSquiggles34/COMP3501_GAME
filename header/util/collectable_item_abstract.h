@@ -4,8 +4,6 @@
 #include <godot_cpp/classes/node3d.hpp>
 
 #include <godot_cpp/variant/vector3.hpp>
-#include <godot_cpp/variant/color.hpp>
-#include <godot_cpp/classes/standard_material3d.hpp>
 #include <godot_cpp/classes/shader_material.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
 #include <godot_cpp/classes/resource_loader.hpp>

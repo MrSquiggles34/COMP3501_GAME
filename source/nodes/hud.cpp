@@ -15,7 +15,6 @@ void HUD::_enter_tree() {
     if (DEBUG) UtilityFunctions::print("Enter Tree - HUD.");
     create_and_add_as_child<Label>(this, pause_label, "PauseLabel", true);
     create_and_add_as_child<ItemList>(this, inventory, "Inventory", true);
-    create_and_add_as_child<Label>(this, inv_label, "InvLabel", true);
     create_and_add_as_child<ColorRect>(this, textBox, "TextBox", true);
     create_and_add_as_child<Label>(this, dialog_label, "Dialog", true);
 
@@ -24,9 +23,9 @@ void HUD::_enter_tree() {
     dialog_list.append("Y-yeah. I can hear you, but the connection isn't great. There seems to be a snowstorm going on.");
     dialog_list.append("HQ: That's unfortunate but there's no... we can do now. We'll have to ... on with the mission at hand.");
     dialog_list.append("HQ: I'm going ... run you through a quick diagnostic. Look around. Is there any... that you can pick up?");
-    dialog_list.append("Uhhh, yes. There's a [THING]");
+    dialog_list.append("Uhhh, yes. There's a battery on the ground.");
     dialog_list.append("HQ: Perfect. Please walk over and retrieve it.");
-    dialog_list.append("HQ: Excellent. Now press [I] to ... Analysis Mode and focus on the [THING] to test your scanner.");
+    dialog_list.append("HQ: Excellent. Now press [I] to ... Analysis Mode and focus on the battery to test your scanner.");
     dialog_list.append("HQ: Everything appears ... in order. Now you are... explore Aurelia... careful...");
     dialog_list.append("Sorry, what was that? You're cutting out again. I'm having trouble understanding what you're saying?");
     dialog_list.append("HQ: ... Signal ... Can't ... Mission");
@@ -52,13 +51,6 @@ void HUD::_ready() {
     pause_label->set_position(screen_size - pause_label->get_minimum_size() / 2);
     pause_label->set_visible(false);
 
-    // INVENTORY LABEL
-    inv_label->set_text("INVENTORY");
-    screen_size.x -= inv_label->get_minimum_size().x / 2;
-    screen_size.y = inv_label->get_minimum_size().y;
-    inv_label->set_position(screen_size);
-    inv_label->set_visible(false);
-
     // INVENTORY
     inventory->set_size(get_viewport()->get_visible_rect().size);
     inventory->set_max_columns(5);
@@ -73,7 +65,7 @@ void HUD::_ready() {
     textBox->set_position(Vector2(5,height*2-5));
     textBox->set_color(Color(0,0,0,1));
 
-    dialog_label->set_size(Vector2(width, height));
+    dialog_label->set_size(Vector2(width-8, height));
     dialog_label->set_autowrap_mode(TextServer::AutowrapMode::AUTOWRAP_WORD_SMART);
     dialog_label->set_text(dialog_list[0]);
     dialog_label->set("theme_override_colors/font_color", Color(1,1,1,1));
@@ -91,17 +83,14 @@ void HUD::toggle_pause_HUD() {
 }
 
 void HUD::toggle_inventory(bool is_inv, Player* player) {
-    if (!is_inv) {
-        inventory->clear();
-        Vector<CollectableItemAbstract*> player_inv = player->get_inventory();
-        for (int i=0; i<player_inv.size(); i++){
-            int index = inventory->add_item(player_inv[i]->get_name(), player_inv[i]->get_icon());
-            UtilityFunctions::print(player_inv[i]->get_name());
-            inventory->set_item_tooltip(index, player_inv[i]->get_lore());
-        }
+    inventory->clear();
+    Vector<CollectableItemAbstract*> player_inv = player->get_inventory();
+    for (int i=0; i<player_inv.size(); i++){
+        int index = inventory->add_item(player_inv[i]->get_name(), player_inv[i]->get_icon());
+        UtilityFunctions::print(player_inv[i]->get_name());
+        inventory->set_item_tooltip(index, player_inv[i]->get_lore());
     }
     inventory->set_visible(is_inv);
-    inv_label->set_visible(is_inv);
 }
 
 void HUD::toggle_dialog(bool is_vis){

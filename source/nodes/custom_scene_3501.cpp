@@ -13,7 +13,7 @@ CustomScene3501::CustomScene3501() : Node3D() {
 	scene_time_passed = 0.0;
 	is_paused = false;
 
-	test_obj_count = 1;
+	tabloid_count = 1;
 }
 
 CustomScene3501::~CustomScene3501() {
@@ -22,16 +22,16 @@ CustomScene3501::~CustomScene3501() {
 
 void CustomScene3501::_enter_tree() {
 	if (DEBUG) UtilityFunctions::print("Enter Tree - CustomScene3501.");
-
-	//create_and_add_as_child(this, main_camera, "QuatCamera", true);
 	create_and_add_as_child<Map>(this, map, "Map", true);
 
 	// For each type of object, create as many as needed
-	Node* obj_group;
-	create_and_add_as_child<Node>(this, obj_group, "Test Group", true);
-	for (int i = 0; i < test_obj_count; i++) {
-		TestCollectable* test_obj;
-		create_and_add_as_child(obj_group, test_obj, vformat("Test%d", i), true);
+	Node* CollectableGroup;
+	create_and_add_as_child<Node>(this, CollectableGroup, "Collectable Items", true);
+	create_and_add_as_child<TutorialItem>(CollectableGroup, tutorial_item, "Battery", true);
+	tutorial_item->set_lore("A spent battery: Whatever charge it once held has been used up.");
+	for (int i = 0; i < tabloid_count; i++) {
+		Tabloid* new_tabloid;
+		//create_and_add_as_child(CollectableGroup, new_tabloid, vformat("Page%d", i), true);
 	}
 
 	// PARTICLE SYSTEMS
@@ -43,15 +43,17 @@ void CustomScene3501::_enter_tree() {
 void CustomScene3501::_ready() {
 	if (DEBUG) UtilityFunctions::print("Ready - CustomScene3501.");
 
-	// For each object type, add them to their lists
-	Node* obj_group;
-	create_and_add_as_child<Node>(this, obj_group, "Test Group", true);
-	TestCollectable* test_obj;
-	for (int i=0; i<test_obj_count; i++){
-		create_and_add_as_child<TestCollectable>(obj_group, test_obj, vformat("Test%d",i), true);
-		test_obj->set_global_position(Vector3(0.0, 1.0, -5.0));
-		test_list.push_back(test_obj);
-	}
+	// Add all collectables to a list
+	Node* CollectableGroup;
+	create_and_add_as_child<Node>(this, CollectableGroup, "Collectable Items", true);
+
+	tutorial_item->set_global_position(Vector3(0.0, 1.0, -5.0));
+	Tabloid* new_tabloid;
+	// for (int i=0; i<tabloid_count; i++){
+	// 	create_and_add_as_child<Tabloid>(CollectableGroup, new_tabloid, vformat("Page%d",i), true);
+	// 	new_tabloid->set_global_position(Vector3(0.0, 4.0, -5.0));
+	// 	tabloid_list.push_back(new_tabloid);
+	// }
 
 	// Activate particles systems
 	for (int index = 0; index < particle_systems.size(); index++) {
@@ -99,11 +101,17 @@ void CustomScene3501::_process(double delta) {
 
 	// For each collectable, check collision
 	player_position.y -= 1;
-	for (int i=0; i<test_list.size(); i++){
-		if (test_list[i]->in_range(player_position)){
-			test_list[i]->set_visible(false);
-			player->add_inventory(test_list[i]);
-			test_list.remove_at(i);
+	for (int i=0; i<tabloid_list.size(); i++){
+		if (tabloid_list[i]->in_range(player_position)){
+			tabloid_list[i]->set_visible(false);
+			player->add_inventory(tabloid_list[i]);
+			tabloid_list.remove_at(i);
+		}
+	}
+	if(tutorial_item->is_visible()){
+		if (tutorial_item->in_range(player_position)){
+			tutorial_item->set_visible(false);
+			player->add_inventory(tutorial_item);
 		}
 	}
 }

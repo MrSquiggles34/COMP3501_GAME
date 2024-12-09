@@ -20,7 +20,6 @@ namespace godot {
 
     private:
         Label* pause_label;
-        Label* inv_label;
         ItemList* inventory;
         ColorRect* textBox;
         Label* dialog_label;

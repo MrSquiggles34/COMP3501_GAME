@@ -19,6 +19,8 @@ Game::Game() : Node() {
     state = TEXT;
     is_paused = false;
     global_time_passed = 0.0;
+    picked_up_first_item = false;
+    checked_first_item = false;
 }
 
 Game::~Game() { }
@@ -62,13 +64,21 @@ void Game::_process(double delta) {
         if (state == TEXT){
             if (_input->is_action_just_pressed("advance_dialog")) {
                 int dialogNum = hud->nextDialog();
-                if(dialogNum == -1 || dialogNum == 6){
+                if(dialogNum == -1 || dialogNum == 6 || dialogNum == 7){
                     hud->toggle_dialog(false);
                     player->toggle_pause(false);
                     state = PLAY;
                 }
             }
         } else if (state == PLAY){
+            if(!picked_up_first_item){
+                if (player->inInventory("Battery")){
+                    picked_up_first_item = true;
+                    state = TEXT;
+                    player->toggle_pause(true);
+                    hud->toggle_dialog(true);
+                }
+            }
             // I to open inventory
             if (_input->is_action_just_pressed("inventory")) {
                 state = INV;
@@ -81,9 +91,14 @@ void Game::_process(double delta) {
             if (_input->is_action_just_pressed("inventory")) {
                 state = PLAY;
                 hud->toggle_inventory(false, player);
-                //main_scene->toggle_pause(false);
                 player->toggle_pause(false);
                 if(DEBUG) UtilityFunctions::print("CLOSE INVENTORY");
+                if(!checked_first_item){
+                    checked_first_item = true;
+                    state = TEXT;
+                    player->toggle_pause(true);
+                    hud->toggle_dialog(true);
+                }
             }
         }
     }

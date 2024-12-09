@@ -1,12 +1,12 @@
-#ifndef TEST_COLLECTABLE_H
-#define TEST_COLLECTABLE_H
+#ifndef TABLOID_H
+#define TABLOID_H
 
 #include "collectable_item_abstract.h"
 
 // everything in gdextension is defined in this namespace
 namespace godot {
-	class TestCollectable : public CollectableItemAbstract {
-		GDCLASS(TestCollectable, CollectableItemAbstract);
+	class Tabloid : public CollectableItemAbstract {
+		GDCLASS(Tabloid, CollectableItemAbstract);
 
 	private:
 		bool in_inventory;
@@ -17,7 +17,7 @@ namespace godot {
 		static void _bind_methods();
 
 	public:
-		TestCollectable();
+		Tabloid();
 
 		void _enter_tree() override;
 		void _ready() override;
