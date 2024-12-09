@@ -13,7 +13,8 @@
 #include "quat_camera.h"
 #include "map.h"
 #include "player.h"
-#include "test_collectable.h"
+#include "tabloid.h"
+#include "tutorial_item.h"
 #include "particle_system.h"
 #include "collidable_object.h"
 #include "building.h"
@@ -29,12 +30,13 @@ private:
 	
 	bool is_paused;
 
-	int test_obj_count;
+	int tabloid_count;
 
 	//QuatCamera* main_camera;
     Map* map;
 	Player* player;
-	Vector<TestCollectable*> test_list;
+	TutorialItem* tutorial_item;
+	Vector<Tabloid*> tabloid_list;
 	Vector<ParticleSystem*> particle_systems;
 	Building* building;
 

@@ -19,6 +19,8 @@ namespace godot {
         double global_time_passed;
         Player* player;
 	    HUD* hud;
+        bool picked_up_first_item;
+        bool checked_first_item;
 
     protected:
         static void _bind_methods();  // Bind methods for GDExtension

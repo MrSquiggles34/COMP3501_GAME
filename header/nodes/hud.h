@@ -20,8 +20,11 @@ namespace godot {
 
     private:
         Label* pause_label;
-        Label* inv_label;
         ItemList* inventory;
+        ColorRect* textBox;
+        Label* dialog_label;
+        Vector<String> dialog_list;
+        int cur_dialog;
 
     public:
         HUD();
@@ -32,6 +35,9 @@ namespace godot {
 
         void toggle_pause_HUD();
         void toggle_inventory(bool is_inv, Player* player);
+
+        int nextDialog();
+        void toggle_dialog(bool is_vis);
 
     protected:
         static void _bind_methods();

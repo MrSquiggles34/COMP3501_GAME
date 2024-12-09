@@ -5,7 +5,7 @@ using namespace godot;
 
 void CollectableItemAbstract::_bind_methods() {}
 
-CollectableItemAbstract::CollectableItemAbstract() : MeshInstance3D() {
+CollectableItemAbstract::CollectableItemAbstract() : Node3D() {
 	in_inventory = false;
     icon = NULL;
     lore = "Lorum Ipsum";

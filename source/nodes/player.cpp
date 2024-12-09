@@ -110,6 +110,7 @@ void Player::_ready() {
 void Player::_process(double delta) {
     if (Engine::get_singleton()->is_editor_hint()) return;
     
+    if(is_paused){ return; }
     update_velocity(delta); // Update the player's velocity
     move_and_slide(); // Move the player
 
@@ -124,6 +125,15 @@ String Player::printInventory(){
         iString += "\n";
     }
     return iString;
+}
+
+bool Player::inInventory(String name){
+    for (int i=0; i<inventory.size(); i++){
+        if (inventory[i]->get_name() == name){
+            return true;
+        }
+    }
+    return false;
 }
 
 void Player::toggle_pause(bool paused) {
