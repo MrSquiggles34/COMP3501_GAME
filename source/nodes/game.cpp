@@ -91,7 +91,7 @@ void Game::_process(double delta) {
                 hud->toggle_inventory(false, player);
                 player->toggle_pause(false);
                 if(DEBUG) UtilityFunctions::print("CLOSE INVENTORY");
-                if(!checked_first_item){
+                if(!checked_first_item && picked_up_first_item){
                     checked_first_item = true;
                     state = TEXT;
                     player->toggle_pause(true);
