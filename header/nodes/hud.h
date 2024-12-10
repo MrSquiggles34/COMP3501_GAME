@@ -9,6 +9,8 @@
 #include <godot_cpp/classes/canvas_layer.hpp>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/classes/viewport.hpp>
+#include <godot_cpp/classes/texture_rect.hpp>
+#include <godot_cpp/classes/texture2d.hpp>
 
 #include "defs.h"
 #include "player.h"
@@ -25,6 +27,7 @@ namespace godot {
         Label* dialog_label;
         Vector<String> dialog_list;
         int cur_dialog;
+        TextureRect* title_screen;
 
     public:
         HUD();
@@ -38,6 +41,8 @@ namespace godot {
 
         int nextDialog();
         void toggle_dialog(bool is_vis);
+
+        void start_game();
 
     protected:
         static void _bind_methods();

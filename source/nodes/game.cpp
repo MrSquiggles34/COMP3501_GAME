@@ -1,7 +1,4 @@
 
-#include <godot_cpp/classes/input.hpp>
-#include <godot_cpp/classes/input_event.hpp>
-
 #include "game.h"
 
 #include "defs.h"
@@ -16,9 +13,10 @@ void Game::_bind_methods() {
 Game::Game() : Node() {
 
     // Used for pausing and game loop.
-    state = TEXT;
+    state = START;
     is_paused = false;
     global_time_passed = 0.0;
+    progress_check = 0;
     picked_up_first_item = false;
     checked_first_item = false;
 }
@@ -39,6 +37,27 @@ void Game::_ready() {
     player->toggle_pause(true);
 }
 
+void Game::_input(const Ref<InputEvent>& event) {
+	if (state == START) {
+        Ref<InputEventMouseButton> mouse_event = event;
+        if (mouse_event.is_valid()) {
+            if (mouse_event->get_button_index() == MouseButton::MOUSE_BUTTON_LEFT) {
+                float mouse_x = mouse_event->get_position().x;
+                float mouse_y = mouse_event->get_position().y;
+
+                Vector2 screen_size = get_viewport()->get_visible_rect().size;
+                float x_lim = screen_size.x / 5;
+                float y_lim = screen_size.y / 5;
+
+                if(mouse_x > x_lim*2 && x_lim*3 > mouse_x && mouse_y > y_lim*3 && y_lim*4 > mouse_y){
+                    state = TEXT;
+                    hud->start_game();
+                }
+            }
+        }
+    }
+}
+
 void Game::_process(double delta) {
     if (Engine::get_singleton()->is_editor_hint()) return; // Early return if we are in editor
 
@@ -46,15 +65,17 @@ void Game::_process(double delta) {
 
     // PAUSE THE GAME BY PAUSING THE SCENE WHICH PAUSES ALL RELEVANT OBJECTS 
     // ESC to toggle pause
-    if (_input->is_action_just_pressed("pause_game")) {
-        is_paused = !is_paused;
-        if (state == PLAY){
-            main_scene->toggle_pause(is_paused);
-            player->toggle_pause(is_paused);
-	        hud->toggle_pause_HUD();
-        } else if (state == TEXT){
-            hud->toggle_pause_HUD();
-            hud->toggle_dialog(!is_paused);
+    if (state != START && state != END){
+        if (_input->is_action_just_pressed("pause_game")) {
+            is_paused = !is_paused;
+            if (state == PLAY){
+                main_scene->toggle_pause(is_paused);
+                player->toggle_pause(is_paused);
+                hud->toggle_pause_HUD();
+            } else if (state == TEXT){
+                hud->toggle_pause_HUD();
+                hud->toggle_dialog(!is_paused);
+            }
         }
     }
 
@@ -69,9 +90,9 @@ void Game::_process(double delta) {
                 }
             }
         } else if (state == PLAY){
-            if(!picked_up_first_item){
+            if(progress_check == 0){
                 if (player->inInventory("Battery")){
-                    picked_up_first_item = true;
+                    progress_check += 1;
                     state = TEXT;
                     player->toggle_pause(true);
                     hud->toggle_dialog(true);
@@ -80,7 +101,6 @@ void Game::_process(double delta) {
             // I to open inventory
             if (_input->is_action_just_pressed("inventory")) {
                 state = INV;
-                //main_scene->toggle_pause(true);
                 player->toggle_pause(true);
                 hud->toggle_inventory(true, player);
                 if(DEBUG) UtilityFunctions::print("OPEN INVENTORY");
@@ -91,8 +111,8 @@ void Game::_process(double delta) {
                 hud->toggle_inventory(false, player);
                 player->toggle_pause(false);
                 if(DEBUG) UtilityFunctions::print("CLOSE INVENTORY");
-                if(!checked_first_item && picked_up_first_item){
-                    checked_first_item = true;
+                if(progress_check == 1){
+                    progress_check += 1;
                     state = TEXT;
                     player->toggle_pause(true);
                     hud->toggle_dialog(true);

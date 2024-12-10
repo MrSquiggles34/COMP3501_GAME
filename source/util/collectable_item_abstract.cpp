@@ -7,7 +7,6 @@ void CollectableItemAbstract::_bind_methods() {}
 
 CollectableItemAbstract::CollectableItemAbstract() : Node3D() {
 	in_inventory = false;
-    icon = NULL;
     lore = "Lorum Ipsum";
 }
 

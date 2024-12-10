@@ -23,7 +23,7 @@ namespace godot {
 		bool in_inventory;
 		ParticleSystem* indicator;
 		String lore;
-		Texture2D* icon;
+		Ref<Texture2D> icon;
 	
 	protected:
 		static void _bind_methods();
@@ -37,8 +37,8 @@ namespace godot {
 		inline String get_lore() { return lore; }
 		inline void set_lore(String i_lore) { lore = i_lore; }
 
-		inline Texture2D* get_icon() { return icon; }
-		inline void set_icon(Texture2D* i_icon) { icon = i_icon; }
+		inline Ref<Texture2D> get_icon() { return icon; }
+		inline void set_icon(Ref<Texture2D> i_icon) { icon = i_icon; }
 
 		inline float get_inventory() { return in_inventory; }
 		inline void set_inventory(bool in) { in_inventory = in; }

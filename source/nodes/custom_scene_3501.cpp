@@ -31,7 +31,7 @@ void CustomScene3501::_enter_tree() {
 	tutorial_item->set_lore("A spent battery: Whatever charge it once held has been used up.");
 	for (int i = 0; i < tabloid_count; i++) {
 		Tabloid* new_tabloid;
-		//create_and_add_as_child(CollectableGroup, new_tabloid, vformat("Page%d", i), true);
+		//create_and_add_as_child<Tabloid>(CollectableGroup, new_tabloid, vformat("Page%d", 1), true);
 	}
 
 	// PARTICLE SYSTEMS
@@ -47,7 +47,7 @@ void CustomScene3501::_ready() {
 	Node* CollectableGroup;
 	create_and_add_as_child<Node>(this, CollectableGroup, "Collectable Items", true);
 
-	tutorial_item->set_global_position(Vector3(0.0, 1.0, -5.0));
+	//tutorial_item->set_global_position(Vector3(0.0, 1.0, -5.0));
 	Tabloid* new_tabloid;
 	// for (int i=0; i<tabloid_count; i++){
 	// 	create_and_add_as_child<Tabloid>(CollectableGroup, new_tabloid, vformat("Page%d",i), true);
@@ -101,13 +101,13 @@ void CustomScene3501::_process(double delta) {
 
 	// For each collectable, check collision
 	player_position.y -= 1;
-	for (int i=0; i<tabloid_list.size(); i++){
-		if (tabloid_list[i]->in_range(player_position)){
-			tabloid_list[i]->set_visible(false);
-			player->add_inventory(tabloid_list[i]);
-			tabloid_list.remove_at(i);
-		}
-	}
+	// for (int i=0; i<tabloid_list.size(); i++){
+	// 	if (tabloid_list[i]->in_range(player_position)){
+	// 		tabloid_list[i]->set_visible(false);
+	// 		player->add_inventory(tabloid_list[i]);
+	// 		tabloid_list.remove_at(i);
+	// 	}
+	// }
 	if(tutorial_item->is_visible()){
 		if (tutorial_item->in_range(player_position)){
 			tutorial_item->set_visible(false);

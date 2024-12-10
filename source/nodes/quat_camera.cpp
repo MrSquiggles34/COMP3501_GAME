@@ -42,7 +42,6 @@ QuatCamera::~QuatCamera() {
 
 // FUNCTION FOR MOUSE LOOKING
 void QuatCamera::_input(const Ref<InputEvent>& event) {
-	//if (DEBUG) UtilityFunctions::print(is_paused ? "Camera Paused" : "Camera Resumed");
 	if (!is_paused) {
 		Input::get_singleton()->set_mouse_mode(Input::MouseMode::MOUSE_MODE_CAPTURED);
 	}

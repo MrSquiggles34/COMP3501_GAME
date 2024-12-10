@@ -1,6 +1,11 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <godot_cpp/classes/input.hpp>
+#include <godot_cpp/classes/input_event.hpp>
+#include <godot_cpp/classes/input_event_mouse_button.hpp>
+#include <godot_cpp/classes/viewport.hpp>
+
 #include "custom_scene_3501.h"
 
 #include "player.h"
@@ -19,6 +24,7 @@ namespace godot {
         double global_time_passed;
         Player* player;
 	    HUD* hud;
+        int progress_check;
         bool picked_up_first_item;
         bool checked_first_item;
 
@@ -30,6 +36,7 @@ namespace godot {
         ~Game();
 
         void _ready() override;
+        void _input(const Ref<InputEvent>&);
         void _process(double delta) override;
         void _enter_tree() override;
 
