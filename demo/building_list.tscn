@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://4b6ghsqwk1gh"]
+[gd_scene load_steps=44 format=3 uid="uid://4b6ghsqwk1gh"]
 
 [ext_resource type="PackedScene" uid="uid://cwqdvckimoqxv" path="res://models/buildings/Tall Blue-Black Building/sci-fi_building.glb" id="1_3fwjy"]
 [ext_resource type="PackedScene" uid="uid://c271xirvidpws" path="res://models/buildings/Industrial Building/industrial_building.glb" id="2_acnyp"]
@@ -21,6 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://bde1ldr2o8d5j" path="res://models/cars/Motorcycle/low-poly_sci-fi_motorcycle_-_cyberpunk_theme.glb" id="18_kqanu"]
 [ext_resource type="PackedScene" uid="uid://dp0f7ilk0cagm" path="res://models/cars/Set of 2 Cars/white_car.tscn" id="19_uj7oe"]
 [ext_resource type="PackedScene" uid="uid://ddcs5rj1a4sfo" path="res://models/cars/Set of 2 Cars/grey_car.tscn" id="20_5edro"]
+[ext_resource type="PackedScene" uid="uid://d00xuw7l57fol" path="res://models/objects/Console/console_game_asset.glb" id="22_qsf8l"]
+[ext_resource type="PackedScene" uid="uid://b0idqjlp76g7v" path="res://models/walls/Concrete Wall/fortified_concrete_wall.glb" id="23_mj6uc"]
+[ext_resource type="PackedScene" uid="uid://djb8uooffnlbf" path="res://models/walls/Sci-Fi Wall/sci-fi_walls.glb" id="24_jyqem"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_su4fs"]
 radius = 6.03542
@@ -71,6 +74,15 @@ size = Vector3(53.0565, 121.659, 54.2958)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vnde7"]
 size = Vector3(64.4976, 214.785, 50.0967)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_02n25"]
+size = Vector3(6.91281, 15.6378, 6.18109)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qec0c"]
+size = Vector3(16.7295, 8.74323, 3.92676)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rt8of"]
+size = Vector3(1112.04, 262.352, 28.5389)
+
 [node name="Objects" type="Node3D"]
 
 [node name="Vehicles" type="Node3D" parent="."]
@@ -88,6 +100,7 @@ shape = SubResource("CapsuleShape3D_su4fs")
 
 [node name="White Angular Car" type="StaticBody3D" parent="Vehicles"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 283.528, 0, -427.311)
+metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Vehicles/White Angular Car" instance=ExtResource("19_uj7oe")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0.373047)
@@ -98,6 +111,7 @@ shape = SubResource("BoxShape3D_i8yee")
 
 [node name="Grey Angular Car" type="StaticBody3D" parent="Vehicles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 239.082, 0, -435.586)
+metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Vehicles/Grey Angular Car" instance=ExtResource("20_5edro")]
 transform = Transform3D(-4.37114e-07, 0, 10, 0, 10, 0, -10, 0, -4.37114e-07, -17.4342, 0, 6.82846)
@@ -108,6 +122,7 @@ shape = SubResource("BoxShape3D_i8yee")
 
 [node name="Grey Truck" type="StaticBody3D" parent="Vehicles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 240.569, 0, -445.996)
+metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Vehicles/Grey Truck" instance=ExtResource("4_kah5b")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
@@ -302,6 +317,7 @@ shape = SubResource("BoxShape3D_ghr4l")
 
 [node name="2021 Cyberpunk Building" type="StaticBody3D" parent="High-Rise Buildings"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 182.608, 0, -246.676)
+metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="High-Rise Buildings/2021 Cyberpunk Building" instance=ExtResource("10_ms1hc")]
 transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.78737, 0, 0.0975952)
@@ -313,6 +329,32 @@ shape = SubResource("BoxShape3D_vnde7")
 [node name="Misc" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 393.923, 0, -1.14627)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Misc"]
+[node name="Console" type="StaticBody3D" parent="Misc"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -640.016, 0, -273.424)
+metadata/_edit_group_ = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Misc/StaticBody3D"]
+[node name="Sketchfab_Scene" parent="Misc/Console" instance=ExtResource("22_qsf8l")]
+transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Misc/Console"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0737457, 7.31891, 0.271851)
+shape = SubResource("BoxShape3D_02n25")
+
+[node name="Concrete Wall" type="StaticBody3D" parent="Misc"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -318.362, 0, -384.288)
+metadata/_edit_group_ = true
+
+[node name="Sketchfab_Scene" parent="Misc/Concrete Wall" instance=ExtResource("23_mj6uc")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Misc/Concrete Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0200195, 3.87161, 0.0493164)
+shape = SubResource("BoxShape3D_qec0c")
+
+[node name="Sci-Fi Wall" type="StaticBody3D" parent="Misc"]
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -398.075, 0, -404.934)
+
+[node name="Sketchfab_Scene" parent="Misc/Sci-Fi Wall" instance=ExtResource("24_jyqem")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Misc/Sci-Fi Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 435.611, 203.751, 4.75244)
+shape = SubResource("BoxShape3D_rt8of")
