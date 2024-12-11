@@ -11,10 +11,9 @@
 
 
 #include "custom_mesh.h"
-#include "robo.h"
 
 #define X_SIZE 250.0f
-#define Y_SIZE 250.0f
+#define Y_SIZE 300.0f
 
 #define	BLANK_COL Color(1.0, 1.0, 1.0, 1)
 #define ROAD_COL Color(0, 0, 0, 1)
@@ -30,8 +29,6 @@ private:
     CustomMesh* ground;
     Vector<CustomMesh*> building_list;
 
-	Robo* robo1;
-
 	bool is_paused;
 	
 protected:
@@ -46,7 +43,6 @@ public:
     void add_building (float x1, float y1, float x2, float y2, float h=0);
 	void setup_starting_area (float width, float depth, float x, float y); // Coordinates based on bottom middle
 	void setup_housing_area (float x, float y, Vector<Vector<int>> houses); // Coordinates based on bottom left
-	void toggle_pause(bool paused);
 };
 
 }

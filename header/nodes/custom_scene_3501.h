@@ -18,6 +18,7 @@
 #include "particle_system.h"
 #include "collidable_object.h"
 #include "building.h"
+#include "robo.h"
 
 // everything in gdextension is defined in this namespace
 namespace godot {
@@ -41,6 +42,7 @@ private:
 	Vector<Tabloid*> tabloid_list;
 	Vector<ParticleSystem*> particle_systems;
 	Building* building;
+	Robo* robo;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes
