@@ -17,6 +17,7 @@ void HUD::_enter_tree() {
     create_and_add_as_child<ItemList>(this, inventory, "Inventory", true);
     create_and_add_as_child<ColorRect>(this, textBox, "TextBox", true);
     create_and_add_as_child<Label>(this, dialog_label, "Dialog", true);
+    create_and_add_as_child<TextureRect>(this, title_screen, "TitleCard", true);
 
     cur_dialog = 0;
     dialog_list.append("HQ: *BZZT* #255, come in. This is Agent *KRRSHH* from mission control speaking. #255, do you copy?");
@@ -42,6 +43,12 @@ void HUD::_ready() {
     Vector2 screen_size = get_viewport()->get_visible_rect().size;
     screen_size = screen_size / 2;
 
+    // START SCREEN
+    Ref<Texture2D> title_image = ResourceLoader::get_singleton()->load("res://textures/Title_Screen.png");
+    title_screen->set_expand_mode(TextureRect::ExpandMode::EXPAND_IGNORE_SIZE);
+    title_screen->set_size(get_viewport()->get_visible_rect().size);
+    title_screen->set_texture(title_image);
+
     // PAUSE LABEL
     pause_label->set_text("PAUSE");
     pause_label->set("theme_override_colors/font_color", Color(1,1,1,1));
@@ -53,9 +60,9 @@ void HUD::_ready() {
 
     // INVENTORY
     inventory->set_size(get_viewport()->get_visible_rect().size);
-    inventory->set_max_columns(5);
-    inventory->set_fixed_icon_size(Vector2i(25, 25));
-    inventory->set("theme_override_font_sizes/font_size", 20);
+    //inventory->set_max_columns(5);
+    inventory->set_fixed_icon_size(Vector2i(100, 100));
+    inventory->set_icon_mode(ItemList::IconMode::ICON_MODE_TOP);
     inventory->set_visible(false);
 
     // DIALOG BOX
@@ -91,6 +98,10 @@ void HUD::toggle_inventory(bool is_inv, Player* player) {
         inventory->set_item_tooltip(index, player_inv[i]->get_lore());
     }
     inventory->set_visible(is_inv);
+}
+
+void HUD::start_game(){
+    title_screen->set_visible(false);
 }
 
 void HUD::toggle_dialog(bool is_vis){
