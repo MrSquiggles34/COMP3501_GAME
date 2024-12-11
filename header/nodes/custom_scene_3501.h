@@ -18,6 +18,7 @@
 #include "particle_system.h"
 #include "collidable_object.h"
 #include "building.h"
+#include "robo.h"
 
 #include "terrain_instance.h"
 
@@ -43,6 +44,7 @@ private:
 	Vector<Tabloid*> tabloid_list;
 	Vector<ParticleSystem*> particle_systems;
 	Building* building;
+	Robo* robo;
 
 	TerrainInstance* terrain;
 
