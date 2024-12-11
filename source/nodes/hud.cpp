@@ -35,7 +35,7 @@ void HUD::_enter_tree() {
     dialog_list.append("*KRZZT*");
     dialog_list.append("Hello? Hello?");
     dialog_list.append("...");
-    dialog_list.append("Well, I guess I'll just have to hope this storm blows over soon. In the meantime, I may as well get moving. I still have my initial directives after all. Analyze the current state of Aurelia and retrieve the White Panoply… I just wish they’d told me what exactly that is.");
+    dialog_list.append("Well, I guess I'll just have to hope this storm blows over soon. In the meantime, I may as well get moving. I still have my initial directives after all. Analyze the current state of Aurelia and retrieve the White Panoply... I just wish they'd told me what exactly that is.");
 }
 
 void HUD::_ready() {
@@ -60,7 +60,7 @@ void HUD::_ready() {
 
     // INVENTORY
     inventory->set_size(get_viewport()->get_visible_rect().size);
-    //inventory->set_max_columns(5);
+    inventory->set_max_columns(10);
     inventory->set_fixed_icon_size(Vector2i(100, 100));
     inventory->set_icon_mode(ItemList::IconMode::ICON_MODE_TOP);
     inventory->set_visible(false);
@@ -111,7 +111,7 @@ void HUD::toggle_dialog(bool is_vis){
 
 int HUD::nextDialog(){
     cur_dialog += 1;
-    if (cur_dialog == 0 || cur_dialog == 2 || cur_dialog == 3 || cur_dialog == 5 || cur_dialog == 6 || cur_dialog == 7 || cur_dialog == 9 || cur_dialog == 11){
+    if (cur_dialog == 0 || cur_dialog == 2 || cur_dialog == 3 || cur_dialog == 5 || cur_dialog == 6 || cur_dialog == 7 || cur_dialog == 9 || cur_dialog == 11 || cur_dialog == 12){
         textBox->set_color(Color(0,0,0,1));
         dialog_label->set("theme_override_colors/font_color", Color(1,1,1,1));
     } else {

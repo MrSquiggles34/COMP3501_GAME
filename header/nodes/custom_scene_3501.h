@@ -33,6 +33,8 @@ private:
 	bool is_paused;
 
 	int tabloid_count;
+	Vector<Vector3> locations;
+	Vector<String> flavor_text;
 
 	//QuatCamera* main_camera;
     Map* map;

@@ -11,7 +11,6 @@ namespace godot {
 	private:
 		bool in_inventory;
 		float radius;
-		ParticleSystem* indicator;
 
 	protected:
 		static void _bind_methods();

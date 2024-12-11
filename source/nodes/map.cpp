@@ -41,9 +41,9 @@ void Map::_enter_tree() {
     ground_material->set_shader_parameter("light_position", Vector3(0.0f, 5.0f, 0.0f));
     ground_material->set_shader_parameter("specular_power", 20.0f);
 
-    create_and_add_as_child<Robo>(this, robo1, "Robo1", true);
+    //create_and_add_as_child<Robo>(this, robo1, "Robo1", true);
 
-    create_and_add_as_child<Node>(this, buildings, "Buildings", true);
+    //create_and_add_as_child<Node>(this, buildings, "Buildings", true);
 }
 
 void Map::_ready() {
@@ -77,8 +77,8 @@ void Map::_ready() {
         {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
     };
 
-    setup_starting_area(24.0, 18.0, 0, 0);
-    setup_housing_area(-90.0, 35.0, main_city);
+    //setup_starting_area(24.0, 18.0, 0, 0);
+    //setup_housing_area(-90.0, 35.0, main_city);
 }
 
 // Function for adding buildings based on 2 x/y coordinates (4 floats)
