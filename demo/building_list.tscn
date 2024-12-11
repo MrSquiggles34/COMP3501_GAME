@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://4b6ghsqwk1gh"]
+[gd_scene load_steps=52 format=3 uid="uid://4b6ghsqwk1gh"]
 
 [ext_resource type="PackedScene" uid="uid://cwqdvckimoqxv" path="res://models/buildings/Tall Blue-Black Building/sci-fi_building.glb" id="1_3fwjy"]
 [ext_resource type="PackedScene" uid="uid://c271xirvidpws" path="res://models/buildings/Industrial Building/industrial_building.glb" id="2_acnyp"]
@@ -22,8 +22,12 @@
 [ext_resource type="PackedScene" uid="uid://dp0f7ilk0cagm" path="res://models/cars/Set of 2 Cars/white_car.tscn" id="19_uj7oe"]
 [ext_resource type="PackedScene" uid="uid://ddcs5rj1a4sfo" path="res://models/cars/Set of 2 Cars/grey_car.tscn" id="20_5edro"]
 [ext_resource type="PackedScene" uid="uid://d00xuw7l57fol" path="res://models/objects/Console/console_game_asset.glb" id="22_qsf8l"]
+[ext_resource type="PackedScene" uid="uid://cyxaqorjixl3v" path="res://models/buildings/Marquee Building/cyberpunk_building.glb" id="22_rmv60"]
+[ext_resource type="PackedScene" uid="uid://dkbgolyruhn3" path="res://models/buildings/Neon City Red Tall Building/cy1.glb" id="23_3ac6j"]
 [ext_resource type="PackedScene" uid="uid://b0idqjlp76g7v" path="res://models/walls/Concrete Wall/fortified_concrete_wall.glb" id="23_mj6uc"]
+[ext_resource type="PackedScene" uid="uid://dx8navpu8t5dl" path="res://models/buildings/Tall Slum Building/cyberpunk_building.glb" id="24_c0a6c"]
 [ext_resource type="PackedScene" uid="uid://djb8uooffnlbf" path="res://models/walls/Sci-Fi Wall/sci-fi_walls.glb" id="24_jyqem"]
+[ext_resource type="PackedScene" uid="uid://ch7tofe77gr7c" path="res://models/buildings/Data Building/sci-fi_building_6.glb" id="25_m4nta"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_su4fs"]
 radius = 6.03542
@@ -73,6 +77,18 @@ size = Vector3(53.0565, 121.659, 54.2958)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vnde7"]
 size = Vector3(64.4976, 214.785, 50.0967)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mucw4"]
+size = Vector3(63.4745, 98.594, 76.4953)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h6y0d"]
+size = Vector3(61.4241, 263.072, 58.7127)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n0fkr"]
+size = Vector3(72.8761, 178.441, 75.1121)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_toe2m"]
+size = Vector3(133.9, 227.841, 141.255)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_02n25"]
 size = Vector3(6.91281, 15.6378, 6.18109)
@@ -325,6 +341,45 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.78737, 0, 0.09759
 [node name="CollisionShape3D" type="CollisionShape3D" parent="High-Rise Buildings/2021 Cyberpunk Building"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03253, 106.746, -0.175415)
 shape = SubResource("BoxShape3D_vnde7")
+
+[node name="Marquee Building" type="StaticBody3D" parent="High-Rise Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 133.767, 0, -118.195)
+
+[node name="Sketchfab_Scene" parent="High-Rise Buildings/Marquee Building" instance=ExtResource("22_rmv60")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 43.806, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="High-Rise Buildings/Marquee Building"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.923828, 43.204, 0.860123)
+shape = SubResource("BoxShape3D_mucw4")
+
+[node name="Tall Red Building" type="StaticBody3D" parent="High-Rise Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.466, 0, 0)
+
+[node name="Sketchfab_Scene" parent="High-Rise Buildings/Tall Red Building" instance=ExtResource("23_3ac6j")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="High-Rise Buildings/Tall Red Building"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8266, 131.036, -24.5255)
+shape = SubResource("BoxShape3D_h6y0d")
+
+[node name="Tall Slum Building" type="StaticBody3D" parent="High-Rise Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168.409, 0, 98.2747)
+
+[node name="Sketchfab_Scene" parent="High-Rise Buildings/Tall Slum Building" instance=ExtResource("24_c0a6c")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="High-Rise Buildings/Tall Slum Building"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.717834, 89.6592, 6.95593)
+shape = SubResource("BoxShape3D_n0fkr")
+
+[node name="Data Building" type="StaticBody3D" parent="High-Rise Buildings"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 224.021, 11.1761, -161.765)
+
+[node name="Sketchfab_Scene" parent="High-Rise Buildings/Data Building" instance=ExtResource("25_m4nta")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="High-Rise Buildings/Data Building"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42407, 94.9777, 2.83414)
+shape = SubResource("BoxShape3D_toe2m")
 
 [node name="Misc" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 393.923, 0, -1.14627)
