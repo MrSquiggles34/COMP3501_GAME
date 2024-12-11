@@ -29,6 +29,7 @@ CustomScene3501::~CustomScene3501() {
 void CustomScene3501::_enter_tree() {
 	if (DEBUG) UtilityFunctions::print("Enter Tree - CustomScene3501.");
 	create_and_add_as_child<Map>(this, map, "Map", true);
+	create_and_add_as_child<Robo>(this, robo, "Robot Arm", true);
 
 	// For each type of object, create as many as needed
 	Node* CollectableGroup;
@@ -75,7 +76,7 @@ void CustomScene3501::_ready() {
 		ShaderMaterial* shader_material = dynamic_cast<ShaderMaterial*>(*particle_system->get_draw_pass_mesh(0)->surface_get_material(0));
 		switch (index) {
 		case 0:
-			particle_system->set_amount(20000);
+			particle_system->set_amount(10000);
 			shader_material->set_shader_parameter("texture_image", ResourceLoader::get_singleton()->load("res://textures/flame4x4orig.png"));
 			break;
 		case 1:
@@ -129,7 +130,7 @@ void CustomScene3501::_process(double delta) {
 void CustomScene3501::toggle_pause(bool paused) {
 	is_paused = paused;
 	// Propogate Pause 
-	map->toggle_pause(is_paused);
+	robo->toggle_pause(is_paused);
 
 	if (DEBUG) UtilityFunctions::print(is_paused ? "Scene Paused" : "Scene Resumed");
 }

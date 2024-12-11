@@ -41,15 +41,13 @@ void Map::_enter_tree() {
     ground_material->set_shader_parameter("light_position", Vector3(0.0f, 5.0f, 0.0f));
     ground_material->set_shader_parameter("specular_power", 20.0f);
 
-    //create_and_add_as_child<Robo>(this, robo1, "Robo1", true);
-
     //create_and_add_as_child<Node>(this, buildings, "Buildings", true);
 }
 
 void Map::_ready() {
     if (DEBUG) UtilityFunctions::print("Ready - Map.");
 
-    ground->set_global_position(Vector3(0.0, 0.0, 25.0 - Y_SIZE / 2));
+    ground->set_global_position(Vector3(0.0, 0.0, 50.0 - Y_SIZE / 2));
 
     // Note the grid is upside down (as in reflect, not rotated, so left is still left)
     Vector<Vector<int>> main_city = {
@@ -142,13 +140,4 @@ void Map::setup_housing_area(float x, float y, Vector<Vector<int>> houses) {
         }
 
     }
-}
-
-void Map::toggle_pause(bool paused) {
-    is_paused = paused;
-
-    // Propogate Pause 
-    robo1->toggle_pause(is_paused);
-
-    if (DEBUG) UtilityFunctions::print(is_paused ? "Map Paused" : "Map Resumed");
 }
