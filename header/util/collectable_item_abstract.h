@@ -11,8 +11,6 @@
 
 #include "create_and_add_as_child.h"
 #include "defs.h"
-#include "particle_system.h"
-#include "custom_mesh.h"
 
 // everything in gdextension is defined in this namespace
 namespace godot {
@@ -21,7 +19,6 @@ namespace godot {
 
 	private:
 		bool in_inventory;
-		ParticleSystem* indicator;
 		String lore;
 		Ref<Texture2D> icon;
 	
