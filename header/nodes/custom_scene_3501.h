@@ -9,6 +9,7 @@
 #include <godot_cpp/classes/canvas_item.hpp> // for viewport size
 #include <godot_cpp/classes/control.hpp> // for the anchors preset
 #include <godot_cpp/classes/color_rect.hpp>
+#include <godot_cpp/classes/sphere_mesh.hpp>
 
 #include "quat_camera.h"
 #include "map.h"
