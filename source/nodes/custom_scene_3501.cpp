@@ -47,6 +47,8 @@ void CustomScene3501::_enter_tree() {
 	create_and_add_as_child<Map>(this, map, "Map", true);
 	create_and_add_as_child<Robo>(this, robo, "Robot Arm", true);
 
+	create_and_add_as_child<TerrainInstance>(this, terrain, "Terrain", true);
+
 	// For each type of object, create as many as needed
 	Node* CollectableGroup;
 	create_and_add_as_child<Node>(this, CollectableGroup, "Collectable Items", true);
@@ -109,6 +111,9 @@ void CustomScene3501::_ready() {
 		}
 
 	}
+
+	// Terrain height
+	terrain->set_global_position(Vector3(4.0, 0.5, -16.0));
 }
 
 void CustomScene3501::_process(double delta) {

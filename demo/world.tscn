@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://cl05u4y5i0hwy"]
+[gd_scene load_steps=59 format=3 uid="uid://cl05u4y5i0hwy"]
 
 [ext_resource type="PackedScene" uid="uid://dvybpnc5jl1qd" path="res://models/buildings/Tower/sci-fi_tower.glb" id="1_io5wi"]
 [ext_resource type="PackedScene" uid="uid://djb8uooffnlbf" path="res://models/walls/Sci-Fi Wall/sci-fi_walls.glb" id="2_p0id5"]
@@ -28,10 +28,6 @@
 [ext_resource type="PackedScene" uid="uid://b1en722lvb7hh" path="res://models/buildings/Mechanic Building/mechanic_building.tscn" id="25_bio0a"]
 [ext_resource type="PackedScene" uid="uid://bde1ldr2o8d5j" path="res://models/cars/Motorcycle/low-poly_sci-fi_motorcycle_-_cyberpunk_theme.glb" id="26_nvlq4"]
 [ext_resource type="PackedScene" uid="uid://82jgehydxfed" path="res://models/buildings/Gate/gate.tscn" id="27_cwmgo"]
-[ext_resource type="Shader" path="res://shaders/lighting.gdshader" id="28_xlos6"]
-[ext_resource type="Shader" path="res://shaders/simple.gdshader" id="29_rvwsq"]
-[ext_resource type="Shader" path="res://shaders/skybox.gdshader" id="30_3a3uc"]
-[ext_resource type="Texture2D" uid="uid://cy3tbee5ax1lc" path="res://textures/nightskycolor.png" id="31_xe6hu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4rvwq"]
 size = Vector3(8.28396, 26.2726, 11.5464)
@@ -124,57 +120,6 @@ height = 33.4592
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4yb2n"]
 size = Vector3(48, 15, 8)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_l35od"]
-render_priority = 0
-shader = ExtResource("28_xlos6")
-shader_parameter/color_in = null
-shader_parameter/light_position = Vector3(0, 5, 0)
-shader_parameter/specular_power = 20.0
-
-[sub_resource type="BoxMesh" id="BoxMesh_c77v8"]
-material = SubResource("ShaderMaterial_l35od")
-size = Vector3(250, 1, 250)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpirh"]
-albedo_color = Color(0, 0, 1, 1)
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_4qgix"]
-material = SubResource("StandardMaterial3D_jpirh")
-height = 1.0
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kurcn"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_r6mp4"]
-render_priority = 0
-shader = ExtResource("29_rvwsq")
-shader_parameter/color_in = null
-
-[sub_resource type="QuadMesh" id="QuadMesh_5upfe"]
-material = SubResource("ShaderMaterial_r6mp4")
-flip_faces = true
-size = Vector2(2, 2)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_k41m5"]
-render_priority = 0
-shader = ExtResource("30_3a3uc")
-shader_parameter/sky_texture = ExtResource("31_xe6hu")
-
-[sub_resource type="BoxMesh" id="BoxMesh_bn75j"]
-size = Vector3(500, 500, 500)
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_knspq"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-
-[sub_resource type="Sky" id="Sky_opf1y"]
-sky_material = SubResource("ProceduralSkyMaterial_knspq")
-
-[sub_resource type="Environment" id="Environment_o4nuh"]
-background_mode = 2
-sky = SubResource("Sky_opf1y")
-tonemap_mode = 2
-glow_enabled = true
 
 [node name="World" type="Node3D"]
 
@@ -368,6 +313,7 @@ shape = SubResource("BoxShape3D_b5ivf")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 39.3214, 2.21077, -60.5236)
 
 [node name="Sketchfab_Scene" parent="Buildings (Bottom Right)/Data Building" instance=ExtResource("12_xpl7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Bottom Right)/Data Building"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42407, 94.9777, 2.83414)
@@ -1288,30 +1234,3 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 7.51933)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Gate"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 7, 7.5)
 shape = SubResource("BoxShape3D_4yb2n")
-
-[node name="Ground" type="CustomMesh" parent="."]
-transform = Transform3D(1.235, 0, 0, 0, 1.235, 0, 0, 0, 1.235, 0, 0, -100)
-mesh = SubResource("BoxMesh_c77v8")
-
-[node name="Player" type="Player" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-collision_layer = 2
-
-[node name="BodyMesh" type="MeshInstance3D" parent="Player"]
-mesh = SubResource("CylinderMesh_4qgix")
-
-[node name="CollisionShape" type="CollisionShape3D" parent="Player"]
-shape = SubResource("CapsuleShape3D_kurcn")
-
-[node name="QuatCamera" type="QuatCamera" parent="Player"]
-
-[node name="Screen Quad" type="MeshInstance3D" parent="Player/QuatCamera"]
-extra_cull_margin = 50.0
-mesh = SubResource("QuadMesh_5upfe")
-
-[node name="Skybox" type="CustomMesh" parent="Player"]
-material_override = SubResource("ShaderMaterial_k41m5")
-mesh = SubResource("BoxMesh_bn75j")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_o4nuh")
