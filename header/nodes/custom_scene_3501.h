@@ -20,6 +20,7 @@
 #include "collidable_object.h"
 #include "building.h"
 #include "robo.h"
+#include "panoply.h"
 
 #include "terrain_instance.h"
 
@@ -43,6 +44,8 @@ private:
 	Player* player;
 	TutorialItem* tutorial_item;
 	Vector<Tabloid*> tabloid_list;
+	Panoply* panoply;
+
 	Vector<ParticleSystem*> particle_systems;
 	Building* building;
 	Robo* robo;

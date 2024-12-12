@@ -22,6 +22,8 @@ void HUD::_enter_tree() {
     create_and_add_as_child<Label>(this, dialog_label, "Dialog", true);
 
     create_and_add_as_child<TextureRect>(this, title_screen, "TitleCard", true);
+    create_and_add_as_child<ColorRect>(this, endScreen, "EndScreen", true);
+    create_and_add_as_child<Label>(this, end_text, "End Text", true);
 
     is_intro = true;
     cur_dialog = 0;
@@ -101,6 +103,20 @@ void HUD::_ready() {
     dialog_label->set("theme_override_font_sizes/font_size", 25);
     dialog_label->set_position(Vector2(20,height*2+10));
 
+    // END SCREEN
+    endScreen->set_size(get_viewport()->get_visible_rect().size);
+    endScreen->set_color(Color(0,0,0,1));
+    endScreen->set_visible(false);
+
+    width = get_viewport()->get_visible_rect().size.x-10;
+    height = get_viewport()->get_visible_rect().size.y-10;
+    end_text->set_size(Vector2(width, height));
+    end_text->set_autowrap_mode(TextServer::AutowrapMode::AUTOWRAP_WORD_SMART);
+    end_text->set("theme_override_colors/font_color", Color(1,1,1,1));
+    end_text->set("theme_override_font_sizes/font_size", 20);
+    end_text->set_position(Vector2(10,10));
+    end_text->set_visible(false);
+
 }
 
 void HUD::_process(double delta){
@@ -138,6 +154,16 @@ void HUD::toggle_inventory(bool is_inv, Player* player) {
 
 void HUD::start_game(){
     title_screen->set_visible(false);
+}
+
+void HUD::end_game(bool completed){
+    endScreen->set_visible(true);
+    if(completed){
+        end_text->set_text("#255 Retrieves the Panoply from the tower, its surface glowing a faint white hue\nUpon making contact with their hand, the walls of the device falls open, and #255's head is filled with information.\nHowever, nothing concrete takes shape, their mind overwhelmed with the surge of new information, #255 chooses to ignore it and follow the instructions he had received prior to arriving at Aurelia\nThey leave the island, and their comms spring back to life, receiving a signal from his leader requesting an update.\nWith no reason to linger in the dilate land of Aurelia, #255 complies with all of the orders he is given.\nAs a transport vehicle arrives to escort #255 away, the island vanishes beneath the clouds, its secrets lost to time forevermore.\nThe Panoply rests in #255's hands, its mysteries left unknown as the city is left behind…\nYou have escaped Aurelia… But some truths remain lost. Perhaps try collecting all 10 of the tabloids next time.");
+    } else {
+        end_text->set_text("#255 retrieves the Panoply from the tower, its surface glowing a faint white hue.\nTheir hands tremble as they touch the device, watching its walls fall open.\n#255's head is filled with information, their mind flooded with memories- no, truths.\nThe scientist's voice echoes in their mind, the information from all the tabloid entries are starting to make so much sense.\nYou are Osiris, my greatest creation! [Italics if possible]\n#255 now understands why the name Osiris sounded so familiar, and why Aurelia seemed like such a familiar place to them.\nThe Panoply contains much information: The destruction of Aurelia was not an accident, the rest of the continent had feared the implications of #255's existence, as well as the potential of Aurelia weaponizing the technology used to create him.\n#255's creator, consumed by grief and thirst to repay blood with blood, had ensured that #255 alone would survive- even if it was at the cost of the rest of Aurelia.\n#255 leaves the island, and their comms spring back to life, receiving a signal from his leader requesting an update.\nA choice now looms before them: What will they do with the truth? ");
+    }
+    end_text->set_visible(true);
 }
 
 void HUD::toggle_dialog(bool is_vis){
