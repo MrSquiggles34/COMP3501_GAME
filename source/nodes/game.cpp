@@ -46,26 +46,28 @@ void Game::_enter_tree() {
     second_page.append("... I am also beginning to wonder if there is any practical purpose for finding new tabloids.");
     second_page.append("I should focus on the mission. Though... I think I would not mind if I were to stumble across another tabloid.");
     
-    page_4.append("This man seems to be experiencing the emotion called 'Grief' and 'Bloodlust'.");
-    page_4.append("Although I have never processed such emotions before, these tabloids might provide me with an insight from someone who does.");
-    page_4.append("From a more practical perspective... I do not see any use for storing such trivial information within my memory banks...");
+    page_4.append("Depression and anger. This must be what people call grief.");
+    page_4.append("I must admit, it is somewhat fascinating to read about such emotions from a firsthand account.");
+    page_4.append("But from a more practical perspective... I do not see any use for storing such information within my data banks...");
     
-    page_5.append("From what I know, it was extremely difficult to reach Aurelia. The information I have gathered only proves my initial assumption.");
-    page_5.append("This made it impossible for the continent to govern Aurelia, which led it to becoming a self-governed state.");
-    page_5.append("I always knew that there had to be a reason Aurelia was able to progress so much faster than the rest of the continent, but...");
+    page_5.append("Aurelia is hard to reach, even now. I can't imagine how it must have been with people still to protect it.");
+    page_5.append("In turn, the Continent could never quite control Aurelia, which led it to becoming a self-governed state.");
+    page_5.append("But could it really be true? The reason Aurelia was able to progress so much faster than the rest of the continent was...");
     page_5.append("I should focus on the mission.");
 
     page_6.append("ERROR: MEMORY CONFLICT");
     page_6.append("Ow!");
     page_6.append("Huh?");
-    page_6.append("What just happened?");
     page_6.append("Osiris... Why does that name sound familiar?");
 
     page_7.append("This project... It couldn’t be...");
     page_7.append("The White Panoply... Was there a reason I wasn’t told what was contained within it...?");
     page_7.append("ERROR: MEMORY CONFLICT");
     page_7.append("Gah!");
-    page_7.append("And then there's these weird errors... This city is more than it appears to be.");
+    page_7.append("I've never had errors like that before today... This city is more than it appears to be.");
+
+    page_8.append("ERROR: MEMORY CONFLICT");
+    page_8.append("...");
 }
 
 void Game::_ready() {
@@ -119,11 +121,9 @@ void Game::_process(double delta) {
         if (state == TEXT){
             if (_input->is_action_just_pressed("advance_dialog")) {
                 int dialogNum = hud->nextDialog();
-                if(dialogNum == -1 || dialogNum == 6 || dialogNum == 7){
-                    hud->toggle_dialog(false);
-                    player->toggle_pause(false);
-                    state = PLAY;
-                } else if (progress_check == 3 && dialogNum == 3){
+                if (dialogNum == -1 ||
+                (progress_check < 3 && (dialogNum == 6 || dialogNum == 7)) ||
+                (progress_check == 4 && dialogNum == 3)){
                     hud->toggle_dialog(false);
                     player->toggle_pause(false);
                     state = PLAY;
@@ -137,12 +137,14 @@ void Game::_process(double delta) {
                     player->toggle_pause(true);
                     hud->toggle_dialog(true);
                 }
-            } else if (progress_check == 3 && player->get_inventory_size() == 3){
-                progress_check += 1;
-                state = TEXT;
-                player->toggle_pause(true);
-                hud->toggle_dialog(true, second_page);
             }
+            // else if (progress_check == 3 && player->get_inventory_size() == 3){
+            //     progress_check += 1;
+            //     state = TEXT;
+            //     player->toggle_pause(true);
+            //     hud->toggle_dialog(true, second_page);
+            // }
+
             // I to open inventory
             if (_input->is_action_just_pressed("inventory")) {
                 state = INV;
@@ -161,23 +163,24 @@ void Game::_process(double delta) {
                     state = TEXT;
                     player->toggle_pause(true);
                     hud->toggle_dialog(true);
-                } else if (progress_check == 2 && player->inInventory("Page0")){
-                    read_pages.append(1);
-                    progress_check += 1;
-                    state = TEXT;
-                    player->toggle_pause(true);
-                    hud->toggle_dialog(true, page_1);
-                } else if (progress_check == 4){
-                    progress_check += 1;
-                    state = TEXT;
-                    player->toggle_pause(true);
-                    hud->toggle_dialog(true);
-                } else if (read_pages.find(4) && player->inInventory("Page3")){
-                    state = TEXT;
-                    read_pages.append(4);
-                    player->toggle_pause(true);
-                    hud->toggle_dialog(true, page_4);
-                }
+                } 
+                // else if (progress_check == 2 && player->inInventory("Page0")){
+                //     progress_check += 1;
+                //     state = TEXT;
+                //     player->toggle_pause(true);
+                //     hud->toggle_dialog(true, page_1);
+                // } else if (progress_check == 4){
+                //     progress_check += 1;
+                //     state = TEXT;
+                //     player->toggle_pause(true);
+                //     hud->toggle_dialog(true);
+                // }
+                //  else if (read_pages.find(4) && player->inInventory("Page3")){
+                //     state = TEXT;
+                //     read_pages.append(4);
+                //     player->toggle_pause(true);
+                //     hud->toggle_dialog(true, page_4);
+                // }
             }
         }
     }

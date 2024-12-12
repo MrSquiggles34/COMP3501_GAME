@@ -161,6 +161,9 @@ int HUD::nextDialog(){
         if (cur_dialog == 0 || cur_dialog == 2 || cur_dialog == 3 || cur_dialog == 5 || cur_dialog == 6 || cur_dialog == 7 || cur_dialog == 9 || cur_dialog == 11 || cur_dialog == 12){
             textBox->set_color(Color(0,0,0,1));
             dialog_label->set("theme_override_colors/font_color", Color(1,1,1,1));
+        } else {
+            textBox->set_color(Color(0.5,0.8,1,1));
+            dialog_label->set("theme_override_colors/font_color", Color(0,0,0,1));
         }
     } else if (dialog_list[cur_dialog] == "ERROR: MEMORY CONFLICT") {
         textBox->set_color(Color(0,0,0,1));
