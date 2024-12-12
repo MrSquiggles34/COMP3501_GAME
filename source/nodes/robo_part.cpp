@@ -26,13 +26,10 @@ RoboPart::~RoboPart() {
 }
 
 void RoboPart::_enter_tree() {
-	if (DEBUG) UtilityFunctions::print("Enter Tree - RoboPart.");
 }
 
 // Since most of the CraneParts use the default hierarchical transformation, we can just use the parent class's implementation (this one); the hook will need to be overridden
 void RoboPart::_ready() {
-	if (DEBUG) UtilityFunctions::print("Ready - ", get_name()); // since this will be called by many of the parts
-
 	set_global_transform(get_transformation_matrix());
 }
 

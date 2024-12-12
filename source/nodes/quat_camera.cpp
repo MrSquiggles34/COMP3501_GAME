@@ -117,6 +117,4 @@ void QuatCamera::toggle_pause(bool paused) {
 		Ref<Shader> shader = ResourceLoader::get_singleton()->load("shaders/simple.gdshader", "Shader");
 		screen_space_shader_material->set_shader(shader);
 	}
-
-	if (DEBUG) UtilityFunctions::print(is_paused ? "Camera Paused" : "Camera Resumed");
 }

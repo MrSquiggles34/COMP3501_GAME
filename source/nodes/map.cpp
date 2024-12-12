@@ -21,8 +21,6 @@ Map::Map() : Node3D() {
 }
 
 void Map::_enter_tree() {
-    if (DEBUG) UtilityFunctions::print("Enter Tree - Map.");
-
     create_and_add_as_child<CustomMesh>(this, ground, "Ground", true);
     ground->set_shader_name(vformat("%s%s.gdshader", "shaders/", "lighting"));
 
@@ -45,8 +43,6 @@ void Map::_enter_tree() {
 }
 
 void Map::_ready() {
-    if (DEBUG) UtilityFunctions::print("Ready - Map.");
-
     ground->set_global_position(Vector3(0.0, 0.0, 50.0 - Y_SIZE / 2));
 
     // Note the grid is upside down (as in reflect, not rotated, so left is still left)

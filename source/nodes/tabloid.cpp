@@ -11,8 +11,6 @@ Tabloid::Tabloid() : CollectableItemAbstract() {
 }
 
 void Tabloid::_enter_tree() {
-    if (DEBUG) UtilityFunctions::print("Enter Tree - Tabloid.");
-
     Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/objects/tabloid/low_poly_sci-fi_tablet.glb");
     Node3D *model_instance = Object::cast_to<Node3D>(scene->instantiate());
     model_instance->set_scale(Vector3(0.5, 0.5, 0.5));
@@ -24,7 +22,6 @@ void Tabloid::_enter_tree() {
 }
 
 void Tabloid::_ready() {
-    if (DEBUG) UtilityFunctions::print("Ready - Tutorial Item.");
 }
 
 void Tabloid::_process(double delta) {

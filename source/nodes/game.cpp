@@ -24,8 +24,6 @@ Game::Game() : Node() {
 Game::~Game() { }
 
 void Game::_enter_tree() {
-    if (DEBUG) UtilityFunctions::print("Enter Tree - Game.");
-
     create_and_add_as_child<Player>(this, player, "Player", true); 
     create_and_add_as_child<HUD>(this, hud, "HUD", true);
     create_and_add_as_child<CustomScene3501>(this, main_scene, "MainScene", true);

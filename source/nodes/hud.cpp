@@ -12,7 +12,6 @@ HUD::HUD() : CanvasLayer() {}
 HUD::~HUD() {}
 
 void HUD::_enter_tree() {
-    if (DEBUG) UtilityFunctions::print("Enter Tree - HUD.");
     create_and_add_as_child<Label>(this, pause_label, "PauseLabel", true);
     
     create_and_add_as_child<ItemList>(this, inventory, "Inventory", true);

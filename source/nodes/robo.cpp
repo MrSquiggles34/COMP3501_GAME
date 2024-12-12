@@ -19,8 +19,6 @@ Robo::~Robo() {
 // Adds the crane parts to the crane in the editor. 
 // the add_child and set_owner should happen in _enter_tree, or we will not see them in the editor
 void Robo::_enter_tree() {
-	if (DEBUG) UtilityFunctions::print("Entering Tree - Robo.");
-
 	// TODO setup your parts with the correct hierarchical relationships here
 	create_and_add_as_child<RoboBase>(base1, "RoboBase1", true);
 	create_and_add_as_child<RoboBase>(base2, "RoboBase2", true);
@@ -78,8 +76,6 @@ void Robo::_enter_tree() {
 }
 
 void Robo::_ready() {
-	if (DEBUG) UtilityFunctions::print("Ready - Robo.");
-
 }
 
 void Robo::_process(double delta) {
@@ -151,8 +147,4 @@ bool Robo::create_and_add_as_child(T*& pointer, String name, bool search) {
 
 void Robo::toggle_pause(bool paused) {
 	is_paused = paused;
-
-	// Propogate Pause 
-
-	if (DEBUG) UtilityFunctions::print(is_paused ? "Robo Paused" : "Robo Resumed");
 }

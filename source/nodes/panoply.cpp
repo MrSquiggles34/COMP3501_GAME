@@ -1,26 +1,24 @@
-#include "tutorial_item.h"
+#include "panoply.h"
 
 #include "defs.h"
 
 using namespace godot;
 
-void TutorialItem::_bind_methods() {}
+void Panoply::_bind_methods() {}
 
-TutorialItem::TutorialItem() : CollectableItemAbstract() {
+Panoply::Panoply() : CollectableItemAbstract() {
     radius = 0.5;
 }
 
-void TutorialItem::_enter_tree() {
-    Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/objects/battery/9v_battery.glb");
+void Panoply::_enter_tree() {
+    Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/objects/panoply/sci-fi_box.glb");
     Node3D *model_instance = Object::cast_to<Node3D>(scene->instantiate());
     model_instance->set_scale(Vector3(5, 5, 5));
     add_child(model_instance);
-
-    Ref<Texture2D> icon_image = ResourceLoader::get_singleton()->load("res://textures/Battery.png");
-    set_icon(icon_image);
 }
 
 void TutorialItem::_ready() {
+
 }
 
 void TutorialItem::_process(double delta) {

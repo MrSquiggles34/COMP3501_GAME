@@ -16,8 +16,6 @@ RoboJoint::~RoboJoint() {
 }
 
 void RoboJoint::_enter_tree() {
-	if (DEBUG) UtilityFunctions::print("Enter Tree - RoboJoint");
-
 	// Setup Base Geometry using BoxMesh
 	BoxMesh* robo_joint = memnew(BoxMesh);
 	robo_joint->set_size(Vector3(1.0f, 1.5f, 0.5f));

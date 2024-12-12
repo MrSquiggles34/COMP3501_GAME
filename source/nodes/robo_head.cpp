@@ -16,8 +16,6 @@ RoboHead::~RoboHead() {
 }
 
 void RoboHead::_enter_tree() {
-	if (DEBUG) UtilityFunctions::print("Enter Tree - RoboHead");
-	
 	// Setup Head Geometry using CylinderMesh
 	SphereMesh* head = memnew(SphereMesh);
 	head->set_radius(1.0f);

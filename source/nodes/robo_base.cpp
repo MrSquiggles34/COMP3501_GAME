@@ -16,8 +16,6 @@ RoboBase::~RoboBase() {
 }
 
 void RoboBase::_enter_tree() {
-	if (DEBUG) UtilityFunctions::print("Enter Tree - RoboBase");
-	
 	// Setup Base Geometry using CylinderMesh
 	CylinderMesh* robo_base = memnew(CylinderMesh);
 	robo_base->set_bottom_radius(3.0f);

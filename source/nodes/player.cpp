@@ -136,6 +136,4 @@ void Player::toggle_pause(bool paused) {
     
     // Propogate Pause
     main_camera->toggle_pause(is_paused);
-
-    if (DEBUG) UtilityFunctions::print(is_paused ? "Player Paused" : "Player Resumed");
 }

@@ -43,7 +43,6 @@ CustomScene3501::~CustomScene3501() {
 }
 
 void CustomScene3501::_enter_tree() {
-	if (DEBUG) UtilityFunctions::print("Enter Tree - CustomScene3501.");
 	create_and_add_as_child<Map>(this, map, "Map", true);
 	create_and_add_as_child<Robo>(this, robo, "Robot Arm", true);
 
@@ -78,8 +77,6 @@ void CustomScene3501::_enter_tree() {
 }
 
 void CustomScene3501::_ready() {
-	if (DEBUG) UtilityFunctions::print("Ready - CustomScene3501.");
-
 	tutorial_item->set_global_position(Vector3(0.0, 1.0, -5.0));
 
 	// Add all tabloids to a list and place them in the world
@@ -159,8 +156,6 @@ void CustomScene3501::toggle_pause(bool paused) {
 	is_paused = paused;
 	// Propogate Pause 
 	robo->toggle_pause(is_paused);
-
-	if (DEBUG) UtilityFunctions::print(is_paused ? "Scene Paused" : "Scene Resumed");
 }
 
 void CustomScene3501::create_particle_system(Node* parent, String node_name, String shader_name) {
