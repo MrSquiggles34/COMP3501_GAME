@@ -35,6 +35,8 @@ namespace godot {
         bool is_intro;
 
         TextureRect* title_screen;
+        ColorRect* endScreen;
+        Label* end_text;
 
     public:
         HUD();
@@ -52,6 +54,7 @@ namespace godot {
         void toggle_dialog(bool is_vis, Vector<String> dialog);
 
         void start_game();
+        void end_game(bool completed);
 
     protected:
         static void _bind_methods();

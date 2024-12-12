@@ -10,6 +10,7 @@
 #include "collectable_item_abstract.h"
 #include "tabloid.h"
 #include "tutorial_item.h"
+#include "panoply.h"
 #include "custom_mesh.h"
 #include "particle_system.h"
 
@@ -40,6 +41,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<CustomScene3501>();
 	ClassDB::register_abstract_class<CollectableItemAbstract>();
 	ClassDB::register_class<Tabloid>();
+	ClassDB::register_class<Panoply>();
 	ClassDB::register_class<TutorialItem>();
 	ClassDB::register_class<Game>();
 	ClassDB::register_class<Map>();

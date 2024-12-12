@@ -143,6 +143,15 @@ void Game::_process(double delta) {
             //     hud->toggle_dialog(true, second_page);
             // }
 
+            if(player->inInventory("Panoply")){
+                state = END;
+                if(player->get_inventory_size() == 11){
+                    hud->end_game(true);
+                } else {
+                    hud->end_game(false);
+                }
+            }
+
             // I to open inventory
             if (_input->is_action_just_pressed("inventory")) {
                 state = INV;

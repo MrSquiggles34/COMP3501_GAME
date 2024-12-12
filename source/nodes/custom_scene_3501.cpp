@@ -70,6 +70,8 @@ void CustomScene3501::_enter_tree() {
 		create_and_add_as_child<Tabloid>(this, new_tabloid, vformat("Page%d", i), true);
 	}
 
+	create_and_add_as_child<Panoply>(this, panoply, "Panoply", true);
+
 	// PARTICLE SYSTEMS
 	create_particle_system(this, "Snow", "snow");
 	create_particle_system(this, "Pebbles", "pebbles");
@@ -78,6 +80,7 @@ void CustomScene3501::_enter_tree() {
 
 void CustomScene3501::_ready() {
 	tutorial_item->set_global_position(Vector3(0.0, 1.0, -5.0));
+	panoply->set_global_position(Vector3(9.0, 1.0, -134.0));
 
 	// Add all tabloids to a list and place them in the world
 	Tabloid* new_tabloid;
@@ -149,6 +152,10 @@ void CustomScene3501::_process(double delta) {
 			tutorial_item->set_visible(false);
 			player->add_inventory(tutorial_item);
 		}
+	}
+	if (panoply->in_range(player_position)){
+		panoply->set_visible(false);
+		player->add_inventory(tutorial_item);
 	}
 }
 
