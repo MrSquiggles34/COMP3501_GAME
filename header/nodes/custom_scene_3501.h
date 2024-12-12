@@ -9,6 +9,7 @@
 #include <godot_cpp/classes/canvas_item.hpp> // for viewport size
 #include <godot_cpp/classes/control.hpp> // for the anchors preset
 #include <godot_cpp/classes/color_rect.hpp>
+#include <godot_cpp/classes/sphere_mesh.hpp>
 
 #include "quat_camera.h"
 #include "map.h"
@@ -19,6 +20,8 @@
 #include "collidable_object.h"
 #include "building.h"
 #include "robo.h"
+
+#include "terrain_instance.h"
 
 // everything in gdextension is defined in this namespace
 namespace godot {
@@ -43,6 +46,8 @@ private:
 	Vector<ParticleSystem*> particle_systems;
 	Building* building;
 	Robo* robo;
+
+	TerrainInstance* terrain;
 
 protected:
 	// a static function that Godot will call to find out which methods can be called and which properties it exposes

@@ -118,13 +118,8 @@ void Player::_process(double delta) {
     skybox->set_global_position(this->get_global_position());
 }
 
-String Player::printInventory(){
-    String iString = "";
-    for (int i=0; i<inventory.size(); i++){
-        iString += inventory[i]->get_name();
-        iString += "\n";
-    }
-    return iString;
+int Player::get_inventory_size(){
+    return inventory.size();
 }
 
 bool Player::inInventory(String name){

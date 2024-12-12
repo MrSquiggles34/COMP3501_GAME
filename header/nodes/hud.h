@@ -22,11 +22,18 @@ namespace godot {
 
     private:
         Label* pause_label;
+
         ItemList* inventory;
+        ColorRect* dataBox;
+        Label* data_label;
+        Vector<String> inventory_data;
+
         ColorRect* textBox;
         Label* dialog_label;
         Vector<String> dialog_list;
         int cur_dialog;
+        bool is_intro;
+
         TextureRect* title_screen;
 
     public:
@@ -35,12 +42,14 @@ namespace godot {
 
         void _ready() override;
         void _enter_tree() override;
+        void _process(double delta) override;
 
         void toggle_pause_HUD();
         void toggle_inventory(bool is_inv, Player* player);
 
         int nextDialog();
         void toggle_dialog(bool is_vis);
+        void toggle_dialog(bool is_vis, Vector<String> dialog);
 
         void start_game();
 

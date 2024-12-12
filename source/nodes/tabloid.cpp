@@ -20,6 +20,7 @@ void Tabloid::_enter_tree() {
 
     Ref<Texture2D> icon_image = ResourceLoader::get_singleton()->load("res://textures/Tabloid.png");
     set_icon(icon_image);
+    set_global_transform(Transform3D(Quaternion(Vector3(1, 0, 0), Math::deg_to_rad(45.0f))));
 }
 
 void Tabloid::_ready() {

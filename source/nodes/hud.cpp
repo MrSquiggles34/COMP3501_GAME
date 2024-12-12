@@ -14,11 +14,17 @@ HUD::~HUD() {}
 void HUD::_enter_tree() {
     if (DEBUG) UtilityFunctions::print("Enter Tree - HUD.");
     create_and_add_as_child<Label>(this, pause_label, "PauseLabel", true);
+    
     create_and_add_as_child<ItemList>(this, inventory, "Inventory", true);
+    create_and_add_as_child<ColorRect>(this, dataBox, "DataBox", true);
+    create_and_add_as_child<Label>(this, data_label, "Data", true);
+
     create_and_add_as_child<ColorRect>(this, textBox, "TextBox", true);
     create_and_add_as_child<Label>(this, dialog_label, "Dialog", true);
+
     create_and_add_as_child<TextureRect>(this, title_screen, "TitleCard", true);
 
+    is_intro = true;
     cur_dialog = 0;
     dialog_list.append("HQ: *BZZT* #255, come in. This is Agent *KRRSHH* from mission control speaking. #255, do you copy?");
     dialog_list.append("Y-yeah. I can hear you, but the connection isn't great. There seems to be a snowstorm going on.");
@@ -36,6 +42,7 @@ void HUD::_enter_tree() {
     dialog_list.append("Hello? Hello?");
     dialog_list.append("...");
     dialog_list.append("Well, I guess I'll just have to hope this storm blows over soon. In the meantime, I may as well get moving. I still have my initial directives after all. Analyze the current state of Aurelia and retrieve the White Panoply... I just wish they'd told me what exactly that is.");
+
 }
 
 void HUD::_ready() {
@@ -59,15 +66,31 @@ void HUD::_ready() {
     pause_label->set_visible(false);
 
     // INVENTORY
-    inventory->set_size(get_viewport()->get_visible_rect().size);
-    inventory->set_max_columns(10);
+    int width = get_viewport()->get_visible_rect().size.x/2;
+    int height = get_viewport()->get_visible_rect().size.y;
+    inventory->set_size(Vector2(width,height));
+    inventory->set_max_columns(5);
     inventory->set_fixed_icon_size(Vector2i(100, 100));
     inventory->set_icon_mode(ItemList::IconMode::ICON_MODE_TOP);
+    inventory->set_allow_reselect(true);
     inventory->set_visible(false);
 
+    dataBox->set_size(Vector2(width, height));
+    dataBox->set_position(Vector2(width,0));
+    dataBox->set_color(Color(0,0,0,1));
+    dataBox->set_visible(false);
+
+    data_label->set_size(Vector2(width-8, height));
+    data_label->set_autowrap_mode(TextServer::AutowrapMode::AUTOWRAP_WORD_SMART);
+    data_label->set_text("ANALYZING...");
+    data_label->set("theme_override_colors/font_color", Color(0,0.8,0.15,1));
+    data_label->set("theme_override_font_sizes/font_size", 20);
+    data_label->set_position(Vector2(width+10,10));
+    data_label->set_visible(false);
+
     // DIALOG BOX
-    int width = get_viewport()->get_visible_rect().size.x-10;
-    int height = get_viewport()->get_visible_rect().size.y/3;
+    width = get_viewport()->get_visible_rect().size.x-10;
+    height = get_viewport()->get_visible_rect().size.y/3;
     textBox->set_size(Vector2(width, height));
     textBox->set_position(Vector2(5,height*2-5));
     textBox->set_color(Color(0,0,0,1));
@@ -78,8 +101,15 @@ void HUD::_ready() {
     dialog_label->set("theme_override_colors/font_color", Color(1,1,1,1));
     dialog_label->set("theme_override_font_sizes/font_size", 25);
     dialog_label->set_position(Vector2(20,height*2+10));
-    //dialog_label->set_visible(false);
 
+}
+
+void HUD::_process(double delta){
+    int num_selected = inventory->get_selected_items().size() - 1;
+    if(num_selected >= 0){
+        int cur_selected = inventory->get_selected_items()[num_selected];
+        data_label->set_text(inventory_data[cur_selected]);
+    }
 }
 
 void HUD::toggle_pause_HUD() {
@@ -90,14 +120,21 @@ void HUD::toggle_pause_HUD() {
 }
 
 void HUD::toggle_inventory(bool is_inv, Player* player) {
+    inventory_data.clear();
     inventory->clear();
     Vector<CollectableItemAbstract*> player_inv = player->get_inventory();
     for (int i=0; i<player_inv.size(); i++){
         int index = inventory->add_item(player_inv[i]->get_name(), player_inv[i]->get_icon());
         UtilityFunctions::print(player_inv[i]->get_name());
-        inventory->set_item_tooltip(index, player_inv[i]->get_lore());
+        inventory_data.append(player_inv[i]->get_lore());
     }
     inventory->set_visible(is_inv);
+    dataBox->set_visible(is_inv);
+    data_label->set_visible(is_inv);
+
+    if (is_inv){
+        data_label->set_text("ANALYZING...");
+    }
 }
 
 void HUD::start_game(){
@@ -109,9 +146,23 @@ void HUD::toggle_dialog(bool is_vis){
     dialog_label->set_visible(is_vis);
 }
 
+void HUD::toggle_dialog(bool is_vis, Vector<String> dialog){
+    dialog_list = dialog;
+    cur_dialog = 0;
+    is_intro = false;
+    dialog_label->set_text(dialog_list[cur_dialog]);
+    textBox->set_visible(is_vis);
+    dialog_label->set_visible(is_vis);
+}
+
 int HUD::nextDialog(){
     cur_dialog += 1;
-    if (cur_dialog == 0 || cur_dialog == 2 || cur_dialog == 3 || cur_dialog == 5 || cur_dialog == 6 || cur_dialog == 7 || cur_dialog == 9 || cur_dialog == 11 || cur_dialog == 12){
+    if(is_intro){
+        if (cur_dialog == 0 || cur_dialog == 2 || cur_dialog == 3 || cur_dialog == 5 || cur_dialog == 6 || cur_dialog == 7 || cur_dialog == 9 || cur_dialog == 11 || cur_dialog == 12){
+            textBox->set_color(Color(0,0,0,1));
+            dialog_label->set("theme_override_colors/font_color", Color(1,1,1,1));
+        }
+    } else if (dialog_list[cur_dialog] == "ERROR: MEMORY CONFLICT") {
         textBox->set_color(Color(0,0,0,1));
         dialog_label->set("theme_override_colors/font_color", Color(1,1,1,1));
     } else {

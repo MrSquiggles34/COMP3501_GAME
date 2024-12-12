@@ -5,6 +5,7 @@
 #include <godot_cpp/variant/packed_float32_array.hpp>
 #include <godot_cpp/core/memory.hpp> 
 #include <godot_cpp/variant/utility_functions.hpp> 
+#include <godot_cpp/templates/vector.hpp>
 
 // easily toggle off the debug messages in the entire library
 #define DEBUG true
@@ -21,6 +22,7 @@
 
 // Stuff for generating custom meshes.
 namespace godot {
+
     // page 328
     static float** generateNoise();
     static PackedFloat32Array* fillDataArray(float** noise);
