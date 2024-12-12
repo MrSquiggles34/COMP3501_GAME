@@ -28,7 +28,6 @@ namespace godot {
 		int something;
 
 		String shader_name; // assumes that the particle shader and spatial shader have the same name + _ps.gdshader or + _ss.gdshader
-		// you can make necessary adjustments if you want to be able to name them differently 
 
 	protected:
 		// a static function that Godot will call to find out which methods can be called and which properties it exposes

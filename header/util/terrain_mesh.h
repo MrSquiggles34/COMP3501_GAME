@@ -23,7 +23,6 @@
 #include "noise.h"
 #include "custom_mesh.h"
 
-// everything in gdextension is defined in this namespace
 namespace godot {
 
 class TerrainMesh : public ArrayMesh {
@@ -57,7 +56,6 @@ public:
 	TerrainMesh();
 	~TerrainMesh();
 
-	// The main setup function, should be all-encompassing enough to call it externally and have it ready to go.  
 	void setup();
 
 	#pragma region SETUP HELPERS
@@ -66,7 +64,6 @@ public:
 	#pragma endregion SETUP HELPERS
 
 	// allows for saving and loading the height map
-	// you could directly use a packed float array as well, both approaches are valid; this is just the one I ended up choosing. 
 	void save_height_map_to_packed();
 	void load_height_map_from_packed();
 

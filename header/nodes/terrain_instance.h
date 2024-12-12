@@ -14,7 +14,6 @@
 #include "defs.h"
 #include "terrain_mesh.h"
 
-// everything in gdextension is defined in this namespace
 namespace godot {
 
 class TerrainInstance : public MeshInstance3D {

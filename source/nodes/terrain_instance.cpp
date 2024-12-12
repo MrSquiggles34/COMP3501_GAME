@@ -30,11 +30,3 @@ void TerrainInstance::_enter_tree(){
 		terrain_mesh->load_height_map_from_packed(); 
 	}
 }
-
-/*
-*
-* A class set-up to save, load and use a procedurally created mesh. 
-*
-* Copyright (c) 2024 Samantha Beilman (samanthabeilman@cmail.carleton.ca)
-*
-*/

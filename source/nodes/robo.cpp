@@ -13,13 +13,12 @@ Robo::Robo() : Node3D() {
 }
 
 Robo::~Robo() {
-	// Add cleanup here, if you have any. I don't, typically. 
+	
 }
 
-// Adds the crane parts to the crane in the editor. 
-// the add_child and set_owner should happen in _enter_tree, or we will not see them in the editor
+
 void Robo::_enter_tree() {
-	// TODO setup your parts with the correct hierarchical relationships here
+	//  setup parts with the correct hierarchical relationships here
 	create_and_add_as_child<RoboBase>(base1, "RoboBase1", true);
 	create_and_add_as_child<RoboBase>(base2, "RoboBase2", true);
 	create_and_add_as_child<RoboJoint>(joint1, "RoboJoint1", true);

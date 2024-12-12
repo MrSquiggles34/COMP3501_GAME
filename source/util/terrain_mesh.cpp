@@ -27,17 +27,16 @@ void TerrainMesh::_bind_methods() {
 }
 
 TerrainMesh::TerrainMesh() {
-	// Initialize variables here.
 	array_width = 2;
 	array_height = 2;
 }
 
 TerrainMesh::~TerrainMesh(){ }
 
-// I just did a simple square ** to show you how to use the packed height map **. 
+// Square terrain generation
 void TerrainMesh::setup(){
 	// Initialize OpenSimplexNoise
-    OpenSimplexNoise noise(12345); // Seed for the noise
+    OpenSimplexNoise noise(12345); 
 
     // Adjust the size of the terrain
     array_width = 12;
@@ -53,24 +52,24 @@ void TerrainMesh::setup(){
     // Iterate through the terrain grid
     for (int x = 0; x < array_width; x++) {
         for (int y = 0; y < array_height; y++) {
-            // Generate height based on OpenSimplex noise
-            float height = noise.get_noise_2d(x * 0.1f, y * 0.1f) * 10.0f;  // Scale and adjust height
+            // Generate height based on noise
+            float height = noise.get_noise_2d(x * 0.1f, y * 0.1f) * 10.0f;  
 
             // Create vertex with noise-based height
             Vector3 vertex(x, height, y);
             vertices.push_back(vertex);
 
-            // Assign color based on height (optional)
+            // Assign color based on height 
             Color vertexColor(0.5f + height * 0.05f, 1.0f - height * 0.05f, 0.2f, 1.0f);
             colors.push_back(vertexColor);
 
             // Normal (simple flat terrain for now)
             normals.push_back(Vector3(0, 1, 0));
 
-            // Texture coordinates (optional)
+            // Texture coordinates
             uv.push_back(Vector2((float)x / array_width, (float)y / array_height));
 
-            // Create indices (triangle list)
+            // Create indices 
             if (x < array_width - 1 && y < array_height - 1) {
                 int i0 = x * array_height + y;
                 int i1 = (x + 1) * array_height + y;
@@ -90,21 +89,22 @@ void TerrainMesh::setup(){
     // Call setup_mesh to finalize the mesh setup
     setup_mesh();
 
-	// check to see if students can use the standard material at this point in the semester. 
+	// Create a material for the terrain
 	StandardMaterial3D* mat = memnew(StandardMaterial3D);
 	Ref<Texture2D> texture = ResourceLoader::get_singleton()->load("textures/sand.jpg", "Texture");
 	if (!texture.is_valid()) {
 		UtilityFunctions::print("Failed to load texture!");
 	}
 
-	mat->set_texture(BaseMaterial3D::TEXTURE_ALBEDO, texture);
 	// Ensures the texture shows properly
+	mat->set_texture(BaseMaterial3D::TEXTURE_ALBEDO, texture);
+	
 
 	surface_set_material(0, mat);
 }
 
 void TerrainMesh::setup_mesh(){
-	// actually use the arrays that we setup in the other functions to make a mesh.
+	//  use the arrays that we setup in the other functions to make a mesh.
 	Array arrays = Array();
 	arrays.resize((int)Mesh::ARRAY_MAX);
 	arrays[(int)Mesh::ARRAY_VERTEX] = vertices;
@@ -113,7 +113,6 @@ void TerrainMesh::setup_mesh(){
 	arrays[(int)Mesh::ARRAY_COLOR] = colors;
 	arrays[(int)Mesh::ARRAY_INDEX] = indices;
 
-	// could also use a triangle strip, but it is a bit more confusing. I don't recommend it.
 	add_surface_from_arrays(Mesh::PRIMITIVE_TRIANGLES, arrays);
 }
 
@@ -126,7 +125,6 @@ PackedFloat32Array TerrainMesh::get_packed_height_map(){
 }
 void TerrainMesh::set_packed_height_map(PackedFloat32Array phm){
 	packed_height_map = phm;
-	// UtilityFunctions::print(packed_height_map.size());
 }
 
 void TerrainMesh::save_height_map_to_packed(){
@@ -138,7 +136,6 @@ void TerrainMesh::save_height_map_to_packed(){
 }
 
 void TerrainMesh::load_height_map_from_packed(){
-	// UtilityFunctions::print(array_width, ", ", array_height);
 	int counter = 0;
 
 	for(int x = 0; x < array_width; x++){
@@ -150,11 +147,3 @@ void TerrainMesh::load_height_map_from_packed(){
 		height_map.push_back(height_map_row);
 	}
 }
-
-/*
-*
-* A class which should be used to create a procedural height-field terrain.
-*
-* Copyright (c) 2024 Samantha Beilman (samanthabeilman@cmail.carleton.ca)
-*
-*/

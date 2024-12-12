@@ -26,7 +26,6 @@
 #define DEBUG true
 #define LINEUP_SPACE_ROBO 0.0f
 
-// everything in gdextension is defined in this namespace
 namespace godot {
 	class RoboPart : public CustomMesh {
 		// this macro sets up a few internal things
@@ -36,7 +35,6 @@ namespace godot {
 		double time_passed;
 
 	protected:
-		// a static function that Godot will call to find out which methods can be called and which properties it exposes
 		static void _bind_methods();
 
 		// the position relative to the transformation hierarchy parent (*T*orso)
@@ -51,7 +49,7 @@ namespace godot {
 
 		Vector3 scale; // (x-scale, y-scale, z-scale) (tor*S*o)
 
-		// this is the parent for our transformation hierarchy
+		// parent for our transformation hierarchy
 		RoboPart* parent;
 
 	public:
@@ -62,11 +60,11 @@ namespace godot {
 		void _ready() override;
 
 		// for our transformation hierarchy, since we will not be using the built-in one. 
-		// To be extra clear: The parent in the SceneTree will be Crane (as set up by add_child); the parent in our internal transformation hierarchy will be another CranePart according to the assignment and set up by you! 
+		
 		void set_parent(RoboPart* parent);
 		RoboPart* get_parent();
 
-		// These functions are specifically for hierarchical transformations as we are not using the hierarchical transformations provided by Godot
+		// These functions are specifically for hierarchical transformations 
 		Transform3D get_transformation_matrix();
 		Transform3D get_transformation_matrix_without_scaling();
 

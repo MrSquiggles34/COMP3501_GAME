@@ -13,7 +13,6 @@ using namespace godot;
 
 void ParticleSystem::_bind_methods() {
 	// IMPORTANT NOTE: in order to use a non-zero argument constructor, you need to bind the methods. 
-	// Think about why that is and ask about it if you can't figure it out. It will maybe help you understand what's going on with the SceneTree a bit better. 
 	ClassDB::bind_method(D_METHOD("set_shader_name", "shader_name"), &ParticleSystem::set_shader_name);
 	ClassDB::bind_method(D_METHOD("get_shader_name"), &ParticleSystem::get_shader_name);
 
@@ -35,7 +34,7 @@ void ParticleSystem::_enter_tree() {
 }
 
 void ParticleSystem::_ready() {
-	// Particle system properties, can be changed from the custom scene code as well
+	// Particle system properties
 	set_amount(25000);
 	set_lifetime(2.0);
 
@@ -43,7 +42,7 @@ void ParticleSystem::_ready() {
 	ShaderMaterial* spatial_material = memnew(ShaderMaterial);
 	Ref<Shader> shader = ResourceLoader::get_singleton()->load(vformat("shaders/%s_ss.gdshader", shader_name), "Shader");
 	spatial_material->set_shader(shader);
-	// this will be the default texture of the spatial material unless you change it
+	// this will be the default texture of the spatial material
 	spatial_material->set_shader_parameter("texture_image", ResourceLoader::get_singleton()->load("res://textures/flame4x4orig.png"));
 
 	// Set up the quad to use for each particle
@@ -67,7 +66,6 @@ void ParticleSystem::_ready() {
 }
 
 ParticleSystem::~ParticleSystem() {
-	// Add your cleanup here.
 }
 
 void ParticleSystem::_process(double delta) {

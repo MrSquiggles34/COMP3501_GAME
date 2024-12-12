@@ -12,7 +12,7 @@ CustomMesh::CustomMesh() : MeshInstance3D() {
 
 	// default values
 	shader_name = "simple.gdshader";
-	base_color = Vector3(); // black
+	base_color = Vector3(); 
 
 	shader_material = nullptr;
 
@@ -26,14 +26,10 @@ void CustomMesh::_enter_tree ( ){
 
 }
 
-// Note: This section runs every time we open the game again. For a small game like what we will make for this assignment, it will be fine. If you want to refactor to make it load from saved data instead, you can, but it likely won't be a good use of your time. 
 void CustomMesh::_ready ( ){
 	if(DEBUG) UtilityFunctions::print("Ready - ", get_name()); 
 
-	// NOTE: this section needs to run after the parent node's _enter_tree (consistently) and before the parent's _ready; making this the perfect place to put it.
 
-	// They don't HAVE to be tori; they don't all HAVE to be the same. You can change the geometry as much as you want -- it is just a canvas to display your shaders for the purposes of this assignment.
-	// That being said, your shaders should work regardless of the shape.
 }
 
 // called every frame (as often as possible)

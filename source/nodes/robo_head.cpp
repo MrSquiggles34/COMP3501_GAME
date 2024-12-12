@@ -5,14 +5,12 @@ using namespace godot;
 void RoboHead::_bind_methods() {
 }
 
-// You may not unset this class as top level (from parent)
 RoboHead::RoboHead() : RoboPart() {
 	// This is just to line them up for the starting scene -- change this for sure. 
 	local_position = Vector3(0.0f, 0.0f, 0.0f);
 }
 
 RoboHead::~RoboHead() {
-	// Add cleanup here, if you have any. I don't, typically. 
 }
 
 void RoboHead::_enter_tree() {

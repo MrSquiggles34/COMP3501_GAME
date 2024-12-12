@@ -17,8 +17,8 @@ RoboPart::RoboPart() : CustomMesh(), parent(nullptr) {
 
 	scale = Vector3(1, 1, 1);
 
-	// this makes it so that any hierarchy established in the node structure does not apply to the hierarchical transformations done by Godot for us, which would interfere
-	set_as_top_level(true); // DO NOT CHANGE THIS LINE
+	// this makes it so that any hierarchy established in the node structure does not apply to the hierarchical transformations done by Godot 
+	set_as_top_level(true);
 }
 
 RoboPart::~RoboPart() {
@@ -29,7 +29,6 @@ void RoboPart::_enter_tree() {
 
 }
 
-// Since most of the CraneParts use the default hierarchical transformation, we can just use the parent class's implementation (this one); the hook will need to be overridden
 void RoboPart::_ready() {
 	set_global_transform(get_transformation_matrix());
 }
