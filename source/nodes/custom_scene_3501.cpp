@@ -153,9 +153,11 @@ void CustomScene3501::_process(double delta) {
 			player->add_inventory(tutorial_item);
 		}
 	}
-	if (panoply->in_range(player_position)){
-		panoply->set_visible(false);
-		player->add_inventory(tutorial_item);
+	if(tutorial_item->is_visible()){
+		if (panoply->in_range(player_position)){
+			panoply->set_visible(false);
+			player->add_inventory(tutorial_item);
+		}
 	}
 }
 

@@ -7,13 +7,13 @@ using namespace godot;
 void Panoply::_bind_methods() {}
 
 Panoply::Panoply() : CollectableItemAbstract() {
-    radius = 0.5;
+    radius = 2.0;
 }
 
 void Panoply::_enter_tree() {
     Ref<PackedScene> scene = ResourceLoader::get_singleton()->load("res://models/objects/panoply/sci-fi_box.glb");
     Node3D *model_instance = Object::cast_to<Node3D>(scene->instantiate());
-    //model_instance->set_scale(Vector3(1, 1, 1));
+    model_instance->set_scale(Vector3(0.2, 0.2, 0.2));
     add_child(model_instance);
 }
 
