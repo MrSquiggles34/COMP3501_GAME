@@ -5,7 +5,7 @@ using namespace godot;
 
 void RoboPart::_bind_methods() {}
 
-RoboPart::RoboPart() : MeshInstance3D(), parent(nullptr) {
+RoboPart::RoboPart() : CustomMesh(), parent(nullptr) {
 	time_passed = 0.0;
 
 	// primary attributes
@@ -26,6 +26,7 @@ RoboPart::~RoboPart() {
 }
 
 void RoboPart::_enter_tree() {
+
 }
 
 // Since most of the CraneParts use the default hierarchical transformation, we can just use the parent class's implementation (this one); the hook will need to be overridden

@@ -5,6 +5,7 @@
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/classes/mesh_instance3d.hpp>
 #include <godot_cpp/templates/vector.hpp>
+#include <godot_cpp/classes/sphere_mesh.hpp>
 
 #include <godot_cpp/variant/color.hpp>
 #include <godot_cpp/classes/random_number_generator.hpp>
@@ -28,6 +29,10 @@ private:
 	Node* buildings;
     CustomMesh* ground;
     Vector<CustomMesh*> building_list;
+
+	// Moon Lighting
+	MeshInstance3D* light_source;
+	ShaderMaterial* light_object_material;
 
 	bool is_paused;
 	

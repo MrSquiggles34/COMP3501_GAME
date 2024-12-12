@@ -20,11 +20,17 @@ void RoboJoint::_enter_tree() {
 	BoxMesh* robo_joint = memnew(BoxMesh);
 	robo_joint->set_size(Vector3(1.0f, 1.5f, 0.5f));
 
-	StandardMaterial3D* material = memnew(StandardMaterial3D);
-	material->set_albedo(Color(0.0, 0.0, 0.0, 1));
+	ShaderMaterial* material = memnew(ShaderMaterial());
+	robo_joint->surface_set_material(0, material);
+
+	Ref<Shader> shader = ResourceLoader::get_singleton()->load(vformat("%s%s.gdshader", "shaders/", "lighting"), "Shader");
+	material->set_shader(shader);
 	robo_joint->surface_set_material(0, material);
 
 	set_mesh(robo_joint);
+	material->set_shader_parameter("color_in", Color(0.0, 0.0, 0.0, 1));
+	material->set_shader_parameter("light_position", Vector3(0.0f, 100.0f, -140.0f));
+	material->set_shader_parameter("specular_power", 50.0f);
 }
 
 void RoboJoint::_process(double delta) {

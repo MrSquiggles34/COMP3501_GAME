@@ -22,9 +22,17 @@ void RoboBase::_enter_tree() {
 	robo_base->set_top_radius(3.0f);
 	robo_base->set_height(0.5f);
 
-	StandardMaterial3D* material = memnew(StandardMaterial3D);
-	material->set_albedo(Color(1.0, 1.0, 0.4, 1));
+	ShaderMaterial* material = memnew(ShaderMaterial());
 	robo_base->surface_set_material(0, material);
+
+	Ref<Shader> shader = ResourceLoader::get_singleton()->load(vformat("%s%s.gdshader", "shaders/", "lighting"), "Shader");
+	material->set_shader(shader);
+	robo_base->surface_set_material(0, material);
+
+	set_mesh(robo_base);
+	material->set_shader_parameter("color_in", Color(1.0, 1.0, 0.4, 1));
+	material->set_shader_parameter("light_position", Vector3(0.0f, 100.0f, -140.0f));
+	material->set_shader_parameter("specular_power", 50.0f);
 
 	set_mesh(robo_base);
 }

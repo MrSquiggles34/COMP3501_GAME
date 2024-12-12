@@ -51,7 +51,7 @@ void fragment() {
 
 	//spec = 0.0f;  // turn off specular
 	//diffuse = 0.0f; // turn off diffuse
-    float amb = 0.1; // ambient coefficient
+    float amb = 0.7; // ambient coefficient
 	
     // Use variable "pixel", surface color, to help determine fragment color
     ALBEDO = (light_color*pixel*diffuse +

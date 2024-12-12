@@ -36,8 +36,25 @@ void Map::_enter_tree() {
 
     ground->set_mesh(ground_mesh);
     ground_material->set_shader_parameter("color_in", BLANK_COL);
-    ground_material->set_shader_parameter("light_position", Vector3(0.0f, 5.0f, 0.0f));
-    ground_material->set_shader_parameter("specular_power", 20.0f);
+    ground_material->set_shader_parameter("light_position", Vector3(0.0f, 100.0f, -140.0f));
+    ground_material->set_shader_parameter("specular_power", 50.0f);
+
+    create_and_add_as_child<MeshInstance3D>(this, light_source, "LightSource", true);
+
+    SphereMesh* light_mesh = memnew(SphereMesh);
+    light_mesh->set_radius(10.0f);
+    light_mesh->set_height(10.0f);
+
+    light_object_material = memnew(ShaderMaterial);
+    Ref<Shader> moon_shader = ResourceLoader::get_singleton()->load(vformat("%s%s.gdshader", "shaders/", "simple"), "Shader");
+    light_object_material->set_shader(moon_shader);
+    light_mesh->surface_set_material(0, light_object_material);
+
+    // Set the SphereMesh as the mesh for light_source
+    light_source->set_mesh(light_mesh);
+    light_object_material->set_shader_parameter("color_in", Vector3(1, 1, 1));
+
+    light_source->set_position(Vector3(0.0f, 100.0f, -140.0f));
 
     //create_and_add_as_child<Node>(this, buildings, "Buildings", true);
 }

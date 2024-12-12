@@ -2,7 +2,6 @@
 #define ROBO_PART_H
 
 #include <godot_cpp/classes/node3d.hpp>
-#include <godot_cpp/classes/mesh_instance3d.hpp>
 
 #include <godot_cpp/classes/mesh.hpp>
 #include <godot_cpp/classes/cylinder_mesh.hpp>
@@ -22,15 +21,16 @@
 #include <godot_cpp/classes/sphere_mesh.hpp>
 #include <godot_cpp/classes/torus_mesh.hpp>
 
+#include "custom_mesh.h"
 
 #define DEBUG true
 #define LINEUP_SPACE_ROBO 0.0f
 
 // everything in gdextension is defined in this namespace
 namespace godot {
-	class RoboPart : public MeshInstance3D {
+	class RoboPart : public CustomMesh {
 		// this macro sets up a few internal things
-		GDCLASS(RoboPart, MeshInstance3D);
+		GDCLASS(RoboPart, CustomMesh);
 
 	private:
 		double time_passed;
