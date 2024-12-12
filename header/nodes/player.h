@@ -62,7 +62,7 @@ public:
 
     void update_velocity(double delta);
 
-    String printInventory(); //Primarily for testing purposes - can delete later
+    int get_inventory_size();
     bool inInventory(String name);
     
 };

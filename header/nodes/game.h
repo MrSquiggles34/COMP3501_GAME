@@ -28,6 +28,15 @@ namespace godot {
         bool picked_up_first_item;
         bool checked_first_item;
 
+        Vector<int> read_pages;
+
+        Vector<String> page_1;
+        Vector<String> second_page;
+        Vector<String> page_4;
+        Vector<String> page_5;
+        Vector<String> page_6;
+        Vector<String> page_7;
+
     protected:
         static void _bind_methods();  // Bind methods for GDExtension
 
