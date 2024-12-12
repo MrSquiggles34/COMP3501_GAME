@@ -60,7 +60,7 @@ size = Vector3(124.79, 128.59, 68.9376)
 size = Vector3(6.91281, 15.6378, 6.18109)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b5ivf"]
-size = Vector3(64.4976, 214.785, 50.0967)
+size = Vector3(67, 214.785, 50.0967)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rkl4t"]
 size = Vector3(133.9, 227.841, 141.255)
@@ -326,7 +326,7 @@ transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 38.0029, 0.355711, -
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 24.3435)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Bottom Right)/Tall Red Building"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8266, 131.036, -24.5255)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8266, 131.036, 2.14117)
 shape = SubResource("BoxShape3D_j2kr5")
 
 [node name="House" type="StaticBody3D" parent="Buildings (Bottom Right)"]
@@ -551,11 +551,11 @@ metadata/_edit_group_ = true
 transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.78737, 0, 0.0975952)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Bottom Left)/2021 Cyberpunk Building"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03253, 106.746, -0.175385)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.781326, 106.746, -0.175415)
 shape = SubResource("BoxShape3D_b5ivf")
 
 [node name="Grey Angular Car" type="StaticBody3D" parent="Buildings (Bottom Left)"]
-transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -23.8858, 0.392797, -67.7262)
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -24.8858, 0.392797, -64.7262)
 metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Buildings (Bottom Left)/Grey Angular Car" instance=ExtResource("18_f15h3")]
@@ -566,7 +566,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.0075
 shape = SubResource("BoxShape3D_ao6g2")
 
 [node name="White Angular Car" type="StaticBody3D" parent="Buildings (Bottom Left)"]
-transform = Transform3D(-0.199867, 0, 0.00730084, 0, 0.2, 0, -0.00730084, 0, -0.199867, -24.5884, 0.465716, -68.0556)
+transform = Transform3D(-0.199867, 0, 0.00730084, 0, 0.2, 0, -0.00730084, 0, -0.199867, -26.9298, 0.465716, -64.0556)
 metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Buildings (Bottom Left)/White Angular Car" instance=ExtResource("19_fkkl3")]
@@ -747,7 +747,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42407, 94.9777, 2.83414)
 shape = SubResource("BoxShape3D_rkl4t")
 
 [node name="Lit up Building" type="StaticBody3D" parent="Buildings (Top Left)"]
-transform = Transform3D(0.00440285, 0, -0.149935, 0, 0.15, 0, 0.149935, 0, 0.00440285, 75.249, 0.173695, 44.9904)
+transform = Transform3D(0.00440285, 0, -0.149935, 0, 0.15, 0, 0.149935, 0, 0.00440285, 77.249, 0.173695, 43.9904)
 metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Buildings (Top Left)/Lit up Building" instance=ExtResource("21_h5vjp")]
@@ -802,7 +802,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.01428, 32.5756, 12.9189)
 shape = SubResource("BoxShape3D_ahhon")
 
 [node name="Love Motel" type="StaticBody3D" parent="Buildings (Top Left)"]
-transform = Transform3D(0.199949, 0, -0.00453746, 0, 0.2, 0, 0.00453746, 0, 0.199949, 41.1517, 0, 18.695)
+transform = Transform3D(0.199949, 0, -0.00453746, 0, 0.2, 0, 0.00453746, 0, 0.199949, 43.1517, 0, 18.695)
 metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Buildings (Top Left)/Love Motel" instance=ExtResource("9_bwkh2")]
@@ -822,6 +822,16 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 3.27069, -12.1568, -1.6053
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Top Left)/Slum House 3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.610474, 32.5756, -3.64275)
 shape = SubResource("BoxShape3D_7p12g")
+
+[node name="Console" type="StaticBody3D" parent="Buildings (Top Left)"]
+transform = Transform3D(-6.55671e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.55671e-09, 41.3069, 0.476124, 42.8946)
+
+[node name="Sketchfab_Scene" parent="Buildings (Top Left)/Console" instance=ExtResource("10_l342g")]
+transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Top Left)/Console"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0737457, 7.31891, 0.271851)
+shape = SubResource("BoxShape3D_wu6x8")
 
 [node name="Walls (Top Left)" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.0415, 0, -205.779)
@@ -1047,7 +1057,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67024, 32.5756, 12.9189)
 shape = SubResource("BoxShape3D_ahhon")
 
 [node name="House2" type="StaticBody3D" parent="Buildings (Top Right)"]
-transform = Transform3D(0.0110249, 0, 0.199696, 0, 0.2, 0, -0.199696, 0, 0.0110249, 44.2301, 0.575429, -104.308)
+transform = Transform3D(0.0110249, 0, 0.199696, 0, 0.2, 0, -0.199696, 0, 0.0110249, 47.0577, 0.575429, -104.308)
 metadata/_edit_group_ = true
 
 [node name="Sketchfab_Scene" parent="Buildings (Top Right)/House2" instance=ExtResource("14_vavf6")]
@@ -1067,6 +1077,16 @@ transform = Transform3D(0.988533, -0.151002, 0, 0.151002, 0.988533, 0, 0, 0, 1, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Top Right)/Motorcycle"]
 transform = Transform3D(-0.0170695, 0.90546, -0.424089, -0.999822, -0.0188484, 5.55112e-17, -0.0079934, 0.424013, 0.905621, -1.19781, -0.239353, -0.878693)
 shape = SubResource("CapsuleShape3D_n2rwt")
+
+[node name="Console" type="StaticBody3D" parent="Buildings (Top Right)"]
+transform = Transform3D(-6.55671e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.55671e-09, 41.3069, 0.476124, -157.935)
+
+[node name="Sketchfab_Scene" parent="Buildings (Top Right)/Console" instance=ExtResource("10_l342g")]
+transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings (Top Right)/Console"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0737457, 7.31891, 0.271851)
+shape = SubResource("BoxShape3D_wu6x8")
 
 [node name="Walls (Top Right)" type="Node3D" parent="."]
 
