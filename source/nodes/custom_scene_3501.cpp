@@ -15,16 +15,16 @@ CustomScene3501::CustomScene3501() : Node3D() {
 
 	tabloid_count = 10;
 
-	locations.append(Vector3(0.0, 2.0, -10.0)); // 1
-	locations.append(Vector3(0.0, 2.0, -12.0)); // 2
-	locations.append(Vector3(0.0, 2.0, -14.0)); // 3
-	locations.append(Vector3(0.0, 2.0, -16.0)); // 4
-	locations.append(Vector3(0.0, 2.0, -17.0)); // 5
-	locations.append(Vector3(0.0, 2.0, -20.0)); // 6
-	locations.append(Vector3(0.0, 2.0, -22.0)); // 7
-	locations.append(Vector3(0.0, 2.0, -24.0)); // 8
-	locations.append(Vector3(0.0, 2.0, -26.0)); // 9
-	locations.append(Vector3(0.0, 2.0, -28.0)); // 10
+	locations.append(Vector3(0.0, 1.0, -30.0)); // 1
+	locations.append(Vector3(-50.0, 1.0, -40.0)); // 2
+	locations.append(Vector3(85.0, 1.0, -60.0)); // 3
+	locations.append(Vector3(-60.0, 1.0, -85.0)); // 4
+	locations.append(Vector3(32.0, 1.0, -153.0)); // 5
+	locations.append(Vector3(-54.0, 1.0, -183.0)); // 6
+	locations.append(Vector3(54.0, 1.0, -205.0)); // 7
+	locations.append(Vector3(-50.0, 1.0, -158.0)); // 8
+	locations.append(Vector3(42.0, 1.0, -118.0)); // 9
+	locations.append(Vector3(0.0, 1.0, -100.0)); // 10
 
 	flavor_text.append("-ENTRY NUMBER 215-\nToday marks the beginning of something truly glorious.\nAll those years of slaving away, all my travels spent trying to bring this project into existence, will finally be worth it.\nTo think that I would be chosen to herald humanity's greatest accomplishment...\nAs if there was ever any other choice.\nMy precious boy... Mark my words, we shall see each other again very soon.\n...");
 	flavor_text.append("-ENTRY NUMBER 32-\nI have finally arrived in Aurelia.\nThe rumors about this continent were true, finding it was no easy feat. This land has both technology and mother nature on its side.\nStill, my genius has prevailed as was to be expected. My submarine design worked perfectly in taking me all the way to shore. That being said...\nThe submarine is no longer operable. I can only hope that the people of Aurelia are as kind and accepting as I have heard.\n...");
@@ -33,8 +33,8 @@ CustomScene3501::CustomScene3501() : Node3D() {
 	flavor_text.append("-ENTRY NUMBER 245-\nLife and work in Aurelia has been exciting, for good and for ill.\nThe self-governing nature of Aurelia means that my research goes undisturbed as long as I do my part for the community. No board of ethics to contend with either.\nThere's no price too high to pay for what I am attempting. I cannot allow it to weigh on my mind.\n");
 	flavor_text.append("-ENTRY NUMBER 50-\nSince the dawn of civilization, man has been seeking intelligent life outside himself. Failing that, he seeks to create his own.\nIt must be me. It can only be me. There is no other reason I am still here when all else has been lost.\n... They called me crazy. Perhaps they were right.\nBut such is the life of a visionary. And I will stop at nothing to bring you back to me.\nThen they'll be sorry...\nOsiris, wait for me.");
 	flavor_text.append("-ENTRY NUMBER 295-\nA whole year has passed since I first began my research.\nI have long since lost count of the failures. But with every failure comes significant progress for my next iteration.\n#$#&*#&@&#*$%@%!*#&$%@^\nHow blind they are, those fools sitting on their ivory towers.\nThey keep asking me to name the project.\nI know that they're desperate to claim authority over MY work.\nLet them call it whatever they want, I said.\nThey don't see its true purpose anyway. They won't until it's completed. But by then it will be too late.\nThen they will TRULY understand the depth of what they have taken away from me.");
-	flavor_text.append("Page 8");
-	flavor_text.append("Page 9");
+	flavor_text.append("-ENTRY NUMBER 70-\nIdiots, all of them. They do not understand. How could they not understand my vision?\nIf my plans were to be realized, I would be playing on the same playing field as God himself.\nNot only do they rob me of my grandson by denying him care, they won't even let me fix what they've done! Calling it blasphemy.\nThey dare deny him his right to live!? His right to be reborn anew!?\nHe was perfect in every way, he could have become a greater mind than I. Yet his future was cut so short.\nNo. I will not allow this to happen.\nI will deliver justice.");
+	flavor_text.append("-ENTRY NUMBER 80-\nI am leaving Aurelia. It's the only way to make more progress. I WILL find a way to proceed with my research, one way or another.\nOsiris… One day, I will return to Aurelia. As much as I loathe them, they are the only ones who can help me bring you back into this world.\nAfterwards...\nYou may choose to live as you see fit.");
 	flavor_text.append("Page 10");
 }
 
